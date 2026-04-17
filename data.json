@@ -12,25 +12,25 @@
       "protein": "2 g",
       "tags": ["Energi- och proteinrik", "Mjuk mat"],
       "ingredients": ["1 dl havregryn", "2 dl vatten", "1 msk neutral olja", "2 tsk smör", "1 nypa salt"],
-      "instructions": "Koka gryn och vatten 1-2 min. Tillsätt salt, olja och smör vid servering för att öka energiinnehållet utan att öka volymen."
+      "instructions": "Koka gryn och vatten 1-2 min. Tillsätt salt, olja och smör vid servering."
     },
     {
       "title": "Havregryn kokt på mjölk",
       "category": "Frukost",
       "energy": "190 kcal",
       "protein": "6 g",
-      "tags": ["Proteinrik", "Klassisk"],
+      "tags": ["Proteinrik"],
       "ingredients": ["1 dl havregryn", "2 dl helmjölk", "1 nypa salt", "2 tsk smör"],
       "instructions": "Koka havregryn och mjölk under omrörning i 1-2 minuter. Tillsätt salt och smör."
     },
     {
-      "title": "Bircher-müsli (Måltid under natten)",
+      "title": "Bircher-müsli (Nattmål)",
       "category": "Frukost/Mellanmål",
       "energy": "237 kcal",
       "protein": "9,4 g",
-      "tags": ["Kall mat", "Fiberrik"],
-      "ingredients": ["50 g havregryn", "1 msk chiafrön", "1 msk pumpakärnor", "1,5 dl mjölk", "Kiwi eller äpple", "Bär och nötter"],
-      "instructions": "Blanda allt utom nötter i en skål. Täck över och ställ i kylen över natten. Perfekt som ett sent mål för att motverka nattlig fasta."
+      "tags": ["Kall mat", "Förbered i förväg"],
+      "ingredients": ["50 g havregryn", "1 msk chiafrön", "1,5 dl mjölk", "Kiwi/Bär", "Nötter"],
+      "instructions": "Blanda allt utom nötter. Låt stå i kyl över natten. Ät som sent kvällsmål."
     },
     {
       "title": "Blåbärs- och banansmoothie",
@@ -38,76 +38,93 @@
       "energy": "265 kcal",
       "protein": "11 g",
       "tags": ["Proteinrik", "Lättätet"],
-      "ingredients": ["1 banan", "2 dl blåbär", "2 dl helmjölk", "1 dl skyr", "1 msk olja", "1 tsk vaniljsocker"],
-      "instructions": "Mixa allt slätt. Serveras gärna kall. Bra vid nedsatt aptit."
+      "ingredients": ["1 banan", "2 dl blåbär", "2 dl helmjölk", "1 dl skyr", "1 msk olja"],
+      "instructions": "Mixa allt slätt. Bra vid nedsatt aptit eller illamående."
     },
     {
       "title": "Melonsallad med fetaost",
-      "category": "Lunch/Mellanmål",
+      "category": "Mellanmål",
       "energy": "410 kcal",
       "protein": "9 g",
-      "tags": ["Fräsch", "Energi"],
-      "ingredients": ["150 g vattenmelon", "50 g fetaost", "1,5 dl pumpafrön", "3 msk olja", "Honung och balsamvinäger"],
-      "instructions": "Rosta fröna. Tärna melonen och blanda med fetaost och dressing."
+      "tags": ["Sött och salt"],
+      "ingredients": ["150 g vattenmelon", "50 g fetaost", "1,5 dl pumpafrön", "Olja/Honung"],
+      "instructions": "Rosta fröna. Blanda melon, fetaost och dressing."
     },
     {
       "title": "Minipajer med spenat",
-      "category": "Lunch/Mellanmål",
-      "energy": "280 kcal (2 st)",
+      "category": "Mellanmål",
+      "energy": "280 kcal",
       "protein": "17 g",
-      "tags": ["Proteinrik", "Går att frysa"],
-      "ingredients": ["250 g spenat", "100 g keso", "2 ägg", "1 dl parmesan", "Pinjenötter"],
-      "instructions": "Blanda keso, ägg och hackad spenat. Grädda i muffinsformar på 160 grader i ca 25 min."
+      "tags": ["Proteinrik"],
+      "ingredients": ["250 g spenat", "100 g keso", "2 ägg", "1 dl parmesan"],
+      "instructions": "Blanda och grädda i muffinsformar på 160 grader i 25 min."
+    },
+    {
+      "title": "Äggsallad på bröd",
+      "category": "Mellanmål",
+      "energy": "300 kcal",
+      "protein": "8 g",
+      "tags": ["Klassisk"],
+      "ingredients": ["1 ägg", "1,5 msk majonnäs", "Smörgåsbröd", "Curry/Salt"],
+      "instructions": "Hacka ägget och blanda med majonnäs. Lägg på små brödbitar."
     },
     {
       "title": "Krämig broccolisoppa med fisk",
       "category": "Middag",
       "energy": "395 kcal",
       "protein": "14 g",
-      "tags": ["Skonkost", "Mjuk mat"],
-      "ingredients": ["150 g broccoli", "100 g fiskfilé", "1 dl vispgrädde", "2,5 dl buljong"],
-      "instructions": "Koka broccoli i buljong. Mixa slätt med grädde. Servera med den ångkokta fisken i soppan."
+      "tags": ["Skonkost"],
+      "ingredients": ["150 g broccoli", "100 g fisk", "1 dl grädde", "2,5 dl buljong"],
+      "instructions": "Mixa soppan slätt med grädde. Lägg i ångad fisk vid servering."
     },
     {
       "title": "Morotssoppa med färskost",
       "category": "Middag",
       "energy": "455 kcal",
       "protein": "9 g",
-      "tags": ["Snäll smak", "Energirik"],
+      "tags": ["Mjuk mat"],
       "ingredients": ["2 morötter", "3 dl buljong", "75 g färskost", "Pumpafrön"],
-      "instructions": "Koka morötter mjuka i buljong. Mixa med färskost. Toppa med rostade pumpafrön."
+      "instructions": "Koka morötter i buljong. Mixa med färskost. Toppa med frön."
     },
     {
-      "title": "Iskaffe (Energirik)",
+      "title": "Koldskål med jordgubbar",
+      "category": "Efterrätt/Mellanmål",
+      "energy": "345 kcal",
+      "protein": "11 g",
+      "tags": ["Kall mat"],
+      "ingredients": ["Kärnmjölk", "Grädde", "Äggulor", "Socker", "Jordgubbar"],
+      "instructions": "Mixa alla ingredienser kalla. Fräscht vid smakförändringar."
+    },
+    {
+      "title": "Iskaffe",
       "category": "Dryck",
       "energy": "305 kcal",
       "protein": "6 g",
-      "tags": ["Extra energi", "Kall dryck"],
-      "ingredients": ["3 tsk snabbkaffe", "3 dl helmjölk", "1 dl vispgrädde", "Socker och is"],
-      "instructions": "Lös upp kaffet i lite hett vatten. Blanda med mjölk, grädde och is."
+      "tags": ["Extra energi"],
+      "ingredients": ["3 tsk kaffe", "3 dl helmjölk", "1 dl grädde", "Is"],
+      "instructions": "Blanda kaffe, mjölk och grädde med is. Bra vid trötthet."
     },
     {
-      "title": "Dagsmeny för lättätare (Exempel)",
-      "category": "Måltidsplan",
-      "energy": "Mycket hög",
-      "protein": "Anpassad",
-      "tags": ["Inspiration"],
-      "ingredients": ["08:00 Frukost", "10:30 Mellanmål", "13:00 Lunch", "15:30 Mellanmål", "18:00 Middag", "21:00 Kvällsmål"],
-      "instructions": "Ät lite men ofta. Se till att varje mål innehåller en energikälla (fett) och en proteinkälla."
+      "title": "Pepparkakor med ingefära",
+      "category": "Snacks",
+      "energy": "110 kcal",
+      "protein": "1 g",
+      "tags": ["Mot illamående"],
+      "ingredients": ["Vetemjöl", "Smör", "Sirap", "Ingefära"],
+      "instructions": "Baka tunna kakor. Ingefära kan lindra illamående."
     }
   ],
   "medical_advice": [
     {
       "title": "Karcinoidsyndrom & Flushing",
-      "info": "Vissa ämnen (aminer) i mat och dryck kan utlösa flushing och diarré.",
-      "avoid": ["Lagrad ost", "Rödvin", "Rökt fisk", "Tomat", "Stark chili"],
-      "better": ["Färskost", "Färsk fisk", "Vitt vin (med måtta)", "Morötter"],
-      "tips": ["Undvik stora portioner", "Drick inte för het vätska"]
+      "info": "Livsmedel med aminer kan utlösa rodnad.",
+      "avoid": ["Lagrad ost", "Rödvin", "Rökt fisk", "Tomat"],
+      "tips": ["Ät små portioner", "Undvik het dryck"]
     },
     {
-      "title": "Protein & Muskelmassa",
-      "info": "Kroppen behöver extra protein vid NET för att bibehålla muskelmassa och styrka.",
-      "tips": ["Sikta på 1,2-1,5 g protein per kg kroppsvikt", "Berika maten med ägg eller grädde", "Välj proteinrika mellanmål"]
+      "title": "Vikten av Protein",
+      "info": "Protein hjälper till att bibehålla muskelmassa.",
+      "tips": ["Sikta på 1,2-1,5g per kg kroppsvikt", "Berika soppor med äggula"]
     }
   ]
 }
