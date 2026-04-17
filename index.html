@@ -3,93 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nutritionshandbok NET</title>
+    <title>Nutrition NET</title>
     <style>
         :root { --primary: #0056b3; --bg: #f8f9fa; }
-        body { font-family: -apple-system, system-ui, sans-serif; background: var(--bg); margin: 0; padding-bottom: 90px; font-size: 19px; line-height: 1.5; }
+        body { font-family: -apple-system, system-ui, sans-serif; background: var(--bg); margin: 0; padding-bottom: 90px; font-size: 19px; line-height: 1.6; }
         header { background: white; padding: 25px 15px; text-align: center; border-bottom: 2px solid #ddd; }
         .container { padding: 15px; max-width: 650px; margin: 0 auto; }
-        .card { background: white; padding: 25px; border-radius: 15px; margin-bottom: 20px; border: 1px solid #ddd; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .card { background: white; padding: 25px; border-radius: 15px; margin-bottom: 20px; border: 1px solid #ddd; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
         h2 { color: var(--primary); font-size: 24px; margin-top: 0; }
-        .tab-bar { position: fixed; bottom: 0; width: 100%; background: white; display: flex; border-top: 2px solid #ddd; height: 80px; box-shadow: 0 -2px 10px rgba(0,0,0,0.05); }
-        .tab-item { flex: 1; text-align: center; padding-top: 25px; font-weight: bold; color: #666; cursor: pointer; font-size: 16px; text-transform: uppercase; }
+        .tab-bar { position: fixed; bottom: 0; width: 100%; background: white; display: flex; border-top: 2px solid #ddd; height: 80px; }
+        .tab-item { flex: 1; text-align: center; padding-top: 25px; font-weight: bold; color: #666; cursor: pointer; font-size: 15px; text-transform: uppercase; }
         .tab-item.active { color: var(--primary); border-top: 5px solid var(--primary); background: #f0f7ff; }
         .warning-box { background: #fff3cd; border-left: 6px solid #ffc107; padding: 15px; margin: 15px 0; border-radius: 4px; }
-        .tag { display: inline-block; background: #e9ecef; padding: 5px 12px; border-radius: 6px; font-size: 14px; margin-bottom: 12px; font-weight: bold; color: #495057; }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 10px; }
+        .tag { display: inline-block; background: #e9ecef; padding: 5px 12px; border-radius: 6px; font-size: 14px; margin-bottom: 12px; font-weight: bold; }
+        .welcome-hero { text-align: center; padding: 30px 10px; }
     </style>
 </head>
 <body>
 
 <header>
-    <h1 style="margin:0; font-size: 22px;">Nutrition & Livsstil vid NET</h1>
+    <h1 style="margin:0; font-size: 22px;">Nutritionshandbok NET</h1>
 </header>
 
 <div class="container" id="content">
-    <p style="text-align: center;">Hämtar information...</p>
+    <p style="text-align: center;">Laddar...</p>
 </div>
 
 <nav class="tab-bar">
-    <div id="tab-recipes" class="tab-item active" onclick="showSection('recipes')">Recept</div>
-    <div id="tab-advice" class="tab-item" onclick="showSection('advice')">Råd & Symtom</div>
+    <div id="tab-welcome" class="tab-item active" onclick="showSection('welcome')">Start</div>
+    <div id="tab-recipes" class="tab-item" onclick="showSection('recipes')">Recept</div>
+    <div id="tab-advice" class="tab-item" onclick="showSection('advice')">Råd</div>
 </nav>
 
 <script>
     let appData = null;
 
-    // Hämta data och visa första sektionen direkt
     fetch('data.json')
         .then(res => res.json())
         .then(data => {
             appData = data;
-            renderRecipes(); // Starta med att visa recepten
-        })
-        .catch(err => {
-            document.getElementById('content').innerHTML = "Kunde inte ladda innehåll. Kontrollera att data.json är korrekt.";
+            showSection('welcome'); // Visa välkomstsidan först
         });
 
     function showSection(section) {
         if (!appData) return;
+        const content = document.getElementById('content');
         
-        // Uppdatera flikar
         document.querySelectorAll('.tab-item').forEach(el => el.classList.remove('active'));
-        if (section === 'recipes') {
-            document.getElementById('tab-recipes').classList.add('active');
-            renderRecipes();
+        document.getElementById('tab-' + section).classList.add('active');
+
+        if (section === 'welcome') {
+            content.innerHTML = `
+                <div class="welcome-hero">
+                    <h2>${appData.welcome_page.title}</h2>
+                    <p>${appData.welcome_page.text}</p>
+                    <div class="card" style="margin-top:20px;">
+                        <p><em>${appData.welcome_page.sub_text}</em></p>
+                    </div>
+                </div>
+            `;
+        } else if (section === 'recipes') {
+            content.innerHTML = appData.recipes.map(r => `
+                <div class="card">
+                    <span class="tag">${r.category}</span>
+                    <h2>${r.title}</h2>
+                    <p><strong>Energi:</strong> ${r.energy} | <strong>Protein:</strong> ${r.protein}</p>
+                    <p style="background:#f1f1f1; padding:10px; border-radius:5px;">${r.ingredients.join(', ')}</p>
+                    <p>${r.instructions}</p>
+                </div>
+            `).join('');
         } else {
-            document.getElementById('tab-advice').classList.add('active');
-            renderAdvice();
+            content.innerHTML = appData.medical_advice.map(a => `
+                <div class="card">
+                    <h2>${a.title}</h2>
+                    <p>${a.info}</p>
+                    ${a.avoid ? `<div class="warning-box"><strong>Undvik:</strong> ${a.avoid.join(', ')}</div>` : ''}
+                    <ul>${a.tips.map(t => `<li>${t}</li>`).join('')}</ul>
+                </div>
+            `).join('');
         }
         window.scrollTo(0,0);
-    }
-
-    function renderRecipes() {
-        const content = document.getElementById('content');
-        content.innerHTML = appData.recipes.map(r => `
-            <div class="card">
-                <span class="tag">${r.category}</span>
-                <h2>${r.title}</h2>
-                <p><strong>Energi:</strong> ${r.energy} | <strong>Protein:</strong> ${r.protein}</p>
-                <div style="background:#f8f9fa; padding:15px; border-radius:8px; margin: 15px 0; border: 1px dashed #ccc;">
-                    <strong>Ingredienser:</strong><br>${r.ingredients.join(', ')}
-                </div>
-                <p><strong>Gör så här:</strong><br>${r.instructions}</p>
-            </div>
-        `).join('');
-    }
-
-    function renderAdvice() {
-        const content = document.getElementById('content');
-        content.innerHTML = appData.medical_advice.map(a => `
-            <div class="card">
-                <h2>${a.title}</h2>
-                <p>${a.info}</p>
-                ${a.avoid ? `<div class="warning-box"><strong>Viktigt att undvika:</strong><br>${a.avoid.join(', ')}</div>` : ''}
-                ${a.better ? `<p><strong>Bättre alternativ:</strong><br>${a.better.join(', ')}</p>` : ''}
-                ${a.tips ? `<strong>Praktiska tips:</strong><ul>${a.tips.map(t => `<li>${t}</li>`).join('')}</ul>` : ''}
-            </div>
-        `).join('');
     }
 </script>
 
