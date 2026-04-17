@@ -3,57 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nutrition NET</title>
+    <title>Nutritionshandbok NET</title>
     <style>
-        body { font-family: -apple-system, sans-serif; padding: 20px; background: #f0f2f5; color: #333; max-width: 600px; margin: 0 auto; }
-        h1 { color: #2c3e50; text-align: center; margin-bottom: 30px; }
-        .category-title { color: #1a73e8; border-bottom: 2px solid #1a73e8; padding-bottom: 5px; margin-top: 40px; text-transform: uppercase; font-size: 1.1em; letter-spacing: 1px; }
-        .card { background: white; padding: 20px; border-radius: 15px; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
-        .tag { background: #e1f5fe; color: #01579b; padding: 5px 10px; border-radius: 20px; font-size: 0.75em; margin-right: 5px; font-weight: bold; display: inline-block; margin-bottom: 5px; }
-        .ingredients { background: #fffde7; padding: 12px; border-radius: 8px; margin: 15px 0; font-size: 0.9em; line-height: 1.4; }
-        .symptoms { font-style: italic; color: #666; font-size: 0.85em; margin-top: 15px; border-top: 1px solid #eee; pt: 10px; }
-        h3 { margin-top: 0; color: #34495e; }
+        :root { --primary: #0056b3; --bg: #f8f9fa; }
+        body { font-family: -apple-system, system-ui, sans-serif; background: var(--bg); margin: 0; padding-bottom: 80px; font-size: 19px; }
+        header { background: white; padding: 20px; text-align: center; border-bottom: 2px solid #ddd; }
+        .container { padding: 15px; max-width: 600px; margin: 0 auto; }
+        .card { background: white; padding: 20px; border-radius: 12px; margin-bottom: 20px; border: 1px solid #ddd; }
+        h2 { color: var(--primary); font-size: 24px; }
+        .tab-bar { position: fixed; bottom: 0; width: 100%; background: white; display: flex; border-top: 2px solid #ddd; height: 70px; }
+        .tab-item { flex: 1; text-align: center; padding: 15px; font-weight: bold; color: #555; cursor: pointer; }
+        .tab-item.active { color: var(--primary); border-top: 4px solid var(--primary); }
+        .warning-box { background: #fff3cd; border-left: 5px solid #ffc107; padding: 15px; margin: 10px 0; font-size: 17px; }
+        .tag { display: inline-block; background: #eee; padding: 4px 10px; border-radius: 5px; font-size: 14px; margin-bottom: 10px; }
     </style>
 </head>
 <body>
-    <h1>Nutritionshandbok NET</h1>
-    <div id="app">Laddar recept...</div>
 
-    <script>
-        fetch('recipes.json')
-            .then(res => res.json())
-            .then(data => {
-                const app = document.getElementById('app');
-                
-                // Gruppera recepten efter kategori
-                const grouped = data.reduce((acc, recipe) => {
-                    if (!acc[recipe.category]) acc[recipe.category] = [];
-                    acc[recipe.category].push(recipe);
-                    return acc;
-                }, {});
+<header>
+    <h1 style="margin:0; font-size: 22px;">Nutrition & Livsstil vid NET</h1>
+</header>
 
-                // Skapa HTML för varje kategori och dess recept
-                app.innerHTML = Object.keys(grouped).map(category => `
-                    <h2 class="category-title">${category}</h2>
-                    ${grouped[category].map(r => `
-                        <div class="card">
-                            <h3>${r.title}</h3>
-                            <div>${r.tags.map(t => `<span class="tag">${t}</span>`).join('')}</div>
-                            <p><strong>Energi:</strong> ${r.energy} | <strong>Protein:</strong> ${r.protein}</p>
-                            <div class="ingredients">
-                                <strong>Ingredienser:</strong><br>
-                                ${r.ingredients.join(', ')}
-                            </div>
-                            <p><strong>Gör så här:</strong><br>${r.instructions}</p>
-                            <div class="symptoms">Bra vid: ${r.symptoms.join(', ')}</div>
-                        </div>
-                    `).join('')}
-                `).join('');
-            })
-            .catch(err => {
-                document.getElementById('app').innerHTML = "Kunde inte ladda recepten.";
-                console.error(err);
-            });
-    </script>
+<div class="container" id="content">
+    Laddar innehåll...
+</div>
+
+<nav class="tab-bar">
+    <div class="tab-item active" onclick="showSection('recipes')">RECEPT</div>
+    <div class="tab-item" onclick="showSection('advice')">RÅD & SYMTON</div>
+</nav>
+
+<script>
+    let appData = {};
+
+    fetch('data.json')
+        .then(res => res.json())
+        .then(data => {
+            appData = data;
+            showSection('recipes');
+        });
+
+    function showSection(section) {
+        const content = document.getElementById('content');
+        document.querySelectorAll('.tab-item').forEach(el => el.classList.remove('active'));
+        event.target.classList.add('active');
+
+        if(section === 'recipes') {
+            content.innerHTML = appData.recipes.map(r => `
+                <div class="card">
+                    <span class="tag">${r.category}</span>
+                    <h2>${r.title}</h2>
+                    <p><strong>Energi:</strong> ${r.energy} | <strong>Protein:</strong> ${r.protein}</p>
+                    <p style="background:#f1f1f1; padding:10px; border-radius:5px;">${r.ingredients.join(', ')}</p>
+                    <p>${r.instructions}</p>
+                </div>
+            `).join('');
+        } else {
+            content.innerHTML = appData.medical_advice.map(a => `
+                <div class="card">
+                    <h2>${a.title}</h2>
+                    <p>${a.info}</p>
+                    ${a.avoid ? `<div class="warning-box"><strong>Undvik:</strong> ${a.avoid.join(', ')}</div>` : ''}
+                    ${a.better ? `<p><strong>Bättre val:</strong> ${a.better.join(', ')}</p>` : ''}
+                    ${a.tips ? `<ul>${a.tips.map(t => `<li>${t}</li>`).join('')}</ul>` : ''}
+                </div>
+            `).join('');
+        }
+        window.scrollTo(0,0);
+    }
+</script>
+
 </body>
 </html>
