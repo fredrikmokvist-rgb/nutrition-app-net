@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nutrition NET</title>
     <style>
-        body { font-family: -apple-system, sans-serif; padding: 20px; background: #f0f2f5; color: #333; }
-        h1 { color: #2c3e50; text-align: center; }
+        body { font-family: -apple-system, sans-serif; padding: 20px; background: #f0f2f5; color: #333; max-width: 600px; margin: 0 auto; }
+        h1 { color: #2c3e50; text-align: center; margin-bottom: 30px; }
+        .category-title { color: #1a73e8; border-bottom: 2px solid #1a73e8; padding-bottom: 5px; margin-top: 40px; text-transform: uppercase; font-size: 1.1em; letter-spacing: 1px; }
         .card { background: white; padding: 20px; border-radius: 15px; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
-        .tag { background: #e1f5fe; color: #01579b; padding: 5px 10px; border-radius: 20px; font-size: 0.75em; margin-right: 5px; font-weight: bold; }
-        .ingredients { background: #fffde7; padding: 10px; border-radius: 8px; margin: 10px 0; font-size: 0.9em; }
-        .symptoms { font-style: italic; color: #666; font-size: 0.85em; margin-top: 10px; }
+        .tag { background: #e1f5fe; color: #01579b; padding: 5px 10px; border-radius: 20px; font-size: 0.75em; margin-right: 5px; font-weight: bold; display: inline-block; margin-bottom: 5px; }
+        .ingredients { background: #fffde7; padding: 12px; border-radius: 8px; margin: 15px 0; font-size: 0.9em; line-height: 1.4; }
+        .symptoms { font-style: italic; color: #666; font-size: 0.85em; margin-top: 15px; border-top: 1px solid #eee; pt: 10px; }
+        h3 { margin-top: 0; color: #34495e; }
     </style>
 </head>
 <body>
@@ -18,28 +20,38 @@
     <div id="app">Laddar recept...</div>
 
     <script>
-        // Denna del hämtar datan från din recipes.json fil
         fetch('recipes.json')
             .then(res => res.json())
             .then(data => {
                 const app = document.getElementById('app');
-                // Här skapar vi HTML för varje recept i listan
-                app.innerHTML = data.map(r => `
-                    <div class="card">
-                        <h3>${r.title}</h3>
-                        <div>${r.tags.map(t => `<span class="tag">${t}</span>`).join('')}</div>
-                        <p><strong>Energi:</strong> ${r.energy} | <strong>Protein:</strong> ${r.protein}</p>
-                        <div class="ingredients">
-                            <strong>Ingredienser:</strong><br>
-                            ${r.ingredients.join(', ')}
+                
+                // Gruppera recepten efter kategori
+                const grouped = data.reduce((acc, recipe) => {
+                    if (!acc[recipe.category]) acc[recipe.category] = [];
+                    acc[recipe.category].push(recipe);
+                    return acc;
+                }, {});
+
+                // Skapa HTML för varje kategori och dess recept
+                app.innerHTML = Object.keys(grouped).map(category => `
+                    <h2 class="category-title">${category}</h2>
+                    ${grouped[category].map(r => `
+                        <div class="card">
+                            <h3>${r.title}</h3>
+                            <div>${r.tags.map(t => `<span class="tag">${t}</span>`).join('')}</div>
+                            <p><strong>Energi:</strong> ${r.energy} | <strong>Protein:</strong> ${r.protein}</p>
+                            <div class="ingredients">
+                                <strong>Ingredienser:</strong><br>
+                                ${r.ingredients.join(', ')}
+                            </div>
+                            <p><strong>Gör så här:</strong><br>${r.instructions}</p>
+                            <div class="symptoms">Bra vid: ${r.symptoms.join(', ')}</div>
                         </div>
-                        <p><strong>Gör så här:</strong><br>${r.instructions}</p>
-                        <div class="symptoms">Bra vid: ${r.symptoms.join(', ')}</div>
-                    </div>
+                    `).join('')}
                 `).join('');
             })
             .catch(err => {
-                document.getElementById('app').innerHTML = "Kunde inte ladda recepten. Kontrollera att recipes.json finns.";
+                document.getElementById('app').innerHTML = "Kunde inte ladda recepten.";
                 console.error(err);
             });
     </script>
