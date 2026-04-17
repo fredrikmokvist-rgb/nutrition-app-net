@@ -5,18 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nutrition NET</title>
     <style>
-        body { font-family: sans-serif; padding: 20px; line-height: 1.6; }
-        h1 { color: #2c3e50; }
-        .recipe { background: #f9f9f9; padding: 15px; border-radius: 8px; border-left: 5px solid #3498db; }
+        body { font-family: -apple-system, sans-serif; padding: 20px; background: #f0f2f5; color: #333; }
+        h1 { color: #2c3e50; text-align: center; }
+        .card { background: white; padding: 20px; border-radius: 15px; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .tag { background: #e1f5fe; color: #01579b; padding: 5px 10px; border-radius: 20px; font-size: 0.75em; margin-right: 5px; font-weight: bold; }
+        .ingredients { background: #fffde7; padding: 10px; border-radius: 8px; margin: 10px 0; font-size: 0.9em; }
+        .symptoms { font-style: italic; color: #666; font-size: 0.85em; margin-top: 10px; }
     </style>
 </head>
 <body>
     <h1>Nutritionshandbok NET</h1>
-    <p>Välkommen! Här samlar vi digitala råd för livet med NET.</p>
-    
-    <div class="recipe">
-        <h3>Blåbärs- och banansmoothie</h3>
-        <p>Perfekt vid nedsatt aptit.</p>
-    </div>
+    <div id="app">Laddar recept...</div>
+
+    <script>
+        // Denna del hämtar datan från din recipes.json fil
+        fetch('recipes.json')
+            .then(res => res.json())
+            .then(data => {
+                const app = document.getElementById('app');
+                // Här skapar vi HTML för varje recept i listan
+                app.innerHTML = data.map(r => `
+                    <div class="card">
+                        <h3>${r.title}</h3>
+                        <div>${r.tags.map(t => `<span class="tag">${t}</span>`).join('')}</div>
+                        <p><strong>Energi:</strong> ${r.energy} | <strong>Protein:</strong> ${r.protein}</p>
+                        <div class="ingredients">
+                            <strong>Ingredienser:</strong><br>
+                            ${r.ingredients.join(', ')}
+                        </div>
+                        <p><strong>Gör så här:</strong><br>${r.instructions}</p>
+                        <div class="symptoms">Bra vid: ${r.symptoms.join(', ')}</div>
+                    </div>
+                `).join('');
+            })
+            .catch(err => {
+                document.getElementById('app').innerHTML = "Kunde inte ladda recepten. Kontrollera att recipes.json finns.";
+                console.error(err);
+            });
+    </script>
 </body>
 </html>
