@@ -6,30 +6,47 @@
       "energy": "190 kcal",
       "protein": "2 g",
       "tags": ["Energi- och proteinrik"],
-      "ingredients": ["1 dl havregryn", "2 dl vatten", "1 msk neutral olja", "2 tsk smör"],
-      "instructions": "Koka gryn och vatten 1-2 min. Tillsätt olja och smör vid servering."
+      "ingredients": ["1 dl havregryn", "2 dl vatten", "1 msk neutral olja", "2 tsk smör", "1 nypa salt"],
+      "instructions": "Koka gryn och vatten 1-2 min. Tillsätt salt, olja och smör vid servering för att öka energiinnehållet utan att öka volymen."
     },
     {
-      "title": "Dagsmeny för småätare",
-      "category": "Måltidsplan",
-      "energy": "Hög",
-      "protein": "Hög",
-      "tags": ["Planering"],
-      "ingredients": ["Frukost: Gröt", "Mellanmål: Smoothie", "Lunch: Soppa", "Kväll: Koldskål"],
-      "instructions": "Sprid ut målen över dagen. Ät var 2-3 timme även om du inte är hungrig."
+      "title": "Blåbärs- och banansmoothie",
+      "category": "Mellanmål",
+      "energy": "265 kcal",
+      "protein": "11 g",
+      "tags": ["Proteinrik", "Kall mat"],
+      "ingredients": ["1 banan", "2 dl blåbär", "2 dl helmjölk", "1 dl skyr", "1 msk olja"],
+      "instructions": "Mixa allt slätt. Perfekt vid nedsatt aptit eller illamående då kalla drycker ofta tolereras bättre."
     }
   ],
   "medical_advice": [
     {
-      "title": "Karcinoidsyndrom & Aminer",
-      "info": "Vissa livsmedel innehåller aminer som kan utlösa flushing (rodnad) och diarré.",
-      "avoid": ["Lagrad ost", "Rödvin", "Rökt fisk", "Tomat", "Spenat"],
-      "better": ["Färskost", "Färsk fisk", "Potatis", "Morötter"]
+      "title": "Karcinoidsyndrom & Flushing",
+      "info": "Vid karcinoidsyndrom kan vissa ämnen i maten utlösa 'flushing' (plötslig rodnad) och diarré. Det beror på frisättning av hormoner.",
+      "avoid": ["Lagrad ost (t.ex. parmesan, mögelost)", "Rödvin och viss öl", "Rökt eller gravad fisk/kött", "Tomat, spenat och aubergine", "Starka kryddor (chili, peppar)"],
+      "better": ["Färskost och milda ostar", "Vitt vin eller alkoholfria alternativ", "Färskt kött och färsk fisk", "Potatis, morötter och gurka"],
+      "tips": ["Undvik stora måltider", "Drick inte mycket varm vätska till maten", "Håll koll på dina personliga triggers genom att föra dagbok"]
     },
     {
-      "title": "Proteinbehov",
-      "info": "Vid NET behöver kroppen ofta 1,2–1,5 g protein per kilo kroppsvikt för att behålla muskelmassa.",
-      "tips": ["Tillsätt ägg i soppan", "Använd proteinrik mjölk", "Ät nötter och frön"]
+      "title": "Tips vid illamående",
+      "info": "Illamående är vanligt och kan ha många orsaker. Här är strategier för att få i sig näring ändå:",
+      "tips": [
+        "Ät små och täta måltider (6-8 gånger per dag).",
+        "Välj kalla eller rumstempererade rätter då de doftar mindre.",
+        "Torr mat som kex eller rostat bröd kan hjälpa på morgonen.",
+        "Undvik favoritmaten när du mår som mest illa för att inte skapa permanenta avsmaker.",
+        "Ingefära (te eller kakor) kan ha en dämpande effekt."
+      ]
+    },
+    {
+      "title": "Protein & Muskelmassa",
+      "info": "Vid NET ökar kroppens behov av protein för att reparera vävnad och bibehålla styrka.",
+      "tips": [
+        "Målet är ofta 1,2–1,5 g protein per kilo kroppsvikt.",
+        "Berika soppor med äggula eller grädde.",
+        "Välj proteinrika mellanmål som kvarg, nötter eller ostskivor.",
+        "Drick gärna mjölk eller näringsdryck istället för vatten till maten."
+      ]
     }
   ]
 }
