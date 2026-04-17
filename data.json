@@ -1,52 +1,113 @@
 {
+  "welcome_page": {
+    "title": "Välkommen",
+    "text": "Denna digitala handbok är ett stöd för dig som lever med neuroendokrina sjukdomar (NET). Här hittar du praktiska råd och recept som är anpassade för att hjälpa dig bibehålla styrka och livskvalitet genom rätt nutrition.",
+    "sub_text": "Använd flikarna längst ner för att navigera mellan recept och medicinska råd."
+  },
   "recipes": [
     {
       "title": "Havregryn med extra fett",
       "category": "Frukost",
       "energy": "190 kcal",
       "protein": "2 g",
-      "tags": ["Energi- och proteinrik"],
+      "tags": ["Energi- och proteinrik", "Mjuk mat"],
       "ingredients": ["1 dl havregryn", "2 dl vatten", "1 msk neutral olja", "2 tsk smör", "1 nypa salt"],
       "instructions": "Koka gryn och vatten 1-2 min. Tillsätt salt, olja och smör vid servering för att öka energiinnehållet utan att öka volymen."
+    },
+    {
+      "title": "Havregryn kokt på mjölk",
+      "category": "Frukost",
+      "energy": "190 kcal",
+      "protein": "6 g",
+      "tags": ["Proteinrik", "Klassisk"],
+      "ingredients": ["1 dl havregryn", "2 dl helmjölk", "1 nypa salt", "2 tsk smör"],
+      "instructions": "Koka havregryn och mjölk under omrörning i 1-2 minuter. Tillsätt salt och smör."
+    },
+    {
+      "title": "Bircher-müsli (Måltid under natten)",
+      "category": "Frukost/Mellanmål",
+      "energy": "237 kcal",
+      "protein": "9,4 g",
+      "tags": ["Kall mat", "Fiberrik"],
+      "ingredients": ["50 g havregryn", "1 msk chiafrön", "1 msk pumpakärnor", "1,5 dl mjölk", "Kiwi eller äpple", "Bär och nötter"],
+      "instructions": "Blanda allt utom nötter i en skål. Täck över och ställ i kylen över natten. Perfekt som ett sent mål för att motverka nattlig fasta."
     },
     {
       "title": "Blåbärs- och banansmoothie",
       "category": "Mellanmål",
       "energy": "265 kcal",
       "protein": "11 g",
-      "tags": ["Proteinrik", "Kall mat"],
-      "ingredients": ["1 banan", "2 dl blåbär", "2 dl helmjölk", "1 dl skyr", "1 msk olja"],
-      "instructions": "Mixa allt slätt. Perfekt vid nedsatt aptit eller illamående då kalla drycker ofta tolereras bättre."
+      "tags": ["Proteinrik", "Lättätet"],
+      "ingredients": ["1 banan", "2 dl blåbär", "2 dl helmjölk", "1 dl skyr", "1 msk olja", "1 tsk vaniljsocker"],
+      "instructions": "Mixa allt slätt. Serveras gärna kall. Bra vid nedsatt aptit."
+    },
+    {
+      "title": "Melonsallad med fetaost",
+      "category": "Lunch/Mellanmål",
+      "energy": "410 kcal",
+      "protein": "9 g",
+      "tags": ["Fräsch", "Energi"],
+      "ingredients": ["150 g vattenmelon", "50 g fetaost", "1,5 dl pumpafrön", "3 msk olja", "Honung och balsamvinäger"],
+      "instructions": "Rosta fröna. Tärna melonen och blanda med fetaost och dressing."
+    },
+    {
+      "title": "Minipajer med spenat",
+      "category": "Lunch/Mellanmål",
+      "energy": "280 kcal (2 st)",
+      "protein": "17 g",
+      "tags": ["Proteinrik", "Går att frysa"],
+      "ingredients": ["250 g spenat", "100 g keso", "2 ägg", "1 dl parmesan", "Pinjenötter"],
+      "instructions": "Blanda keso, ägg och hackad spenat. Grädda i muffinsformar på 160 grader i ca 25 min."
+    },
+    {
+      "title": "Krämig broccolisoppa med fisk",
+      "category": "Middag",
+      "energy": "395 kcal",
+      "protein": "14 g",
+      "tags": ["Skonkost", "Mjuk mat"],
+      "ingredients": ["150 g broccoli", "100 g fiskfilé", "1 dl vispgrädde", "2,5 dl buljong"],
+      "instructions": "Koka broccoli i buljong. Mixa slätt med grädde. Servera med den ångkokta fisken i soppan."
+    },
+    {
+      "title": "Morotssoppa med färskost",
+      "category": "Middag",
+      "energy": "455 kcal",
+      "protein": "9 g",
+      "tags": ["Snäll smak", "Energirik"],
+      "ingredients": ["2 morötter", "3 dl buljong", "75 g färskost", "Pumpafrön"],
+      "instructions": "Koka morötter mjuka i buljong. Mixa med färskost. Toppa med rostade pumpafrön."
+    },
+    {
+      "title": "Iskaffe (Energirik)",
+      "category": "Dryck",
+      "energy": "305 kcal",
+      "protein": "6 g",
+      "tags": ["Extra energi", "Kall dryck"],
+      "ingredients": ["3 tsk snabbkaffe", "3 dl helmjölk", "1 dl vispgrädde", "Socker och is"],
+      "instructions": "Lös upp kaffet i lite hett vatten. Blanda med mjölk, grädde och is."
+    },
+    {
+      "title": "Dagsmeny för lättätare (Exempel)",
+      "category": "Måltidsplan",
+      "energy": "Mycket hög",
+      "protein": "Anpassad",
+      "tags": ["Inspiration"],
+      "ingredients": ["08:00 Frukost", "10:30 Mellanmål", "13:00 Lunch", "15:30 Mellanmål", "18:00 Middag", "21:00 Kvällsmål"],
+      "instructions": "Ät lite men ofta. Se till att varje mål innehåller en energikälla (fett) och en proteinkälla."
     }
   ],
   "medical_advice": [
     {
       "title": "Karcinoidsyndrom & Flushing",
-      "info": "Vid karcinoidsyndrom kan vissa ämnen i maten utlösa 'flushing' (plötslig rodnad) och diarré. Det beror på frisättning av hormoner.",
-      "avoid": ["Lagrad ost (t.ex. parmesan, mögelost)", "Rödvin och viss öl", "Rökt eller gravad fisk/kött", "Tomat, spenat och aubergine", "Starka kryddor (chili, peppar)"],
-      "better": ["Färskost och milda ostar", "Vitt vin eller alkoholfria alternativ", "Färskt kött och färsk fisk", "Potatis, morötter och gurka"],
-      "tips": ["Undvik stora måltider", "Drick inte mycket varm vätska till maten", "Håll koll på dina personliga triggers genom att föra dagbok"]
-    },
-    {
-      "title": "Tips vid illamående",
-      "info": "Illamående är vanligt och kan ha många orsaker. Här är strategier för att få i sig näring ändå:",
-      "tips": [
-        "Ät små och täta måltider (6-8 gånger per dag).",
-        "Välj kalla eller rumstempererade rätter då de doftar mindre.",
-        "Torr mat som kex eller rostat bröd kan hjälpa på morgonen.",
-        "Undvik favoritmaten när du mår som mest illa för att inte skapa permanenta avsmaker.",
-        "Ingefära (te eller kakor) kan ha en dämpande effekt."
-      ]
+      "info": "Vissa ämnen (aminer) i mat och dryck kan utlösa flushing och diarré.",
+      "avoid": ["Lagrad ost", "Rödvin", "Rökt fisk", "Tomat", "Stark chili"],
+      "better": ["Färskost", "Färsk fisk", "Vitt vin (med måtta)", "Morötter"],
+      "tips": ["Undvik stora portioner", "Drick inte för het vätska"]
     },
     {
       "title": "Protein & Muskelmassa",
-      "info": "Vid NET ökar kroppens behov av protein för att reparera vävnad och bibehålla styrka.",
-      "tips": [
-        "Målet är ofta 1,2–1,5 g protein per kilo kroppsvikt.",
-        "Berika soppor med äggula eller grädde.",
-        "Välj proteinrika mellanmål som kvarg, nötter eller ostskivor.",
-        "Drick gärna mjölk eller näringsdryck istället för vatten till maten."
-      ]
+      "info": "Kroppen behöver extra protein vid NET för att bibehålla muskelmassa och styrka.",
+      "tips": ["Sikta på 1,2-1,5 g protein per kg kroppsvikt", "Berika maten med ägg eller grädde", "Välj proteinrika mellanmål"]
     }
   ]
 }
