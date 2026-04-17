@@ -1,0 +1,35 @@
+{
+  "recipes": [
+    {
+      "title": "Havregryn med extra fett",
+      "category": "Frukost",
+      "energy": "190 kcal",
+      "protein": "2 g",
+      "tags": ["Energi- och proteinrik"],
+      "ingredients": ["1 dl havregryn", "2 dl vatten", "1 msk neutral olja", "2 tsk smör"],
+      "instructions": "Koka gryn och vatten 1-2 min. Tillsätt olja och smör vid servering."
+    },
+    {
+      "title": "Dagsmeny för småätare",
+      "category": "Måltidsplan",
+      "energy": "Hög",
+      "protein": "Hög",
+      "tags": ["Planering"],
+      "ingredients": ["Frukost: Gröt", "Mellanmål: Smoothie", "Lunch: Soppa", "Kväll: Koldskål"],
+      "instructions": "Sprid ut målen över dagen. Ät var 2-3 timme även om du inte är hungrig."
+    }
+  ],
+  "medical_advice": [
+    {
+      "title": "Karcinoidsyndrom & Aminer",
+      "info": "Vissa livsmedel innehåller aminer som kan utlösa flushing (rodnad) och diarré.",
+      "avoid": ["Lagrad ost", "Rödvin", "Rökt fisk", "Tomat", "Spenat"],
+      "better": ["Färskost", "Färsk fisk", "Potatis", "Morötter"]
+    },
+    {
+      "title": "Proteinbehov",
+      "info": "Vid NET behöver kroppen ofta 1,2–1,5 g protein per kilo kroppsvikt för att behålla muskelmassa.",
+      "tips": ["Tillsätt ägg i soppan", "Använd proteinrik mjölk", "Ät nötter och frön"]
+    }
+  ]
+}
