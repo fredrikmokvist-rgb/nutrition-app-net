@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "title": "Blåbärs- och banansmoothie",
+    "category": "Mellanmål",
+    "tags": ["Energi- och proteinrik", "Lättätare"],
+    "symptoms": ["Nedsatt aptit", "Behov av energi"],
+    "ingredients": ["1 banan", "2 dl blåbär", "2 dl helmjölk", "1 dl skyr", "1 msk olja"],
+    "instructions": "Mixa alla ingredienser tills drycken har en slät konsistens. Smaksätt med socker."
+  },
+  {
+    "id": "2",
+    "title": "Krämig broccolisoppa med fisk",
+    "category": "Middag",
+    "tags": ["Proteinrik", "Krämig"],
+    "symptoms": ["Känsliga slemhinnor", "Behov av protein"],
+    "ingredients": ["150g broccoli", "1 dl vispgrädde 38%", "100g fisk", "2.5 dl buljong"],
+    "instructions": "Koka broccoli i buljong. Mixa med grädde. Servera med ångad fisk."
+  }
+]
