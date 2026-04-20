@@ -11,15 +11,12 @@
         .container { padding: 20px; max-width: 650px; margin: 0 auto; }
         h2 { color: var(--primary); font-size: 26px; margin-top: 10px; border-bottom: 2px solid #ddd; padding-bottom: 10px; }
         
-        /* Kort-design för recept och råd */
         .card { background: white; padding: 25px; border-radius: 15px; margin-bottom: 20px; border: 1px solid #ddd; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
         .tag { background: #e9ecef; padding: 5px 12px; border-radius: 6px; font-size: 14px; font-weight: bold; margin-bottom: 12px; display: inline-block; text-transform: uppercase; color: #495057; }
         
-        /* Dragspels-funktion för Kunskapsbasen */
         .accordion-btn { background: #fff; width: 100%; text-align: left; border: 1px solid #ddd; padding: 20px; border-radius: 12px; margin-bottom: 10px; font-size: 20px; font-weight: bold; cursor: pointer; color: var(--primary); display: flex; justify-content: space-between; align-items: center; }
         .accordion-content { display: none; background: #fff; padding: 20px; border: 1px solid #ddd; border-top: 0; border-radius: 0 0 12px 12px; margin-top: -11px; margin-bottom: 20px; border-left: 4px solid var(--primary); }
         
-        /* Navigeringsfältet längst ner */
         .tab-bar { position: fixed; bottom: 0; width: 100%; background: white; display: flex; border-top: 2px solid #ddd; height: 85px; box-shadow: 0 -2px 10px rgba(0,0,0,0.05); }
         .tab-item { flex: 1; text-align: center; padding-top: 28px; font-weight: bold; color: #7f8c8d; font-size: 14px; text-transform: uppercase; cursor: pointer; transition: all 0.2s; }
         .tab-item.active { color: var(--primary); border-top: 6px solid var(--primary); background: #f0f7ff; }
@@ -44,7 +41,6 @@
 <script>
     let appData = null;
 
-    // Hämta JSON-filen
     fetch('data.json')
         .then(res => res.json())
         .then(data => {
@@ -52,14 +48,13 @@
             showSection('home');
         })
         .catch(err => {
-            document.getElementById('content').innerHTML = "Kunde inte ladda data. Kontrollera att data.json finns i samma mapp på GitHub.";
+            document.getElementById('content').innerHTML = "Kunde inte ladda data. Kontrollera att data.json är sparad korrekt på GitHub.";
         });
 
     function showSection(section) {
         if (!appData) return;
         const content = document.getElementById('content');
         
-        // Uppdatera flik-styling
         document.querySelectorAll('.tab-item').forEach(el => el.classList.remove('active'));
         document.getElementById('tab-' + section).classList.add('active');
 
@@ -73,23 +68,31 @@
         } 
         
         else if (section === 'know') {
-            content.innerHTML = `<h2>Kunskapsbas</h2><p style="font-size:16px; color:#666;">Klicka på rubrikerna för att läsa mer.</p>` + 
+            content.innerHTML = `<h2>Kunskapsbas</h2><p style="font-size:16px; color:#666;">Klicka på rubrikerna för att läsa den fullständiga texten.</p>` + 
                 appData.knowledge_base.map((k, i) => `
                 <button class="accordion-btn" onclick="toggleAcc(${i})">${k.title} <span>+</span></button>
                 <div id="acc-${i}" class="accordion-content">
                     <span class="tag">${k.category}</span>
-                    <p>${k.content}</p>
+                    <p style="white-space: pre-line;">${k.content}</p>
                 </div>`).join('');
         } 
         
         else if (section === 'recipes') {
-            content.innerHTML = `<h2>Recept & Måltider</h2>` + appData.recipes.map(r => `
+            content.innerHTML = `<h2>Recept och Måltider</h2>` + appData.recipes.map(r => `
                 <div class="card">
                     <span class="tag">${r.category}</span>
                     <h3 style="margin:0 0 10px 0;">${r.title}</h3>
-                    <p style="font-size:16px; color:#555;"><strong>Energi:</strong> ${r.energy} | <strong>Protein:</strong> ${r.protein}</p>
-                    <div class="ingr-box"><strong>Ingredienser:</strong><br>${r.ingredients.join(', ')}</div>
-                    <p><strong>Gör så här:</strong><br>${r.instructions}</p>
+                    <div style="font-size:16px; color:#555; margin-bottom:15px; border-bottom: 1px solid #eee; padding-bottom:10px;">
+                        <strong>Näringsvärde per portion:</strong> ${r.energy} | ${r.protein} protein
+                    </div>
+                    <div class="ingr-box">
+                        <strong>Ingredienser:</strong><br>
+                        <ul style="margin:5px 0; padding-left:20px;">
+                            ${r.ingredients.map(ing => `<li>${ing}</li>`).join('')}
+                        </ul>
+                    </div>
+                    <p><strong>Gör så här:</strong></p>
+                    <p style="white-space: pre-line; line-height: 1.8;">${r.instructions}</p>
                 </div>`).join('');
         } 
         
@@ -98,8 +101,8 @@
                 <div class="card">
                     <h3 style="margin-top:0;">${a.title}</h3>
                     <p>${a.info}</p>
-                    ${a.avoid ? `<div class="warning-box"><strong>Viktigt att undvika:</strong><br>${a.avoid.join(', ')}</div>` : ''}
-                    ${a.tips ? `<div style="margin-top:15px;"><strong>Praktiska tips:</strong><ul>${a.tips.map(t => `<li>${t}</li>`).join('')}</ul></div>` : ''}
+                    ${a.avoid ? `<div class="warning-box"><strong>Viktigt att undvika:</strong><br><ul>${a.avoid.map(av => `<li>${av}</li>`).join('')}</ul></div>` : ''}
+                    ${a.tips ? `<div style="margin-top:15px;"><strong>Praktiska råd:</strong><ul>${a.tips.map(t => `<li>${t}</li>`).join('')}</ul></div>` : ''}
                 </div>`).join('');
         }
         window.scrollTo(0,0);
@@ -111,7 +114,7 @@
         const isOpen = el.style.display === 'block';
         
         el.style.display = isOpen ? 'none' : 'block';
-        btn.querySelector('span').innerText = isOpen ? '+' : '−';
+        btn.querySelector('span').innerText = isOpen ? '−' : '+';
     }
 </script>
 
