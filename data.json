@@ -1,143 +1,96 @@
 {
   "welcome_page": {
     "title": "Nutrition & Livsstil vid NET",
-    "text": "Välkommen till din digitala handbok. Här finns samlad kunskap och praktiska verktyg för att stödja dig i vardagen med neuroendokrina tumörer.",
+    "text": "Denna nutritionshandbok vänder sig till dig som har en neuroendokrin tumör (NET). Handboken kan också läsas av närstående. Syftet med handboken är att ge kunskap om betydelsen av vad du äter och dricker samt ge praktiska råd och tips på hur du kan få i dig tillräckligt med energi och protein för att bibehålla din vikt och muskelmassa.",
     "sections": [
       {
-        "heading": "Varför är maten viktig?",
-        "body": "Vid NET behöver kroppen ofta mer energi och protein än vanligt för att orka med behandlingar och bibehålla muskelmassa. Rätt kost kan också dämpa symtom som diarré och flushing."
+        "heading": "Inledning",
+        "body": "Vid cancersjukdom är det vanligt med ofrivillig viktnedgång och att muskelmassan minskar. Det beror både på att tumören i sig påverkar ämnesomsättningen och på biverkningar av de behandlingar som ges. Att bibehålla vikt och muskelmassa är en viktig förutsättning för att du ska må så bra som möjligt, orka vara fysiskt aktiv och för att kroppen ska tåla de behandlingar som planeras. Maten är en del av din behandling."
       }
     ]
   },
   "knowledge_base": [
     {
       "category": "Näringslära",
-      "title": "Protein - kroppens byggstenar",
-      "content": "Vid sjukdom ökar proteinbehovet för att reparera vävnad och motverka muskelnedbrytning. Målet är ofta 1,2–1,5 g protein per kilo kroppsvikt per dag. Bra källor är ägg, fisk, kött, bönor och mejeriprodukter."
+      "title": "Protein",
+      "content": "Protein brukar kallas för kroppens byggstenar. Det behövs bland annat för att bygga upp och reparera kroppens celler och för immunförsvaret. Kroppen har inget lager för protein utan vi behöver tillföra det via maten varje dag. Vid cancersjukdom ökar behovet av protein. Det beror på att tumören och dess behandlingar ökar nedbrytningen av muskelmassa. Ett vanligt rekommenderat intag av protein för personer med cancersjukdom är 1,2–1,5 gram protein per kilo kroppsvikt och dag. Det innebär att om du till exempel väger 70 kg behöver du få i dig mellan 84 och 105 gram protein varje dag."
     },
     {
       "category": "Näringslära",
-      "title": "Fettets betydelse",
-      "content": "Fett är vår mest koncentrerade energikälla. Vid behandling med somatostatinanaloger kan fettupptaget försämras, vilket ger fettdiarréer. Det kan då vara nödvändigt att ta matsmältningsenzymer till måltiderna."
+      "title": "Fett, matsmältning och enzymer",
+      "content": "Fett är kroppens mest koncentrerade energikälla. Fett behövs också för att kroppen ska kunna ta upp de fettlösliga vitaminerna A, D, E och K. Många som har en NET-sjukdom behandlas med somatostatinanaloger (t.ex. Somatuline eller Sandostatin). Dessa läkemedel hämmar bukspottkörtelns produktion av matsmältningsenzymer. När det finns för lite enzymer i tarmen kan inte fettet i maten brytas ner och tas upp av kroppen. Det leder till att fettet följer med avföringen ut, så kallad fettdiarré. Avföringen blir då ofta ljus, voluminös, illaluktande och kan vara svår att spola ner. Det leder också till att man förlorar energi och att man kan få brist på fettlösliga vitaminer. Vid brist på matsmältningsenzymer behöver man ta enzymkapslar (t.ex. Creon) till varje måltid och mellanmål som innehåller fett."
     },
     {
       "category": "Livsstil",
       "title": "Fysisk aktivitet",
-      "content": "Träning är en viktig del av behandlingen. Det hjälper mot trötthet (fatigue) och stärker aptiten. Även korta promenader gör skillnad. Kombinera gärna kondition med enkel styrketräning för att behålla musklerna."
-    },
-    {
-      "category": "Behandling",
-      "title": "Medicinska näringsdrycker",
-      "content": "Om du inte får i dig tillräckligt via vanlig mat kan näringsdrycker vara ett bra komplement. De är sammansatta för att ge mycket näring på liten volym och bör drickas långsamt, gärna kalla."
-    },
-    {
-      "category": "Behandling",
-      "title": "Kosttillskott & Varningar",
-      "content": "Var försiktig med naturläkemedel. Vissa tillskott, som Johannesört eller höga doser antioxidanter, kan störa effekten av din medicinska behandling. Rådgör alltid med din läkare."
-    },
-    {
-      "category": "Fördjupning",
-      "title": "Sondmatning",
-      "content": "Om det under en längre tid är svårt att äta tillräckligt kan sondmatning via en tunn slang till magen vara ett alternativ. Det kan användas som ett komplement till vanlig mat, ofta under natten."
+      "content": "Fysisk aktivitet är viktigt både före, under och efter behandling. Det bidrar till att bibehålla muskelmassa och styrka, förbättra konditionen och minska trötthet (fatigue). Fatigue är en speciell sorts trötthet som är vanlig vid cancersjukdom och som inte går att vila bort. Fysisk aktivitet är en av de få saker som har visat sig kunna minska fatigue. All rörelse räknas och det är bättre att göra lite än ingenting alls. Försök att hitta en aktivitet som du tycker är rolig och som fungerar i din vardag. Det kan vara promenader, trädgårdsarbete eller anpassad träning."
     }
   ],
   "recipes": [
     {
-      "title": "Havregryn med extra fett",
+      "title": "Havregrynsgröt med extra energi",
       "category": "Frukost",
-      "energy": "190 kcal", "protein": "2 g",
-      "ingredients": ["1 dl havregryn", "2 dl vatten", "1 msk olja", "2 tsk smör"],
-      "instructions": "Koka gryn och vatten 1-2 min. Tillsätt fettet vid servering."
+      "energy": "190 kcal",
+      "protein": "2 g",
+      "ingredients": ["1 dl havregryn", "2 dl vatten", "1 msk rapsolja", "2 tsk smör", "1 krm salt"],
+      "instructions": "1. Blanda havregryn, vatten och salt i en kastrull. 2. Koka upp under omrörning och låt sjuda i ca 1-2 minuter. 3. Ta kastrullen från plattan och rör ner oljan. 4. Servera med smör och gärna mjölk."
     },
     {
-      "title": "Havregryn kokt på mjölk",
+      "title": "Havregrynsgröt kokt på mjölk",
       "category": "Frukost",
-      "energy": "190 kcal", "protein": "6 g",
-      "ingredients": ["1 dl havregryn", "2 dl helmjölk", "Smör"],
-      "instructions": "Koka under omrörning i 1-2 minuter."
+      "energy": "190 kcal",
+      "protein": "6 g",
+      "ingredients": ["1 dl havregryn", "2 dl helmjölk", "2 tsk smör", "1 krm salt"],
+      "instructions": "1. Blanda havregryn, mjölk och salt i en kastrull. 2. Koka upp under omrörning och låt sjuda i ca 1-2 minuter. 3. Servera med smör."
     },
     {
-      "title": "Bircher-müsli (Nattmål)",
-      "category": "Frukost",
-      "energy": "237 kcal", "protein": "9,4 g",
-      "ingredients": ["Havregryn", "Chiafrön", "Mjölk", "Bär"],
-      "instructions": "Blanda och låt stå i kyl över natten."
+      "title": "Bircher-müsli",
+      "category": "Mellanmål / nattmål",
+      "energy": "237 kcal",
+      "protein": "9,4 g",
+      "ingredients": ["50 g havregryn", "1 msk chiafrön", "1 msk pumpakärnor", "1,5 dl mjölk", "1 msk limesaft", "½ msk lönnsirap eller honung", "½ tsk kanel", "1 st kiwi eller valfria bär", "1 msk hackade valnötter"],
+      "instructions": "1. Blanda havregryn, chiafrön, pumpakärnor, mjölk, limesaft och lönnsirap i en skål eller burk. 2. Rör om ordentligt, täck över och låt stå i kylskåp över natten. 3. Vid servering: toppa med skivad kiwi eller bär, hackade valnötter och kanel."
     },
     {
       "title": "Blåbärs- och banansmoothie",
       "category": "Mellanmål",
-      "energy": "265 kcal", "protein": "11 g",
-      "ingredients": ["Banan", "Blåbär", "Helmjölk", "Skyr"],
-      "instructions": "Mixa allt slätt."
+      "energy": "265 kcal",
+      "protein": "11 g",
+      "ingredients": ["1 st banan", "1 dl blåbär", "2 dl helmjölk", "1 dl skyr eller kvarg", "1 msk olja", "1 msk socker", "1 tsk vaniljsocker"],
+      "instructions": "1. Mixa alla ingredienser till en slät konsistens. 2. Smaka av med socker och vaniljsocker. 3. Servera gärna med isbitar."
     },
     {
-      "title": "Melonsallad med fetaost",
+      "title": "Minipajer med spenat och pinjenötter",
       "category": "Mellanmål",
-      "energy": "410 kcal", "protein": "9 g",
-      "ingredients": ["Vattenmelon", "Fetaost", "Pumpafrön"],
-      "instructions": "Rosta fröna och blanda med tärnad melon."
-    },
-    {
-      "title": "Minipajer med spenat",
-      "category": "Mellanmål",
-      "energy": "280 kcal", "protein": "17 g",
-      "ingredients": ["Spenat", "Keso", "Ägg", "Parmesan"],
-      "instructions": "Grädda i muffinsformar på 160 grader i 25 min."
-    },
-    {
-      "title": "Äggsallad på bröd",
-      "category": "Mellanmål",
-      "energy": "300 kcal", "protein": "8 g",
-      "ingredients": ["Ägg", "Majonnäs", "Curry", "Bröd"],
-      "instructions": "Hacka ägg, blanda med majonnäs och lägg på bröd."
+      "energy": "280 kcal per portion (2 st)",
+      "protein": "17 g",
+      "ingredients": ["250 g frusen bladspenat", "100 g keso", "2 st ägg", "1 dl riven parmesanost", "½ dl pinjenötter", "2 msk crème fraiche 34 %", "Riven muskotnöt", "Salt och peppar"],
+      "instructions": "1. Sätt ugnen på 160°C. 2. Rosta pinjenötterna i en torr stekpanna. 3. Vispa ihop ägg, crème fraiche, keso och parmesanost. 4. Tina spenaten och krama ur vattnet. Hacka spenaten grovt och blanda ner i äggsmeten tillsammans med pinjenötterna. 5. Krydda med muskot, salt och peppar. 6. Häll smeten i smorda muffinsformar. 7. Grädda i mitten av ugnen i ca 25 minuter."
     },
     {
       "title": "Krämig broccolisoppa med fisk",
       "category": "Middag",
-      "energy": "395 kcal", "protein": "14 g",
-      "ingredients": ["Broccoli", "Fiskfilé", "Grädde", "Buljong"],
-      "instructions": "Mixa soppan slät och lägg i fisk."
-    },
-    {
-      "title": "Morotssoppa med färskost",
-      "category": "Middag",
-      "energy": "455 kcal", "protein": "9 g",
-      "ingredients": ["Morötter", "Buljong", "Färskost"],
-      "instructions": "Koka morötter, mixa med färskost."
-    },
-    {
-      "title": "Koldskål med jordgubbar",
-      "category": "Efterrätt",
-      "energy": "345 kcal", "protein": "11 g",
-      "ingredients": ["Kärnmjölk", "Grädde", "Äggula", "Jordgubbar"],
-      "instructions": "Blanda allt kallt."
+      "energy": "395 kcal",
+      "protein": "14 g",
+      "ingredients": ["150 g broccoli", "100 g fiskfilé (t.ex. rödspätta eller torsk)", "1 dl vispgrädde 36-40 %", "2,5 dl grönsaksbuljong", "½ st gul lök", "½ st stjälk selleri", "2 msk olja"],
+      "instructions": "1. Hacka lök, selleri och broccoli. Fräs grönsakerna i olja i en kastrull utan att de tar färg. 2. Häll på buljongen och låt sjuda under lock i ca 10 minuter. 3. Ångkoka fisken separat i lite vatten och salt tills den är genomkokt. 4. Mixa soppan slät med en stavmixer. Rör ner grädden och värm upp soppan igen. 5. Fördela fisken i soppan vid servering."
     },
     {
       "title": "Iskaffe",
       "category": "Dryck",
-      "energy": "305 kcal", "protein": "6 g",
-      "ingredients": ["Kaffe", "Helmjölk", "Grädde", "Is"],
-      "instructions": "Mixa och servera kallt."
-    },
-    {
-      "title": "Pepparkakor med ingefära",
-      "category": "Snacks",
-      "energy": "110 kcal", "protein": "1 g",
-      "ingredients": ["Smör", "Vetemjöl", "Sirap", "Ingefära"],
-      "instructions": "Baka tunna kakor för att lindra illamående."
+      "energy": "305 kcal",
+      "protein": "6 g",
+      "ingredients": ["3 tsk snabbkaffepulver", "½ dl kokande vatten", "3 dl helmjölk", "1 dl vispgrädde 36-40 %", "1 msk farinsocker eller sirap", "Isbitar"],
+      "instructions": "1. Lös upp kaffepulvret och sockret i det kokande vattnet. Låt svalna. 2. Blanda kaffet med mjölk och grädde. 3. Häll upp i ett stort glas med isbitar. 4. Mixa eventuellt i en blender för en skummig konsistens."
     }
   ],
   "medical_advice": [
     {
-      "title": "Karcinoidsyndrom & Aminer",
-      "info": "Vissa livsmedel innehåller aminer som kan trigga flushing.",
-      "avoid": ["Lagrad ost", "Rödvin", "Rökt fisk", "Tomat", "Spenat"],
-      "tips": ["Ät små portioner", "Undvik stress vid måltiden"]
-    },
-    {
-      "title": "Tips vid illamående",
-      "info": "Strategier för att få i sig näring vid obehag.",
-      "tips": ["Välj kall mat", "Ät torra kex", "Små täta mål"]
+      "title": "Karcinoidsyndrom och mat",
+      "info": "Vid karcinoidsyndrom producerar tumören hormoner och signalsubstanser, bland annat serotonin. Vissa livsmedel innehåller ämnen som kallas aminer. Aminer påminner om de ämnen tumören producerar och kan hos vissa utlösa symtom som flushing (plötslig rodnad) och diarré.",
+      "avoid": ["Lagrad ost (t.ex. parmesan, cheddar, mögelost)", "Alkohol (framförallt rödvin och viss öl)", "Rökt, gravat eller fermenterat kött och fisk", "Tomat, spenat, aubergine och avokado", "Choklad", "Starka kryddor (chili, peppar)"],
+      "better": ["Färskost, mozzarella, keso", "Färskt kött och färsk fisk", "Potatis, morötter, blomkål, gurka", "Vitt vin (i små mängder)"],
+      "tips": ["Undvik stora måltider", "Undvik mycket varm mat och dryck", "För gärna en matdagbok för att se om det är något särskilt livsmedel som utlöser dina symtom."]
     }
   ]
 }
