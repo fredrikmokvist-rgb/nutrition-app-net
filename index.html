@@ -3,44 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nutrition NET</title>
+    <title>NET Nutrition Hub</title>
     <style>
-        :root { --primary: #0056b3; --bg: #f8f9fa; }
-        body { font-family: -apple-system, sans-serif; background: var(--bg); margin: 0; padding-bottom: 90px; font-size: 19px; }
-        header { background: white; padding: 20px; text-align: center; border-bottom: 2px solid #ddd; position: sticky; top: 0; z-index: 100; }
-        .container { padding: 15px; max-width: 650px; margin: 0 auto; }
-        .card { background: white; padding: 25px; border-radius: 15px; margin-bottom: 20px; border: 1px solid #ddd; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-        h2 { color: var(--primary); margin-top: 0; font-size: 24px; }
-        .tab-bar { position: fixed; bottom: 0; width: 100%; background: white; display: flex; border-top: 2px solid #ddd; height: 80px; }
-        .tab-item { flex: 1; text-align: center; padding-top: 25px; font-weight: bold; color: #666; cursor: pointer; text-transform: uppercase; font-size: 15px; }
+        :root { --primary: #0056b3; --bg: #f4f7f9; --text: #2c3e50; }
+        body { font-family: -apple-system, sans-serif; background: var(--bg); color: var(--text); margin: 0; padding-bottom: 90px; font-size: 20px; line-height: 1.5; }
+        header { background: white; padding: 20px; text-align: center; border-bottom: 2px solid #ddd; position: sticky; top: 0; z-index: 1000; }
+        .container { padding: 20px; max-width: 650px; margin: 0 auto; }
+        .card { background: white; padding: 25px; border-radius: 15px; margin-bottom: 20px; border: 1px solid #ddd; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .accordion-btn { background: #fff; width: 100%; text-align: left; border: 1px solid #ddd; padding: 20px; border-radius: 12px; margin-bottom: 10px; font-size: 20px; font-weight: bold; cursor: pointer; color: var(--primary); display: flex; justify-content: space-between; }
+        .accordion-content { display: none; background: #fff; padding: 20px; border: 1px solid #ddd; border-top: 0; border-radius: 0 0 12px 12px; margin-top: -10px; margin-bottom: 15px; }
+        .tab-bar { position: fixed; bottom: 0; width: 100%; background: white; display: flex; border-top: 2px solid #ddd; height: 85px; }
+        .tab-item { flex: 1; text-align: center; padding-top: 25px; font-weight: bold; color: #7f8c8d; font-size: 14px; text-transform: uppercase; cursor: pointer; }
         .tab-item.active { color: var(--primary); border-top: 5px solid var(--primary); background: #f0f7ff; }
-        .tag { display: inline-block; background: #e9ecef; padding: 4px 10px; border-radius: 6px; font-size: 14px; margin-bottom: 10px; font-weight: bold; }
-        .warning-box { background: #fff3cd; border-left: 6px solid #ffc107; padding: 15px; margin: 15px 0; border-radius: 4px; }
+        .tag { background: #e9ecef; padding: 5px 10px; border-radius: 6px; font-size: 14px; font-weight: bold; margin-bottom: 10px; display: inline-block; }
     </style>
 </head>
 <body>
 
-<header>
-    <h1 style="margin:0; font-size: 20px;">Nutritionshandbok NET</h1>
-</header>
+<header><h1 style="margin:0; font-size: 22px;">Nutritionshub NET</h1></header>
 
 <div class="container" id="content">Laddar...</div>
 
 <nav class="tab-bar">
-    <div id="tab-welcome" class="tab-item active" onclick="showSection('welcome')">Start</div>
+    <div id="tab-home" class="tab-item active" onclick="showSection('home')">Hem</div>
     <div id="tab-recipes" class="tab-item" onclick="showSection('recipes')">Recept</div>
     <div id="tab-advice" class="tab-item" onclick="showSection('advice')">Råd</div>
+    <div id="tab-know" class="tab-item" onclick="showSection('know')">Kunskap</div>
 </nav>
 
 <script>
     let appData = null;
 
-    fetch('data.json')
-        .then(res => res.json())
-        .then(data => {
-            appData = data;
-            showSection('welcome');
-        });
+    fetch('data.json').then(res => res.json()).then(data => {
+        appData = data;
+        showSection('home');
+    });
 
     function showSection(section) {
         if (!appData) return;
@@ -48,37 +45,29 @@
         document.querySelectorAll('.tab-item').forEach(el => el.classList.remove('active'));
         document.getElementById('tab-' + section).classList.add('active');
 
-        if (section === 'welcome') {
-            content.innerHTML = `
-                <div style="text-align:center; padding: 20px 0;">
-                    <h2>${appData.welcome_page.title}</h2>
-                    <p>${appData.welcome_page.text}</p>
-                    <div class="card" style="margin-top:20px;">
-                        <p><em>${appData.welcome_page.sub_text}</em></p>
-                    </div>
-                </div>`;
+        if (section === 'home') {
+            content.innerHTML = `<h2>${appData.welcome_page.title}</h2><p>${appData.welcome_page.text}</p>` + 
+                appData.welcome_page.sections.map(s => `<div class="card"><h3>${s.heading}</h3><p>${s.body}</p></div>`).join('');
+        } else if (section === 'know') {
+            content.innerHTML = `<h2>Kunskapsbas</h2>` + appData.knowledge_base.map((k, i) => `
+                <button class="accordion-btn" onclick="toggleAcc(${i})">${k.title} <span>+</span></button>
+                <div id="acc-${i}" class="accordion-content"><span class="tag">${k.category}</span><p>${k.content}</p></div>
+            `).join('');
         } else if (section === 'recipes') {
-            content.innerHTML = appData.recipes.map(r => `
-                <div class="card">
-                    <span class="tag">${r.category}</span>
-                    <h2>${r.title}</h2>
-                    <p><strong>Energi:</strong> ${r.energy} | <strong>Protein:</strong> ${r.protein}</p>
-                    <div style="background:#f1f1f1; padding:12px; border-radius:8px; margin-bottom:15px;">
-                        <strong>Ingredienser:</strong><br>${r.ingredients.join(', ')}
-                    </div>
-                    <p><strong>Gör så här:</strong><br>${r.instructions}</p>
-                </div>`).join('');
+            content.innerHTML = `<h2>Recept</h2>` + appData.recipes.map(r => `
+                <div class="card"><span class="tag">${r.category}</span><h3>${r.title}</h3><p>${r.instructions}</p></div>
+            `).join('');
         } else {
-            content.innerHTML = appData.medical_advice.map(a => `
-                <div class="card">
-                    <h2>${a.title}</h2>
-                    <p>${a.info}</p>
-                    ${a.avoid ? `<div class="warning-box"><strong>Undvik:</strong> ${a.avoid.join(', ')}</div>` : ''}
-                    <strong>Tips:</strong>
-                    <ul>${a.tips.map(t => `<li>${t}</li>`).join('')}</ul>
-                </div>`).join('');
+            content.innerHTML = `<h2>Råd & Symtom</h2>` + appData.medical_advice.map(a => `
+                <div class="card"><h3>${a.title}</h3><p>${a.info}</p></div>
+            `).join('');
         }
         window.scrollTo(0,0);
+    }
+
+    function toggleAcc(id) {
+        const el = document.getElementById('acc-' + id);
+        el.style.display = el.style.display === 'block' ? 'none' : 'block';
     }
 </script>
 </body>
