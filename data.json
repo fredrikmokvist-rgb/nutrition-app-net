@@ -1,130 +1,57 @@
 {
   "welcome_page": {
-    "title": "Välkommen",
-    "text": "Denna digitala handbok är ett stöd för dig som lever med neuroendokrina sjukdomar (NET). Här hittar du praktiska råd och recept som är anpassade för att hjälpa dig bibehålla styrka och livskvalitet genom rätt nutrition.",
-    "sub_text": "Använd flikarna längst ner för att navigera mellan recept och medicinska råd."
+    "title": "Nutrition & Livsstil vid NET",
+    "text": "Välkommen till din digitala handbok. Här finns samlad kunskap för att stödja dig i vardagen med neuroendokrina tumörer.",
+    "sections": [
+      {
+        "heading": "Varför är maten viktig?",
+        "body": "Vid NET behöver kroppen ofta mer energi och protein än vanligt för att orka med behandlingar och bibehålla muskelmassa. Rätt kost kan också dämpa symtom som diarré och flushing."
+      }
+    ]
   },
+  "knowledge_base": [
+    {
+      "category": "Näringslära",
+      "title": "Protein - kroppens byggstenar",
+      "content": "Vid sjukdom ökar proteinbehovet för att reparera vävnad och motverka muskelnedbrytning. Målet är ofta 1,2–1,5 g protein per kilo kroppsvikt per dag. Bra källor är ägg, fisk, kött, bönor och mejeriprodukter."
+    },
+    {
+      "category": "Näringslära",
+      "title": "Fettets betydelse",
+      "content": "Fett är vår mest koncentrerade energikälla. Vid behandling med somatostatinanaloger kan fettupptaget försämras, vilket ger fettdiarréer. Det kan då vara nödvändigt att ta matsmältningsenzymer till måltiderna."
+    },
+    {
+      "category": "Livsstil",
+      "title": "Fysisk aktivitet",
+      "content": "Träning är en viktig del av behandlingen. Det hjälper mot trötthet (fatigue) och stärker aptiten. Även korta promenader gör skillnad. Kombinera gärna kondition med enkel styrketräning för att behålla musklerna."
+    },
+    {
+      "category": "Behandling",
+      "title": "Medicinska näringsdrycker",
+      "content": "Om du inte får i dig tillräckligt via vanlig mat kan näringsdrycker vara ett bra komplement. De är sammansatta för att ge mycket näring på liten volym och bör drickas långsamt, gärna kalla."
+    },
+    {
+      "category": "Behandling",
+      "title": "Kosttillskott & Varningar",
+      "content": "Var försiktig med naturläkemedel. Vissa tillskott, som Johannesört eller höga doser antioxidanter, kan störa effekten av din medicinska behandling. Rådgör alltid med din läkare."
+    }
+  ],
   "recipes": [
-    {
-      "title": "Havregryn med extra fett",
-      "category": "Frukost",
-      "energy": "190 kcal",
-      "protein": "2 g",
-      "tags": ["Energi- och proteinrik", "Mjuk mat"],
-      "ingredients": ["1 dl havregryn", "2 dl vatten", "1 msk neutral olja", "2 tsk smör", "1 nypa salt"],
-      "instructions": "Koka gryn och vatten 1-2 min. Tillsätt salt, olja och smör vid servering."
-    },
-    {
-      "title": "Havregryn kokt på mjölk",
-      "category": "Frukost",
-      "energy": "190 kcal",
-      "protein": "6 g",
-      "tags": ["Proteinrik"],
-      "ingredients": ["1 dl havregryn", "2 dl helmjölk", "1 nypa salt", "2 tsk smör"],
-      "instructions": "Koka havregryn och mjölk under omrörning i 1-2 minuter. Tillsätt salt och smör."
-    },
-    {
-      "title": "Bircher-müsli (Nattmål)",
-      "category": "Frukost/Mellanmål",
-      "energy": "237 kcal",
-      "protein": "9,4 g",
-      "tags": ["Kall mat", "Förbered i förväg"],
-      "ingredients": ["50 g havregryn", "1 msk chiafrön", "1,5 dl mjölk", "Kiwi/Bär", "Nötter"],
-      "instructions": "Blanda allt utom nötter. Låt stå i kyl över natten. Ät som sent kvällsmål."
-    },
-    {
-      "title": "Blåbärs- och banansmoothie",
-      "category": "Mellanmål",
-      "energy": "265 kcal",
-      "protein": "11 g",
-      "tags": ["Proteinrik", "Lättätet"],
-      "ingredients": ["1 banan", "2 dl blåbär", "2 dl helmjölk", "1 dl skyr", "1 msk olja"],
-      "instructions": "Mixa allt slätt. Bra vid nedsatt aptit eller illamående."
-    },
-    {
-      "title": "Melonsallad med fetaost",
-      "category": "Mellanmål",
-      "energy": "410 kcal",
-      "protein": "9 g",
-      "tags": ["Sött och salt"],
-      "ingredients": ["150 g vattenmelon", "50 g fetaost", "1,5 dl pumpafrön", "Olja/Honung"],
-      "instructions": "Rosta fröna. Blanda melon, fetaost och dressing."
-    },
-    {
-      "title": "Minipajer med spenat",
-      "category": "Mellanmål",
-      "energy": "280 kcal",
-      "protein": "17 g",
-      "tags": ["Proteinrik"],
-      "ingredients": ["250 g spenat", "100 g keso", "2 ägg", "1 dl parmesan"],
-      "instructions": "Blanda och grädda i muffinsformar på 160 grader i 25 min."
-    },
-    {
-      "title": "Äggsallad på bröd",
-      "category": "Mellanmål",
-      "energy": "300 kcal",
-      "protein": "8 g",
-      "tags": ["Klassisk"],
-      "ingredients": ["1 ägg", "1,5 msk majonnäs", "Smörgåsbröd", "Curry/Salt"],
-      "instructions": "Hacka ägget och blanda med majonnäs. Lägg på små brödbitar."
-    },
     {
       "title": "Krämig broccolisoppa med fisk",
       "category": "Middag",
       "energy": "395 kcal",
       "protein": "14 g",
-      "tags": ["Skonkost"],
-      "ingredients": ["150 g broccoli", "100 g fisk", "1 dl grädde", "2,5 dl buljong"],
-      "instructions": "Mixa soppan slätt med grädde. Lägg i ångad fisk vid servering."
-    },
-    {
-      "title": "Morotssoppa med färskost",
-      "category": "Middag",
-      "energy": "455 kcal",
-      "protein": "9 g",
-      "tags": ["Mjuk mat"],
-      "ingredients": ["2 morötter", "3 dl buljong", "75 g färskost", "Pumpafrön"],
-      "instructions": "Koka morötter i buljong. Mixa med färskost. Toppa med frön."
-    },
-    {
-      "title": "Koldskål med jordgubbar",
-      "category": "Efterrätt/Mellanmål",
-      "energy": "345 kcal",
-      "protein": "11 g",
-      "tags": ["Kall mat"],
-      "ingredients": ["Kärnmjölk", "Grädde", "Äggulor", "Socker", "Jordgubbar"],
-      "instructions": "Mixa alla ingredienser kalla. Fräscht vid smakförändringar."
-    },
-    {
-      "title": "Iskaffe",
-      "category": "Dryck",
-      "energy": "305 kcal",
-      "protein": "6 g",
-      "tags": ["Extra energi"],
-      "ingredients": ["3 tsk kaffe", "3 dl helmjölk", "1 dl grädde", "Is"],
-      "instructions": "Blanda kaffe, mjölk och grädde med is. Bra vid trötthet."
-    },
-    {
-      "title": "Pepparkakor med ingefära",
-      "category": "Snacks",
-      "energy": "110 kcal",
-      "protein": "1 g",
-      "tags": ["Mot illamående"],
-      "ingredients": ["Vetemjöl", "Smör", "Sirap", "Ingefära"],
-      "instructions": "Baka tunna kakor. Ingefära kan lindra illamående."
+      "ingredients": ["150g broccoli", "100g fiskfilé", "1 dl vispgrädde", "2.5 dl buljong"],
+      "instructions": "Mixa soppan slät med grädde. Ånga fisken separat och lägg i vid servering."
     }
   ],
   "medical_advice": [
     {
-      "title": "Karcinoidsyndrom & Flushing",
-      "info": "Livsmedel med aminer kan utlösa rodnad.",
-      "avoid": ["Lagrad ost", "Rödvin", "Rökt fisk", "Tomat"],
-      "tips": ["Ät små portioner", "Undvik het dryck"]
-    },
-    {
-      "title": "Vikten av Protein",
-      "info": "Protein hjälper till att bibehålla muskelmassa.",
-      "tips": ["Sikta på 1,2-1,5g per kg kroppsvikt", "Berika soppor med äggula"]
+      "title": "Karcinoidsyndrom & Aminer",
+      "info": "Vissa livsmedel innehåller aminer som kan trigga flushing.",
+      "avoid": ["Lagrad ost", "Rödvin", "Rökt fisk", "Tomat", "Spenat"],
+      "tips": ["Ät små portioner", "Undvik stress vid måltiden"]
     }
   ]
 }
