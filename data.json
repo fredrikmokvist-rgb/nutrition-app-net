@@ -1,7 +1,7 @@
 {
   "welcome_page": {
     "title": "Nutrition & Livsstil vid NET",
-    "text": "Välkommen till din digitala handbok. Här finns samlad kunskap för att stödja dig i vardagen med neuroendokrina tumörer.",
+    "text": "Välkommen till din digitala handbok. Här finns samlad kunskap och praktiska verktyg för att stödja dig i vardagen med neuroendokrina tumörer.",
     "sections": [
       {
         "heading": "Varför är maten viktig?",
@@ -34,16 +34,97 @@
       "category": "Behandling",
       "title": "Kosttillskott & Varningar",
       "content": "Var försiktig med naturläkemedel. Vissa tillskott, som Johannesört eller höga doser antioxidanter, kan störa effekten av din medicinska behandling. Rådgör alltid med din läkare."
+    },
+    {
+      "category": "Fördjupning",
+      "title": "Sondmatning",
+      "content": "Om det under en längre tid är svårt att äta tillräckligt kan sondmatning via en tunn slang till magen vara ett alternativ. Det kan användas som ett komplement till vanlig mat, ofta under natten."
     }
   ],
   "recipes": [
     {
+      "title": "Havregryn med extra fett",
+      "category": "Frukost",
+      "energy": "190 kcal", "protein": "2 g",
+      "ingredients": ["1 dl havregryn", "2 dl vatten", "1 msk olja", "2 tsk smör"],
+      "instructions": "Koka gryn och vatten 1-2 min. Tillsätt fettet vid servering."
+    },
+    {
+      "title": "Havregryn kokt på mjölk",
+      "category": "Frukost",
+      "energy": "190 kcal", "protein": "6 g",
+      "ingredients": ["1 dl havregryn", "2 dl helmjölk", "Smör"],
+      "instructions": "Koka under omrörning i 1-2 minuter."
+    },
+    {
+      "title": "Bircher-müsli (Nattmål)",
+      "category": "Frukost",
+      "energy": "237 kcal", "protein": "9,4 g",
+      "ingredients": ["Havregryn", "Chiafrön", "Mjölk", "Bär"],
+      "instructions": "Blanda och låt stå i kyl över natten."
+    },
+    {
+      "title": "Blåbärs- och banansmoothie",
+      "category": "Mellanmål",
+      "energy": "265 kcal", "protein": "11 g",
+      "ingredients": ["Banan", "Blåbär", "Helmjölk", "Skyr"],
+      "instructions": "Mixa allt slätt."
+    },
+    {
+      "title": "Melonsallad med fetaost",
+      "category": "Mellanmål",
+      "energy": "410 kcal", "protein": "9 g",
+      "ingredients": ["Vattenmelon", "Fetaost", "Pumpafrön"],
+      "instructions": "Rosta fröna och blanda med tärnad melon."
+    },
+    {
+      "title": "Minipajer med spenat",
+      "category": "Mellanmål",
+      "energy": "280 kcal", "protein": "17 g",
+      "ingredients": ["Spenat", "Keso", "Ägg", "Parmesan"],
+      "instructions": "Grädda i muffinsformar på 160 grader i 25 min."
+    },
+    {
+      "title": "Äggsallad på bröd",
+      "category": "Mellanmål",
+      "energy": "300 kcal", "protein": "8 g",
+      "ingredients": ["Ägg", "Majonnäs", "Curry", "Bröd"],
+      "instructions": "Hacka ägg, blanda med majonnäs och lägg på bröd."
+    },
+    {
       "title": "Krämig broccolisoppa med fisk",
       "category": "Middag",
-      "energy": "395 kcal",
-      "protein": "14 g",
-      "ingredients": ["150g broccoli", "100g fiskfilé", "1 dl vispgrädde", "2.5 dl buljong"],
-      "instructions": "Mixa soppan slät med grädde. Ånga fisken separat och lägg i vid servering."
+      "energy": "395 kcal", "protein": "14 g",
+      "ingredients": ["Broccoli", "Fiskfilé", "Grädde", "Buljong"],
+      "instructions": "Mixa soppan slät och lägg i fisk."
+    },
+    {
+      "title": "Morotssoppa med färskost",
+      "category": "Middag",
+      "energy": "455 kcal", "protein": "9 g",
+      "ingredients": ["Morötter", "Buljong", "Färskost"],
+      "instructions": "Koka morötter, mixa med färskost."
+    },
+    {
+      "title": "Koldskål med jordgubbar",
+      "category": "Efterrätt",
+      "energy": "345 kcal", "protein": "11 g",
+      "ingredients": ["Kärnmjölk", "Grädde", "Äggula", "Jordgubbar"],
+      "instructions": "Blanda allt kallt."
+    },
+    {
+      "title": "Iskaffe",
+      "category": "Dryck",
+      "energy": "305 kcal", "protein": "6 g",
+      "ingredients": ["Kaffe", "Helmjölk", "Grädde", "Is"],
+      "instructions": "Mixa och servera kallt."
+    },
+    {
+      "title": "Pepparkakor med ingefära",
+      "category": "Snacks",
+      "energy": "110 kcal", "protein": "1 g",
+      "ingredients": ["Smör", "Vetemjöl", "Sirap", "Ingefära"],
+      "instructions": "Baka tunna kakor för att lindra illamående."
     }
   ],
   "medical_advice": [
@@ -52,6 +133,11 @@
       "info": "Vissa livsmedel innehåller aminer som kan trigga flushing.",
       "avoid": ["Lagrad ost", "Rödvin", "Rökt fisk", "Tomat", "Spenat"],
       "tips": ["Ät små portioner", "Undvik stress vid måltiden"]
+    },
+    {
+      "title": "Tips vid illamående",
+      "info": "Strategier för att få i sig näring vid obehag.",
+      "tips": ["Välj kall mat", "Ät torra kex", "Små täta mål"]
     }
   ]
 }
