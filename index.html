@@ -3,26 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NET Nutrition Hub</title>
+    <title>Nutritionshub NET</title>
     <style>
         :root { --primary: #0056b3; --bg: #f4f7f9; --text: #2c3e50; }
-        body { font-family: -apple-system, sans-serif; background: var(--bg); color: var(--text); margin: 0; padding-bottom: 90px; font-size: 20px; line-height: 1.5; }
-        header { background: white; padding: 20px; text-align: center; border-bottom: 2px solid #ddd; position: sticky; top: 0; z-index: 1000; }
+        body { font-family: -apple-system, sans-serif; background: var(--bg); color: var(--text); margin: 0; padding-bottom: 100px; font-size: 20px; line-height: 1.6; }
+        header { background: white; padding: 25px 15px; text-align: center; border-bottom: 2px solid #ddd; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
         .container { padding: 20px; max-width: 650px; margin: 0 auto; }
+        h2 { color: var(--primary); font-size: 26px; margin-top: 10px; border-bottom: 2px solid #ddd; padding-bottom: 10px; }
+        
+        /* Kort-design för recept och råd */
         .card { background: white; padding: 25px; border-radius: 15px; margin-bottom: 20px; border: 1px solid #ddd; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
-        .accordion-btn { background: #fff; width: 100%; text-align: left; border: 1px solid #ddd; padding: 20px; border-radius: 12px; margin-bottom: 10px; font-size: 20px; font-weight: bold; cursor: pointer; color: var(--primary); display: flex; justify-content: space-between; }
-        .accordion-content { display: none; background: #fff; padding: 20px; border: 1px solid #ddd; border-top: 0; border-radius: 0 0 12px 12px; margin-top: -10px; margin-bottom: 15px; }
-        .tab-bar { position: fixed; bottom: 0; width: 100%; background: white; display: flex; border-top: 2px solid #ddd; height: 85px; }
-        .tab-item { flex: 1; text-align: center; padding-top: 25px; font-weight: bold; color: #7f8c8d; font-size: 14px; text-transform: uppercase; cursor: pointer; }
-        .tab-item.active { color: var(--primary); border-top: 5px solid var(--primary); background: #f0f7ff; }
-        .tag { background: #e9ecef; padding: 5px 10px; border-radius: 6px; font-size: 14px; font-weight: bold; margin-bottom: 10px; display: inline-block; }
+        .tag { background: #e9ecef; padding: 5px 12px; border-radius: 6px; font-size: 14px; font-weight: bold; margin-bottom: 12px; display: inline-block; text-transform: uppercase; color: #495057; }
+        
+        /* Dragspels-funktion för Kunskapsbasen */
+        .accordion-btn { background: #fff; width: 100%; text-align: left; border: 1px solid #ddd; padding: 20px; border-radius: 12px; margin-bottom: 10px; font-size: 20px; font-weight: bold; cursor: pointer; color: var(--primary); display: flex; justify-content: space-between; align-items: center; }
+        .accordion-content { display: none; background: #fff; padding: 20px; border: 1px solid #ddd; border-top: 0; border-radius: 0 0 12px 12px; margin-top: -11px; margin-bottom: 20px; border-left: 4px solid var(--primary); }
+        
+        /* Navigeringsfältet längst ner */
+        .tab-bar { position: fixed; bottom: 0; width: 100%; background: white; display: flex; border-top: 2px solid #ddd; height: 85px; box-shadow: 0 -2px 10px rgba(0,0,0,0.05); }
+        .tab-item { flex: 1; text-align: center; padding-top: 28px; font-weight: bold; color: #7f8c8d; font-size: 14px; text-transform: uppercase; cursor: pointer; transition: all 0.2s; }
+        .tab-item.active { color: var(--primary); border-top: 6px solid var(--primary); background: #f0f7ff; }
+        
+        .ingr-box { background: #f8f9fa; padding: 15px; border-radius: 10px; margin: 15px 0; border: 1px dashed #cbd5e0; font-size: 18px; }
+        .warning-box { background: #fff3cd; border-left: 6px solid #ffc107; padding: 15px; margin: 15px 0; border-radius: 4px; font-size: 18px; }
     </style>
 </head>
 <body>
 
 <header><h1 style="margin:0; font-size: 22px;">Nutritionshub NET</h1></header>
 
-<div class="container" id="content">Laddar...</div>
+<div class="container" id="content">Hämtar handboken...</div>
 
 <nav class="tab-bar">
     <div id="tab-home" class="tab-item active" onclick="showSection('home')">Hem</div>
@@ -34,41 +44,76 @@
 <script>
     let appData = null;
 
-    fetch('data.json').then(res => res.json()).then(data => {
-        appData = data;
-        showSection('home');
-    });
+    // Hämta JSON-filen
+    fetch('data.json')
+        .then(res => res.json())
+        .then(data => {
+            appData = data;
+            showSection('home');
+        })
+        .catch(err => {
+            document.getElementById('content').innerHTML = "Kunde inte ladda data. Kontrollera att data.json finns i samma mapp på GitHub.";
+        });
 
     function showSection(section) {
         if (!appData) return;
         const content = document.getElementById('content');
+        
+        // Uppdatera flik-styling
         document.querySelectorAll('.tab-item').forEach(el => el.classList.remove('active'));
         document.getElementById('tab-' + section).classList.add('active');
 
         if (section === 'home') {
             content.innerHTML = `<h2>${appData.welcome_page.title}</h2><p>${appData.welcome_page.text}</p>` + 
-                appData.welcome_page.sections.map(s => `<div class="card"><h3>${s.heading}</h3><p>${s.body}</p></div>`).join('');
-        } else if (section === 'know') {
-            content.innerHTML = `<h2>Kunskapsbas</h2>` + appData.knowledge_base.map((k, i) => `
+                appData.welcome_page.sections.map(s => `
+                    <div class="card">
+                        <h3 style="margin-top:0;">${s.heading}</h3>
+                        <p>${s.body}</p>
+                    </div>`).join('');
+        } 
+        
+        else if (section === 'know') {
+            content.innerHTML = `<h2>Kunskapsbas</h2><p style="font-size:16px; color:#666;">Klicka på rubrikerna för att läsa mer.</p>` + 
+                appData.knowledge_base.map((k, i) => `
                 <button class="accordion-btn" onclick="toggleAcc(${i})">${k.title} <span>+</span></button>
-                <div id="acc-${i}" class="accordion-content"><span class="tag">${k.category}</span><p>${k.content}</p></div>
-            `).join('');
-        } else if (section === 'recipes') {
-            content.innerHTML = `<h2>Recept</h2>` + appData.recipes.map(r => `
-                <div class="card"><span class="tag">${r.category}</span><h3>${r.title}</h3><p>${r.instructions}</p></div>
-            `).join('');
-        } else {
-            content.innerHTML = `<h2>Råd & Symtom</h2>` + appData.medical_advice.map(a => `
-                <div class="card"><h3>${a.title}</h3><p>${a.info}</p></div>
-            `).join('');
+                <div id="acc-${i}" class="accordion-content">
+                    <span class="tag">${k.category}</span>
+                    <p>${k.content}</p>
+                </div>`).join('');
+        } 
+        
+        else if (section === 'recipes') {
+            content.innerHTML = `<h2>Recept & Måltider</h2>` + appData.recipes.map(r => `
+                <div class="card">
+                    <span class="tag">${r.category}</span>
+                    <h3 style="margin:0 0 10px 0;">${r.title}</h3>
+                    <p style="font-size:16px; color:#555;"><strong>Energi:</strong> ${r.energy} | <strong>Protein:</strong> ${r.protein}</p>
+                    <div class="ingr-box"><strong>Ingredienser:</strong><br>${r.ingredients.join(', ')}</div>
+                    <p><strong>Gör så här:</strong><br>${r.instructions}</p>
+                </div>`).join('');
+        } 
+        
+        else if (section === 'advice') {
+            content.innerHTML = `<h2>Råd & Symtomhantering</h2>` + appData.medical_advice.map(a => `
+                <div class="card">
+                    <h3 style="margin-top:0;">${a.title}</h3>
+                    <p>${a.info}</p>
+                    ${a.avoid ? `<div class="warning-box"><strong>Viktigt att undvika:</strong><br>${a.avoid.join(', ')}</div>` : ''}
+                    ${a.tips ? `<div style="margin-top:15px;"><strong>Praktiska tips:</strong><ul>${a.tips.map(t => `<li>${t}</li>`).join('')}</ul></div>` : ''}
+                </div>`).join('');
         }
         window.scrollTo(0,0);
     }
 
     function toggleAcc(id) {
         const el = document.getElementById('acc-' + id);
-        el.style.display = el.style.display === 'block' ? 'none' : 'block';
+        const btn = el.previousElementSibling;
+        const isOpen = el.style.display === 'block';
+        
+        el.style.display = isOpen ? 'none' : 'block';
+        btn.querySelector('span').innerText = isOpen ? '+' : '−';
     }
 </script>
+
 </body>
 </html>
