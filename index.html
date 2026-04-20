@@ -22,7 +22,6 @@
             -webkit-font-smoothing: antialiased;
         }
         
-        /* Top Header likt bilden */
         header { 
             background: white; 
             padding: 15px; 
@@ -40,14 +39,12 @@
             letter-spacing: 0.5px; 
         }
         
-        /* Main Content */
         .container { 
             padding: 20px 15px; 
             max-width: 600px; 
             margin: 0 auto; 
         }
         
-        /* Rubriker likt "Mina Bevakningar" (Serif) */
         h2.page-title { 
             font-family: Georgia, serif; 
             font-size: 32px; 
@@ -65,7 +62,6 @@
             padding: 0 15px;
         }
         
-        /* Kort-designen */
         .card { 
             background: white; 
             padding: 22px; 
@@ -76,7 +72,6 @@
             position: relative;
         }
         
-        /* Ikon uppe till höger (Papperskorg/Bokmärke) */
         .card-icon-right {
             position: absolute;
             top: 22px;
@@ -85,7 +80,6 @@
             font-size: 20px;
         }
         
-        /* Status Indikator (Likt gröna "AKTIV") */
         .status-label { 
             font-size: 11px; 
             font-weight: 800; 
@@ -104,7 +98,6 @@
             margin-right: 8px; 
         }
         
-        /* Kort-titel */
         .card h3 { 
             margin: 0 0 12px 0; 
             font-size: 22px; 
@@ -112,7 +105,6 @@
             font-weight: 700;
         }
         
-        /* Tag / Pill (Likt "Rheumatology") */
         .tag { 
             background: #ebf4ff; 
             color: var(--primary); 
@@ -125,12 +117,11 @@
             margin-bottom: 20px; 
         }
         .tag::before { 
-            content: '🔍'; /* Ikon i taggen */
+            content: '🔍'; 
             margin-right: 6px; 
             font-size: 12px; 
         }
         
-        /* Knapp (Likt "Redigera & Testkör") */
         .action-btn { 
             background: #f7fafc; 
             width: 100%; 
@@ -148,7 +139,6 @@
         }
         .action-btn:active { background: #e2e8f0; }
         
-        /* Dragspels-innehåll */
         .accordion-content { 
             display: none; 
             margin-top: 15px; 
@@ -157,12 +147,10 @@
             font-size: 16px;
         }
         
-        /* Innehåll i korten */
         .card p { line-height: 1.6; color: #4a5568; margin-top: 0; }
         .ingr-box { background: #f7fafc; padding: 15px; border-radius: 12px; margin: 15px 0; border: 1px solid #e2e8f0; font-size: 15px; }
         .warning-box { background: #fffaf0; border-left: 4px solid #ecc94b; padding: 15px; margin: 15px 0; border-radius: 8px; font-size: 15px; }
         
-        /* Tab Bar i botten */
         .tab-bar { 
             position: fixed; 
             bottom: 0; 
@@ -320,7 +308,6 @@
         
         el.style.display = isOpen ? 'none' : 'block';
         
-        // Ändra text på knappen baserat på om den är öppen eller stängd
         if (isOpen) {
             if (id.includes('rec')) btn.innerText = 'Visa recept & ingredienser';
             else if (id.includes('know')) btn.innerText = 'Läs mer';
