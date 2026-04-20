@@ -1,11 +1,11 @@
 {
   "welcome_page": {
     "title": "Nutrition & Livsstil vid NET",
-    "text": "Denna nutritionshandbok vänder sig till dig som har en neuroendokrin tumör (NET). Handboken kan också läsas av närstående. Syftet med handboken är att ge kunskap om betydelsen av vad du äter och dricker samt ge praktiska råd och tips på hur du kan få i dig tillräckligt med energi och protein för att bibehålla din vikt och muskelmassa.",
+    "text": "Maten ska vara färgglad, full av smak, varierad, hälsosam och njutbar. [cite: 9] Näringslära är en viktig del av livet med NET och du kan ofta göra din del för att bibehålla vikt, funktion och styrka. [cite: 10]",
     "sections": [
       {
-        "heading": "Inledning",
-        "body": "Vid cancersjukdom är det vanligt med ofrivillig viktnedgång och att muskelmassan minskar. Det beror både på att tumören i sig påverkar ämnesomsättningen och på biverkningar av de behandlingar som ges. Att bibehålla vikt och muskelmassa är en viktig förutsättning för att du ska må så bra som möjligt, orka vara fysiskt aktiv och för att kroppen ska tåla de behandlingar som planeras. Maten är en del av din behandling."
+        "heading": "Allmän kost och fysisk aktivitet i NET",
+        "body": "Det är viktigt att äta en varierad kost för att tillgodose behovet av olika näringsämnen. [cite: 38] Men hur äter man en varierad kost? Goda råd är dyra, men hälsosamma råvaror och en varierad kost behöver inte vara det. [cite: 39] Vanliga livsmedel som morötter, havregryn, hasselnötter, frukt och bär från trädgården, grönkål och persilja är fulla av näringsämnen. [cite: 40] Hälsosamma ingredienser och bra mat med högt innehåll av energi, protein, vitaminer och mineraler kan stärka kroppen under behandlingen, ge dig mer energi och en bättre livskvalitet. [cite: 41]"
       }
     ]
   },
@@ -13,84 +13,271 @@
     {
       "category": "Näringslära",
       "title": "Protein",
-      "content": "Protein brukar kallas för kroppens byggstenar. Det behövs bland annat för att bygga upp och reparera kroppens celler och för immunförsvaret. Kroppen har inget lager för protein utan vi behöver tillföra det via maten varje dag. Vid cancersjukdom ökar behovet av protein. Det beror på att tumören och dess behandlingar ökar nedbrytningen av muskelmassa. Ett vanligt rekommenderat intag av protein för personer med cancersjukdom är 1,2–1,5 gram protein per kilo kroppsvikt och dag. Det innebär att om du till exempel väger 70 kg behöver du få i dig mellan 84 och 105 gram protein varje dag."
+      "content": "Protein är kroppens byggstenar och hjälper till att bygga upp muskler och organ. [cite: 104] Samtidigt har kroppen inte ett lager av protein att ösa ur. Därför är det viktigt att uppfylla sitt dagliga proteinbehov. [cite: 105] Detta kan uppnås genom en varierad kost, men om aptiten är kraftigt nedsatt kan det vara nödvändigt att komplettera med medicinska näringsdrycker. [cite: 106]"
     },
     {
       "category": "Näringslära",
-      "title": "Fett, matsmältning och enzymer",
-      "content": "Fett är kroppens mest koncentrerade energikälla. Fett behövs också för att kroppen ska kunna ta upp de fettlösliga vitaminerna A, D, E och K. Många som har en NET-sjukdom behandlas med somatostatinanaloger (t.ex. Somatuline eller Sandostatin). Dessa läkemedel hämmar bukspottkörtelns produktion av matsmältningsenzymer. När det finns för lite enzymer i tarmen kan inte fettet i maten brytas ner och tas upp av kroppen. Det leder till att fettet följer med avföringen ut, så kallad fettdiarré. Avföringen blir då ofta ljus, voluminös, illaluktande och kan vara svår att spola ner. Det leder också till att man förlorar energi och att man kan få brist på fettlösliga vitaminer. Vid brist på matsmältningsenzymer behöver man ta enzymkapslar (t.ex. Creon) till varje måltid och mellanmål som innehåller fett."
+      "title": "Fett",
+      "content": "De viktigaste fettkällorna är smör, olja, feta mejeriprodukter, kött och fisk med hög fetthalt, nötter och mandlar. [cite: 136] Fetter delas in i mättade och omättade fettsyror. Mättade fettsyror finns i alla animaliska fetter (smör, mejeriprodukter, kött). [cite: 137] Omättade fetter, t.ex. omega-3-fettsyror, får vi från fisk, särskilt fet fisk som lax, sill och makrill. [cite: 138] Vi får också bra fettsyror från avokado, mandel och nötter. [cite: 139]"
+    },
+    {
+      "category": "Dryck",
+      "title": "Drycker och vätskebehov",
+      "content": "Vid NET är det viktigt att hålla sig hydrerad - ca 2 liter per dag. [cite: 148] Om diarrén är svår kan vätsketerapi behövas. Kaffe, te, vatten, juice och läskedrycker innehåller få bra näringsämnen. [cite: 149] Om du ersätter dem med mjölk, t.ex. helmjölk, chokladmjölk eller hemgjorda näringsdrycker, även kända som energi- och proteinrika drycker, kan du öka mängden energi och protein utan att aptiten vid måltiderna påverkas nämnvärt. [cite: 150]"
     },
     {
       "category": "Livsstil",
-      "title": "Fysisk aktivitet",
-      "content": "Fysisk aktivitet är viktigt både före, under och efter behandling. Det bidrar till att bibehålla muskelmassa och styrka, förbättra konditionen och minska trötthet (fatigue). Fatigue är en speciell sorts trötthet som är vanlig vid cancersjukdom och som inte går att vila bort. Fysisk aktivitet är en av de få saker som har visat sig kunna minska fatigue. All rörelse räknas och det är bättre att göra lite än ingenting alls. Försök att hitta en aktivitet som du tycker är rolig och som fungerar i din vardag. Det kan vara promenader, trädgårdsarbete eller anpassad träning."
+      "title": "Motion och fysisk aktivitet",
+      "content": "Sjukdom och behandling kan göra det svårt att klara den dagliga motionen. [cite: 63] När behandlingen är över för en tid kan det vara svårt att hitta energi till att vara fysiskt aktiv. [cite: 64] Samtidigt innebär den minskade aptiten en brist på energi och proteinintag, vilket förvärrar känslan av trötthet och utmattning. [cite: 65] Fysisk aktivitet och träning har en övergripande positiv effekt på hälsa, vikt, muskelmassa, trötthet och humör, och det har visat sig att patienter som tränar under och efter en sjukdomsprocess behåller styrkan och motivationen att fortsätta träna. [cite: 66]"
     }
   ],
   "recipes": [
     {
-      "title": "Havregrynsgröt med extra energi",
+      "title": "Havregryn med extra fett",
       "category": "Frukost",
-      "energy": "190 kcal",
-      "protein": "2 g",
-      "ingredients": ["1 dl havregryn", "2 dl vatten", "1 msk rapsolja", "2 tsk smör", "1 krm salt"],
-      "instructions": "1. Blanda havregryn, vatten och salt i en kastrull. 2. Koka upp under omrörning och låt sjuda i ca 1-2 minuter. 3. Ta kastrullen från plattan och rör ner oljan. 4. Servera med smör och gärna mjölk."
+      "energy": "190 kcal [cite: 406]",
+      "protein": "2 g [cite: 406]",
+      "ingredients": [
+        "1 dl havregryn [cite: 383]",
+        "2 dl vatten [cite: 384]",
+        "1 msk. neutral smaksatt olja, t.ex. rapsolja [cite: 385, 386]",
+        "1 nypa salt [cite: 387]",
+        "2 tsk smör [cite: 388]",
+        "2 tsk socker [cite: 389]"
+      ],
+      "instructions": "1. Koka upp havregryn och mjölk eller vatten under omrörning. [cite: 399, 400]\n2. Koka i 1-2 minuter. [cite: 401]\n3. Tillsätt salt och olja om så önskas. [cite: 402]"
     },
     {
-      "title": "Havregrynsgröt kokt på mjölk",
+      "title": "Havregryn tillagade på mjölk",
       "category": "Frukost",
-      "energy": "190 kcal",
-      "protein": "6 g",
-      "ingredients": ["1 dl havregryn", "2 dl helmjölk", "2 tsk smör", "1 krm salt"],
-      "instructions": "1. Blanda havregryn, mjölk och salt i en kastrull. 2. Koka upp under omrörning och låt sjuda i ca 1-2 minuter. 3. Servera med smör."
+      "energy": "190 kcal [cite: 409]",
+      "protein": "6 g [cite: 409]",
+      "ingredients": [
+        "1 dl havregryn [cite: 393]",
+        "2 dl helmjölk [cite: 394]",
+        "1 nypa salt [cite: 395]",
+        "2 tsk smör [cite: 396]",
+        "2 tsk socker [cite: 397]"
+      ],
+      "instructions": "1. Koka upp havregryn och mjölk eller vatten under omrörning. [cite: 399, 400]\n2. Koka i 1-2 minuter. [cite: 401]"
     },
     {
-      "title": "Bircher-müsli",
-      "category": "Mellanmål / nattmål",
-      "energy": "237 kcal",
-      "protein": "9,4 g",
-      "ingredients": ["50 g havregryn", "1 msk chiafrön", "1 msk pumpakärnor", "1,5 dl mjölk", "1 msk limesaft", "½ msk lönnsirap eller honung", "½ tsk kanel", "1 st kiwi eller valfria bär", "1 msk hackade valnötter"],
-      "instructions": "1. Blanda havregryn, chiafrön, pumpakärnor, mjölk, limesaft och lönnsirap i en skål eller burk. 2. Rör om ordentligt, täck över och låt stå i kylskåp över natten. 3. Vid servering: toppa med skivad kiwi eller bär, hackade valnötter och kanel."
+      "title": "Måltid under natten / Bircher-müsli",
+      "category": "Mellanmål",
+      "energy": "237 kcal [cite: 441, 442]",
+      "protein": "9,4 g [cite: 442, 443]",
+      "ingredients": [
+        "50 g havregryn (11/½ dl) [cite: 420]",
+        "1 msk chiafrön (12 g) [cite: 421]",
+        "1 msk. pumpakärnor [cite: 422]",
+        "½ msk lönnsirap/flytande honung [cite: 423]",
+        "10 g torkade tranbär/raisiner [cite: 424]",
+        "1-2 kiwifrukter skurna i små bitar/ eller 1 litet äpple [cite: 424]",
+        "10 g blåbär, halverade [cite: 424]",
+        "1 msk. färskpressad limesaft [cite: 424, 425]",
+        "1½ dl mjölk [cite: 425]",
+        "1-2 tsk. kanel [cite: 426]",
+        "Några hackade valnötter [cite: 427]"
+      ],
+      "instructions": "1. Häll havregryn, chiafrön, pumpafrön, lönnsirap, tranbär, kiwibär och blåbär i en skål. [cite: 429]\n2. Häll sedan limesaften och mjölken i skålen och rör om. [cite: 430, 431]\n3. Täck över och kyl till nästa morgon. [cite: 432]\n4. Servera med lite kanel och några hackade valnötter och lite extra färska bär, t.ex. blåbär, på toppen. [cite: 433, 434]"
     },
     {
       "title": "Blåbärs- och banansmoothie",
       "category": "Mellanmål",
-      "energy": "265 kcal",
-      "protein": "11 g",
-      "ingredients": ["1 st banan", "1 dl blåbär", "2 dl helmjölk", "1 dl skyr eller kvarg", "1 msk olja", "1 msk socker", "1 tsk vaniljsocker"],
-      "instructions": "1. Mixa alla ingredienser till en slät konsistens. 2. Smaka av med socker och vaniljsocker. 3. Servera gärna med isbitar."
+      "energy": "265 kcal [cite: 470, 471]",
+      "protein": "11 g [cite: 472]",
+      "ingredients": [
+        "1 msk. olja [cite: 451]",
+        "1 banan [cite: 452]",
+        "2 dl blåbär, färska eller frysta [cite: 453]",
+        "1 msk socker [cite: 454]",
+        "1 tsk. vaniljsocker [cite: 455]",
+        "2 dl helmjölk [cite: 456]",
+        "1 dl skyr [cite: 457]",
+        "Isbitar för servering [cite: 458]"
+      ],
+      "instructions": "1. Mixa alla ingredienser tills drycken har en slät konsistens. [cite: 460, 461, 462, 464]\n2. Smaksätt med socker. [cite: 463]\n3. Servera i glas med extra isbitar. [cite: 465, 466]"
+    },
+    {
+      "title": "Melonsallad med fetaost och pumpafrön",
+      "category": "Lunch",
+      "energy": "410 kcal [cite: 508]",
+      "protein": "9 g [cite: 509]",
+      "ingredients": [
+        "1½ dl pumpafrön [cite: 486]",
+        "1 msk olja [cite: 486, 487]",
+        "150 g vattenmelon, utan kärnor [cite: 488, 489]",
+        "50 g tärnad fetaost [cite: 489]",
+        "2 msk. olja, t.ex. olivolja [cite: 490]",
+        "1 msk. balsamvinäger [cite: 491]",
+        "2 tsk. flytande honung [cite: 492]"
+      ],
+      "instructions": "1. Rosta pumpakärnorna lätt i olja i en stekpanna och låt svalna. [cite: 494, 495]\n2. Skär vattenmelonen i små tärningar och lägg upp på ett fat. [cite: 496, 497, 498]\n3. Låt fetaosten rinna av. [cite: 499, 500]\n4. Blanda samman olivolja, balsamvinäger och honung. [cite: 501, 502]\n5. Häll dressingen över melonen. [cite: 503]\n6. Tillsätt slutligen fetaost och rostade pumpafrön. [cite: 504]"
     },
     {
       "title": "Minipajer med spenat och pinjenötter",
-      "category": "Mellanmål",
-      "energy": "280 kcal per portion (2 st)",
-      "protein": "17 g",
-      "ingredients": ["250 g frusen bladspenat", "100 g keso", "2 st ägg", "1 dl riven parmesanost", "½ dl pinjenötter", "2 msk crème fraiche 34 %", "Riven muskotnöt", "Salt och peppar"],
-      "instructions": "1. Sätt ugnen på 160°C. 2. Rosta pinjenötterna i en torr stekpanna. 3. Vispa ihop ägg, crème fraiche, keso och parmesanost. 4. Tina spenaten och krama ur vattnet. Hacka spenaten grovt och blanda ner i äggsmeten tillsammans med pinjenötterna. 5. Krydda med muskot, salt och peppar. 6. Häll smeten i smorda muffinsformar. 7. Grädda i mitten av ugnen i ca 25 minuter."
+      "category": "Lunch",
+      "energy": "280 kcal [cite: 537]",
+      "protein": "17 g [cite: 538]",
+      "ingredients": [
+        "½ dl pinjenötter [cite: 516]",
+        "2 msk 38% gräddfil [cite: 517]",
+        "100 g keso [cite: 517]",
+        "2 ägg [cite: 518]",
+        "Salt, peppar och muskotnöt [cite: 519]",
+        "250 g spenatblad, färska eller frysta [cite: 520]",
+        "1 dl parmesanost [cite: 521]",
+        "Lite smör eller olja för smörjning [cite: 522]"
+      ],
+      "instructions": "1. Rosta och hacka pinjenötterna grovt. [cite: 524, 525]\n2. Blanda ihop 38% crème fraiche, keso och ägg och smaka av med kryddor. [cite: 526, 527]\n3. Blanchera eller tina spenaten, låt rinna av och hacka den fint. [cite: 528, 529]\n4. Blanda spenat, parmesanost och pinjenötter med kesoblandningen. [cite: 530, 531]\n5. Smörj muffinsformarna med lite smör eller olja. [cite: 532]\n6. Häll blandningen i muffinsformar. [cite: 533]\n7. Grädda pajerna i mitten av ugnen i 160 grader i ca 25 minuter. [cite: 534]"
+    },
+    {
+      "title": "Smörgås med äggsallad",
+      "category": "Lunch",
+      "energy": "300 kcal [cite: 568]",
+      "protein": "8 g [cite: 569]",
+      "ingredients": [
+        "1 ägg [cite: 552]",
+        "1 1/2 msk majonnäs [cite: 553, 554]",
+        "Salt, peppar och curry [cite: 554, 555]",
+        "Eventuell gräslök för garnering [cite: 556]",
+        "1/2 skiva smörgåsbröd [cite: 556]"
+      ],
+      "instructions": "1. Koka och skala ägget. [cite: 558]\n2. Hacka ägget i en skål och blanda med majonnäsen. [cite: 559, 560, 561]\n3. Smaka av med kryddor efter eget tycke och smak. [cite: 562]\n4. Tillsätt gräslök om så önskas. [cite: 563]\n5. Lägg upp äggsalladen på två små kvartade brödbitar. [cite: 563, 564]"
+    },
+    {
+      "title": "Dagliga matförslag för lättätare",
+      "category": "Måltidsplan",
+      "energy": "Varierar [cite: 572]",
+      "protein": "Varierar [cite: 572]",
+      "ingredients": [
+        "I morgon: 1 liten portion ölbröd med grädde eller 1/2 bulle med smör och ost, 1 ägg, 2 dl helmjölk eller 2 dl Ymer/skyr med honung/marmelad + strössel 1 ägg, 1 dl juice [cite: 573-579]",
+        "Mellanmål: 2 digestivekex med smör och ost, 2 dl juice eller 2 dl kall kål/smoothie/proteindryck, 1 dl popcorn [cite: 580-583]",
+        "Lunch och middag: 1/2 skiva rågbröd/franskt bröd med smör och kallskuret - helst fisk/ägg/majonnässallad, 1 1/2 dl helmjölk eller 2 dl legeringssoppa, 1 1/2 dl helmjölk [cite: 584-588]",
+        "Mellanmål: 2 dl energigivande cold bowl/smoothie/proteindryck 2 chokladbitar eller 30 g jordnötter/valnötter, 2 dl varm choklad med vispad grädde/skyr med fruktkompott [cite: 589-595]",
+        "Middag: 1 dl potatismos/potatis/ris + 1 liten bit kött, fisk eller fågel och sås 1 1/2 dl mjölk eller dl legeringssoppa + 1 msk gräddfil 2 dl helmjölk [cite: 596-601]",
+        "Mellanmål: 1 pannkaka med glass och hackad choklad eller 2 dl kall kål/smoothie/proteindryck, 1 chokladkex [cite: 602-606]"
+      ],
+      "instructions": "Måltiderna är ofta bland de viktigaste händelserna under dagen. [cite: 340] Prioritera mellanmål, eftersom många mellanmål kan öka ditt totala energi- och proteinintag. [cite: 344]"
     },
     {
       "title": "Krämig broccolisoppa med fisk",
       "category": "Middag",
-      "energy": "395 kcal",
-      "protein": "14 g",
-      "ingredients": ["150 g broccoli", "100 g fiskfilé (t.ex. rödspätta eller torsk)", "1 dl vispgrädde 36-40 %", "2,5 dl grönsaksbuljong", "½ st gul lök", "½ st stjälk selleri", "2 msk olja"],
-      "instructions": "1. Hacka lök, selleri och broccoli. Fräs grönsakerna i olja i en kastrull utan att de tar färg. 2. Häll på buljongen och låt sjuda under lock i ca 10 minuter. 3. Ångkoka fisken separat i lite vatten och salt tills den är genomkokt. 4. Mixa soppan slät med en stavmixer. Rör ner grädden och värm upp soppan igen. 5. Fördela fisken i soppan vid servering."
+      "energy": "395 kcal [cite: 634]",
+      "protein": "14 g [cite: 635]",
+      "ingredients": [
+        "2 msk. olja [cite: 614]",
+        "1/2 liten lök [cite: 615]",
+        "1/2 stjälk selleri [cite: 616]",
+        "2 1/2 dl buljong [cite: 616]",
+        "150 g broccolibuketter [cite: 617]",
+        "1 dl vispgrädde 38% [cite: 617]",
+        "salt och peppar [cite: 618]",
+        "100 g fisk, t.ex. rödspättafilé eller kummel [cite: 618]"
+      ],
+      "instructions": "1. Ansa och hacka lök, selleri och broccoli. [cite: 620]\n2. Fräs lök och rotselleri i en kastrull med olja. [cite: 621]\n3. Tillsätt broccoli och buljong och koka soppan i 10 minuter. [cite: 622]\n4. Medan soppan kokar, ånga fisken i en kastrull med lite vatten och salt. [cite: 623]\n5. Håll fisken varm och servera soppan till. [cite: 624, 625]\n6. Mixa soppan med grädden till en krämig konsistens. [cite: 626]\n7. Värm soppan, men låt den inte koka. [cite: 627]\n8. Smaka av med salt och peppar. [cite: 628]\n9. Lägg upp soppan på en tallrik och lägg i en bit fisk i soppan. [cite: 629, 630]"
+    },
+    {
+      "title": "Morotssoppa med pumpafrön",
+      "category": "Middag",
+      "energy": "455 kcal [cite: 664]",
+      "protein": "9 g [cite: 665]",
+      "ingredients": [
+        "2 medelstora morötter [cite: 646]",
+        "1 liten purjolök [cite: 647]",
+        "2 msk. olja [cite: 648]",
+        "3 dl lager [cite: 649]",
+        "75 g naturell färskost [cite: 650]",
+        "salt och peppar [cite: 651]",
+        "1½ dl pumpafrön [cite: 652]",
+        "1 msk olja [cite: 652]"
+      ],
+      "instructions": "1. Ansa och hacka purjolöken och morötterna. [cite: 654, 655]\n2. Fräs grönsakerna i olja. [cite: 656]\n3. Tillsätt buljongen och koka soppan i ca 15 minuter. [cite: 656]\n4. Rosta pumpakärnorna lätt i olja i en kastrull medan soppan kokar. [cite: 657]\n5. Mixa soppan och häll tillbaka den i kastrullen. [cite: 658]\n6. Tillsätt färskosten under omrörning. [cite: 659]\n7. Smaka av soppan med salt och peppar. [cite: 660]"
+    },
+    {
+      "title": "Snacks med torkad frukt och nötter",
+      "category": "Mellanmål",
+      "energy": "220 kcal [cite: 683, 684]",
+      "protein": "3 g [cite: 684]",
+      "ingredients": [
+        "3 torkade dadlar [cite: 673]",
+        "2 torkade aprikoser [cite: 674]",
+        "5 mandlar [cite: 675]",
+        "10 blandade nötter [cite: 676]"
+      ],
+      "instructions": "1. Fördela frukt och nötter i en skål, ett fat eller på en tallrik. [cite: 678, 679]"
     },
     {
       "title": "Iskaffe",
       "category": "Dryck",
-      "energy": "305 kcal",
-      "protein": "6 g",
-      "ingredients": ["3 tsk snabbkaffepulver", "½ dl kokande vatten", "3 dl helmjölk", "1 dl vispgrädde 36-40 %", "1 msk farinsocker eller sirap", "Isbitar"],
-      "instructions": "1. Lös upp kaffepulvret och sockret i det kokande vattnet. Låt svalna. 2. Blanda kaffet med mjölk och grädde. 3. Häll upp i ett stort glas med isbitar. 4. Mixa eventuellt i en blender för en skummig konsistens."
+      "energy": "305 kcal [cite: 714]",
+      "protein": "6 g [cite: 715]",
+      "ingredients": [
+        "3 tsk. Nescafé [cite: 694]",
+        "1/2 dl kokande vatten [cite: 695, 696]",
+        "3 dl helmjölk [cite: 696, 697]",
+        "1 dl vispgrädde 38%. [cite: 698]",
+        "4 isbitar [cite: 699]",
+        "1 msk. farinsocker eller kaffesirap [cite: 700]",
+        "ev. extra isbitar till servering [cite: 701]"
+      ],
+      "instructions": "1. Häll snabbkaffe, kokande vatten och farinsocker/kaffesirap i mixern. [cite: 703, 704, 705]\n2. Låt kaffeblandningen svalna i ca 5 minuter. [cite: 706]\n3. Tillsätt mjölk och isbitar. Blanda tills isen har lösts upp. [cite: 707, 708]\n4. Häll upp iskaffet i två stora glas och tillsätt extra isbitar om det behövs. [cite: 709, 710]"
+    },
+    {
+      "title": "Kall toast med jordgubbar",
+      "category": "Efterrätt",
+      "energy": "345 kcal [cite: 736]",
+      "protein": "11 g [cite: 738]",
+      "ingredients": [
+        "2 pastöriserade äggulor [cite: 722]",
+        "3 msk socker [cite: 723]",
+        "1 1/2 dl kärnmjölk [cite: 724, 725]",
+        "1 1/2 dl grädde [cite: 726]",
+        "1/2 dl grädde 38%. [cite: 727]",
+        "100 g jordgubbar, färska eller frysta [cite: 728]"
+      ],
+      "instructions": "1. Blanda alla ingredienser tillsammans. [cite: 730]\n2. Smaksätt med ytterligare socker. [cite: 731, 732]"
+    },
+    {
+      "title": "Pepparkakor",
+      "category": "Snacks",
+      "energy": "110 kcal [cite: 775, 776]",
+      "protein": "1 g [cite: 777]",
+      "ingredients": [
+        "60 g smör [cite: 749]",
+        "45 g sirap [cite: 750]",
+        "175 g vetemjöl [cite: 751]",
+        "1 nypa salt [cite: 752]",
+        "1 tsk. bakpulver [cite: 753]",
+        "1/2 tsk. bakpulver [cite: 754]",
+        "100 g socker [cite: 755]",
+        "1/2 msk. färskriven ingefära [cite: 756]",
+        "1/2 ägg [cite: 756]"
+      ],
+      "instructions": "1. Smält smör och sirap i en kastrull under omrörning - ställ åt sidan. [cite: 758, 759, 760]\n2. Blanda vetemjöl, salt, bakpulver, bikarbonat och socker i en skål. [cite: 761, 762, 763]\n3. Skala och riv ingefäran fint. [cite: 764]\n4. Knåda ihop ingredienserna till en fast deg. [cite: 764, 765, 766]\n5. Rulla valnötsstora bollar och lägg dem på en bakplåt. [cite: 767]\n6. Tryck dem något platta. [cite: 768]\n7. Baka kakorna i övre delen av ugnen vid 175 grader varmluft i Cirka 10 minuter. [cite: 769, 770, 771, 772]"
     }
   ],
   "medical_advice": [
     {
-      "title": "Karcinoidsyndrom och mat",
-      "info": "Vid karcinoidsyndrom producerar tumören hormoner och signalsubstanser, bland annat serotonin. Vissa livsmedel innehåller ämnen som kallas aminer. Aminer påminner om de ämnen tumören producerar och kan hos vissa utlösa symtom som flushing (plötslig rodnad) och diarré.",
-      "avoid": ["Lagrad ost (t.ex. parmesan, cheddar, mögelost)", "Alkohol (framförallt rödvin och viss öl)", "Rökt, gravat eller fermenterat kött och fisk", "Tomat, spenat, aubergine och avokado", "Choklad", "Starka kryddor (chili, peppar)"],
-      "better": ["Färskost, mozzarella, keso", "Färskt kött och färsk fisk", "Potatis, morötter, blomkål, gurka", "Vitt vin (i små mängder)"],
-      "tips": ["Undvik stora måltider", "Undvik mycket varm mat och dryck", "För gärna en matdagbok för att se om det är något särskilt livsmedel som utlöser dina symtom."]
+      "title": "Karcinoid syndrom",
+      "info": "Mellan 10-20% av patienterna med NET kommer att få problem med karcinoidsyndrom (rodnad, även känt som ansiktsflamma, magkramper och diarré), men även andra icke-intestinala symtom. [cite: 316] Symtomen utlöses av cancern, som bland annat producerar serotonin. Symtomen påverkar livskvaliteten, kostintaget, fysiska och sociala aktiviteter. [cite: 317] De flesta (80%) får lindring av sina symtom med hjälp av de läkemedel de får (somatostatinanaloger). [cite: 318] Det kan också vara så att vissa livsmedel utlöser eller påverkar karcinoidsyndrom, rodnad eller diarré. [cite: 319] Livsmedel eller drycker som innehåller mycket så kallade vasoaktiva aminer kan utlösa symtom. [cite: 320]",
+      "avoid": [
+        "Lagrade ostar (cheddar, camembert, blåmögelostar). [cite: 324]",
+        "Alkoholhaltiga drycker. [cite: 324]",
+        "Rökt, saltad eller inlagd fisk eller kött (marinerad sill, salami, korv, pepperoni). [cite: 325]",
+        "Jästextrakt och bryggerijäst. [cite: 326]",
+        "Fermenterade livsmedel som surkål, miso, tempeh, sojasås och tofu. [cite: 327]"
+      ]
+    },
+    {
+      "title": "Diarré och matsmältningsbesvär",
+      "info": "Vissa patienter med NET får diarré och snabba tarmrörelser under sjukdomstiden och efter behandling. [cite: 257] Detta gäller särskilt vid behandling med somatostatinanaloger, som kan orsaka problem med förändrad absorption av fett från födan, vilket resulterar i diarré. [cite: 258] Kirurgiska ingrepp där delar av tunntarmen tas bort kan orsaka gallsyrediarré, och vid intag av fett uppstår snabb trängningar till avföring och tunn avföring. [cite: 259]",
+      "tips": [
+        "Banans, havregrynsgröt. [cite: 274]",
+        "Skal av loppfrö (HUSK). [cite: 275]",
+        "Många små måltider i stället för stora och få måltider. [cite: 276]",
+        "Håll vätskebalansen uppe och undvik att dricka samtidigt som du äter. [cite: 277]"
+      ]
     }
   ]
 }
