@@ -1,10 +1,10 @@
-{
-  "welcome_page": {
+"welcome_page": {
     "title": "Nutrition och livsstil vid neuroendokrina sjukdomar (NET)",
     "text": "Maten ska vara färgglad, full av smak, varierad, hälsosam och njutbar. Näringslära är en viktig del av livet med NET och du kan ofta göra din del för att bibehålla vikt, funktion och styrka. I livet med NET kan trötthet, smärta, matbegär och aptitlöshet, matsmältningsproblem som diarré och viktnedgång ta mycket tid. Näring är därför viktigt och kan ge energi i vardagen och stärka kroppen för cancerbehandling.",
     "sections": [
       {
         "heading": "Kost och livsstil",
+        "image": "nutrition_image_11.jpg",
         "body": "Många personer med NET har också en normal och till och med god aptit utan symtom. Här är det viktigt att äta en hälsosam och varierad kost. Patienter med NET och god aptit rekommenderas att äter samma kost som friska personer eller andra med cancer, så det finns inga särskilda försiktighetsåtgärder. Rätt kost och fysisk aktivitet är viktigt och kan bidra till att ge ny energi och förbättra livskvaliteten. Eftersom sjukdomen drabbar fler äldre än yngre är kosten viktig i sig, eftersom vi förlorar muskelmassa med åldern och behovet av protein, kalcium och D-vitamin ökar. Näringshäftet är skrivet för dig med NET för att ge goda råd och vägledning om kost och livsstil för dig och dina vårdare. Häftet är avsett som ett komplement och kan inte ersätta den rådgivning som ges på sjukhuset."
       }
     ]
