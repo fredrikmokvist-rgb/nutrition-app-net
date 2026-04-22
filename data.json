@@ -165,5 +165,223 @@
         "1 dl parmesanost",
         "Lite smör eller olja för smörjning"
       ],
-      "instructions": "1. Rosta och hacka pinjenötterna grovt.\n2. Blanda ihop 38% crème fraiche, keso och ägg och smaka av med kryddor.\n3. Blanchera eller tina spenaten, låt rinna av och hacka den fint.\n4. Blanda spenat, parmesanost och pinjenötter med kesoblandningen
-
+      "instructions": "1. Rosta och hacka pinjenötterna grovt.\n2. Blanda ihop 38% crème fraiche, keso och ägg och smaka av med kryddor.\n3. Blanchera eller tina spenaten, låt rinna av och hacka den fint.\n4. Blanda spenat, parmesanost och pinjenötter med kesoblandningen.\n5. Smörj muffinsformarna med lite smör eller olja.\n6. Häll blandningen i muffinsformar.\n7. Grädda pajerna i mitten av ugnen i 160 grader i ca 25 minuter."
+    },
+    {
+      "title": "Smörgås med äggsallad",
+      "category": "Lunch",
+      "image": "nutrition_image_16.jpg",
+      "energy": "300 kcal",
+      "protein": "8 g",
+      "ingredients": [
+        "1 ägg",
+        "1 1/2 msk majonnäs",
+        "Salt, peppar och curry",
+        "Eventuell gräslök för garnering",
+        "1/2 skiva smörgåsbröd"
+      ],
+      "instructions": "1. Koka och skala ägget.\n2. Hacka ägget i en skål och blanda med majonnäsen.\n3. Smaka av med kryddor efter eget tycke och smak.\n4. Tillsätt gräslök om så önskas.\n5. Lägg upp äggsalladen på två små kvartade brödbitar."
+    },
+    {
+      "title": "Krämig broccolisoppa med fisk",
+      "category": "Middag",
+      "image": "nutrition_image_15.jpg",
+      "energy": "395 kcal",
+      "protein": "14 g",
+      "ingredients": [
+        "2 msk. olja",
+        "1/2 liten lök",
+        "1/2 stjälk selleri 2 1/2 dl buljong",
+        "150 g broccolibuketter",
+        "1 dl vispgrädde 38%",
+        "salt och peppar",
+        "100 g fisk, t.ex. rödspättafilé eller kummel"
+      ],
+      "instructions": "1. Ansa och hacka lök, selleri och broccoli.\n2. Fräs lök och rotselleri i en kastrull med olja.\n3. Tillsätt broccoli och buljong och koka soppan i 10 minuter.\n4. Medan soppan kokar, ånga fisken i en kastrull med lite vatten och salt.\n5. Håll fisken varm och servera soppan till.\n6. Mixa soppan med grädden till en krämig konsistens.\n7. Värm soppan, men låt den inte koka.\n8. Smaka av med salt och peppar.\n9. Lägg upp soppan på en tallrik och lägg i en bit fisk i soppan."
+    },
+    {
+      "title": "Morotssoppa med pumpafrön",
+      "category": "Middag",
+      "image": "nutrition_image_1.jpg",
+      "energy": "455 kcal",
+      "protein": "9 g",
+      "ingredients": [
+        "2 medelstora morötter",
+        "1 liten purjolök",
+        "2 msk. olja",
+        "3 dl lager",
+        "75 g naturell färskost",
+        "salt och peppar",
+        "1½ dl pumpafrön",
+        "1 msk olja"
+      ],
+      "instructions": "1. Ansa och hacka purjolöken och morötterna.\n2. Fräs grönsakerna i olja.\n3. Tillsätt buljongen och koka soppan i ca 15 minuter.\n4. Rosta pumpakärnorna lätt i olja i en kastrull medan soppan kokar.\n5. Mixa soppan och häll tillbaka den i kastrullen.\n6. Tillsätt färskosten under omrörning.\n7. Smaka av soppan med salt och peppar."
+    },
+    {
+      "title": "Snacks med torkad frukt och nötter",
+      "category": "Mellanmål",
+      "image": "nutrition_image_14.jpg",
+      "energy": "220 kcal",
+      "protein": "3 g",
+      "ingredients": [
+        "3 torkade dadlar",
+        "2 torkade aprikoser",
+        "5 mandlar",
+        "10 blandade nötter"
+      ],
+      "instructions": "1. Fördela frukt och nötter i en skål, ett fat eller på en tallrik."
+    },
+    {
+      "title": "Iskaffe",
+      "category": "Dryck",
+      "image": "nutrition_image_6.jpg",
+      "energy": "305 kcal",
+      "protein": "6 g",
+      "ingredients": [
+        "3 tsk. Nescafé",
+        "1/2 dl kokande vatten",
+        "3 dl helmjölk",
+        "1 dl vispgrädde 38%.",
+        "4 isbitar",
+        "1 msk. farinsocker eller kaffesirap",
+        "ev. extra isbitar till servering"
+      ],
+      "instructions": "1. Häll snabbkaffe, kokande vatten och farinsocker/kaffesirap i mixern.\n2. Låt kaffeblandningen svalna i ca 5 minuter.\n3. Tillsätt mjölk och isbitar. Blanda tills isen har lösts upp.\n4. Häll upp iskaffet i två stora glas och tillsätt extra isbitar om det behövs."
+    },
+    {
+      "title": "Kall toast med jordgubbar",
+      "category": "Efterrätt",
+      "image": "nutrition_image_9.jpg",
+      "energy": "345 kcal",
+      "protein": "11 g",
+      "ingredients": [
+        "2 pastöriserade äggulor",
+        "3 msk socker",
+        "1 1/2 dl kärnmjölk",
+        "1 1/2 dl grädde",
+        "1/2 dl grädde 38%.",
+        "100 g jordgubbar, färska eller frysta"
+      ],
+      "instructions": "1. Blanda alla ingredienser tillsammans.\n2. Smaksätt med ytterligare socker."
+    },
+    {
+      "title": "Pepparkakor",
+      "category": "Snacks",
+      "image": "nutrition_image_2.jpg",
+      "energy": "110 kcal",
+      "protein": "1 g",
+      "ingredients": [
+        "60 g smör",
+        "45 g sirap",
+        "175 g vetemjöl",
+        "1 nypa salt",
+        "1 tsk. bakpulver",
+        "1/2 tsk. bakpulver",
+        "100 g socker",
+        "1/2 msk. färskriven ingefära",
+        "1/2 ägg"
+      ],
+      "instructions": "1. Smält smör och sirap i en kastrull under omrörning - ställ åt sidan.\n2. Blanda vetemjöl, salt, bakpulver, bikarbonat och socker i en skål.\n3. Skala och riv ingefäran fint.\n4. Knåda ihop ingredienserna till en fast deg.\n5. Rulla valnötsstora bollar och lägg dem på en bakplåt.\n6. Tryck dem något platta.\n7. Baka kakorna i övre delen av ugnen vid 175 grader varmluft i Cirka 10 minuter."
+    },
+    {
+      "title": "Dagliga matförslag för lättätare",
+      "category": "Måltidsplan",
+      "energy": "Varierar",
+      "protein": "Varierar",
+      "ingredients": [
+        "I morgon: 1 liten portion ölbröd med grädde eller 1/2 bulle med smör och ost, 1 ägg, 2 dl helmjölk eller 2 dl Ymer/skyr med honung/marmelad + strössel 1 ägg, 1 dl juice",
+        "Mellanmål: 2 digestivekex med smör och ost, 2 dl juice eller 2 dl kall kål/smoothie/proteindryck, 1 dl popcorn",
+        "Lunch och middag: 1/2 skiva rågbröd/franskt bröd med smör och kallskuret - helst fisk/ägg/majonnässallad, 1 1/2 dl helmjölk eller 2 dl legeringssoppa, 1 1/2 dl helmjölk",
+        "Mellanmål: 2 dl energigivande cold bowl/smoothie/proteindryck 2 chokladbitar eller 30 g jordnötter/valnötter, 2 dl varm choklad med vispad grädde/skyr med fruktkompott",
+        "Middag: 1 dl potatismos/potatis/ris + 1 liten bit kött, fisk eller fågel och sås, 1 1/2 dl mjölk eller dl legeringssoppa + 1 msk gräddfil 2 dl helmjölk",
+        "Mellanmål: 1 pannkaka med glass och hackad choklad eller 2 dl kall kål/smoothie/proteindryck, 1 chokladkex"
+      ],
+      "instructions": "Måltiderna är ofta bland de viktigaste händelserna under dagen. Prioritera mellanmål, eftersom många mellanmål kan öka ditt totala energi- och proteinintag."
+    }
+  ],
+  "medical_advice": [
+    {
+      "title": "Ätproblem relaterade till sjukdom och behandling",
+      "info": "Patienter med NET får olika behandlingar längs vägen. Själva sjukdomen, medicinska behandlingar såsom somatostatinanaloger eller kirurgiska ingrepp för att avlägsna delar av tarmen eller bukspottkörteln kan ha olika biverkningar som påverkar vikten, orsakar obehag när man äter, orsakar diarré eller gör det svårt att äta normalt. Vissa, men långt ifrån alla NET-sjuka, upplever aptitlöshet, illamående, kräkningar, tarmproblem med förstoppning, diarré och muntorrhet, men även rodnad som en följd av den behandling de får, men också på grund av sjukdomen i sig. De flesta/några besvär kan vanligtvis lindras med medicinering och genom att följa de råd som ges av den behandlande avdelningen. Det är viktigt att du berättar om dina symtom för personalen på ditt behandlingscenter. De kan ofta hjälpa dig att hitta en lösning."
+    },
+    {
+      "title": "Konsistens i livsmedel",
+      "info": "När aptiten är begränsad kan hackat och malet kött ofta vara bättre än helt kött eftersom det kräver mindre tuggning. Detsamma gäller för tillbehör. Prova potatismos istället för potatis, kokta eller wokade grönsaker istället för råa. Använd också fruktgröt med grädde i stället för färsk frukt. Mat som har en mjuk konsistens behöver inte vara mildare i smaken utan kan vara färgglad, smakrik och fullproppad med bra vitaminer och mineraler.",
+      "tips": [
+        "Ät potatismos istället för potatis.",
+        "Ät ölbröd med grädde i stället för rågbröd.",
+        "Ät grönsakssoppa/örtpuré/smoothie, gärna berikad, istället för kokta eller råa grönsaker.",
+        "Ät fruktgröt med grädde eller smoothies istället för färsk frukt."
+      ]
+    },
+    {
+      "title": "Förändringar i smak",
+      "info": "Smaksinnet kan påverkas av sjukdom, behandling och medicinering. Förmågan att smaka återkommer ofta efter avslutad behandling. Smakförändringar upplevs mycket olika och leder ofta till minskad lust att äta med risk för viktnedgång. Det är inte ovanligt att vissa livsmedel inte har någon smak alls, medan andra smakar metalliskt, eller för salt, sött, surt eller bittert.",
+      "tips": [
+        "Undvik livsmedel som inte smakar som de gjorde förr.",
+        "Välj kall eller tempererad mat framför varm mat.",
+        "Krydda maten med färska örter som basilika, men även senap, marinad eller extra salt och socker.",
+        "Salt och salta livsmedel kan dölja en söt smak.",
+        "Citron kan framhäva smaken.",
+        "Tillsätt extra socker, honung eller sirap för att förstärka smaken.",
+        "Välj fågel, fisk, skaldjur och ägg, eftersom nöt- och fläskkött ofta har en bitter smak."
+      ]
+    },
+    {
+      "title": "Illamående och kräkningar",
+      "info": "Illamående och kräkningar kan ha många olika orsaker, t.ex. sjukdom, cellgiftsbehandling och smärtstillande medel. Många får förebyggande illamåendemedicin i samband med cellgiftsbehandling. Förstoppning, men även hunger, är en förbisedd orsak till illamående och minskad aptit. Tyvärr finns det inga livsmedel eller rätter som kan eliminera illamående eller kräkningar, och många av råden är baserade på erfarenhet snarare än faktisk forskning. Illamående kan också orsakas av hunger, eftersom brist på mat kan förvärra illamåendet. Brist på vätska. Förstoppning.",
+      "tips": [
+        "Ät små och täta måltider, t.ex. torra kex.",
+        "Undvik mycket fet mat med stark lukt, t.ex. friterade rätter.",
+        "Kall mat kan vara att föredra under en period.",
+        "Prova syrliga och salta maträtter och drycker.",
+        "Använd ingefära som krydda, eftersom ingefära kan ha en viss effekt på illamående.",
+        "Pepparmynta, lakrits och sura sötsaker kan lindra illamående.",
+        "Låt andra förbereda maten om du känner dig illamående.",
+        "Ät tillsammans med andra så att du slipper tänka på illamåendet och obehaget.",
+        "Det är också viktigt att upprätthålla en god munhygien för att minimera orala problem och ta hand om dina tänder."
+      ]
+    },
+    {
+      "title": "Diarré och matsmältningsbesvär",
+      "info": "Vissa patienter med NET får diarré och snabba tarmrörelser under sjukdomstiden och efter behandling. Detta gäller särskilt vid behandling med somatostatinanaloger, som kan orsaka problem med förändrad absorption av fett från födan, vilket resulterar i diarré. Kirurgiska ingrepp där delar av tunntarmen tas bort kan orsaka gallsyrediarré, och vid intag av fett uppstår snabb trängningar till avföring och tunn avföring. Vid svår diarré passerar en del av maten osmält genom tarmarna, vilket gör att kroppen inte kan ta upp tillräckligt med näringsämnen och vätska. Diarré kan också orsakas av ökad aktivitet i själva sjukdomen. Detta leder till viktnedgång och användning av extra näring, t.ex. näringsdrycker eller sondmatning, kan vara en lösning. Det är viktigt att du berättar för personalen på sjukhus om dina avföringsproblem, eftersom de bäst kan hjälpa dig att hitta orsaken och behandla den. Om diarré orsakas av somatostatinanaloger kan enzymer (Creon) finnas tillgängliga för att hjälpa till att absorbera näringsämnen och tas med fettinnehållande måltider.",
+      "avoid": [
+        "Fiberrika livsmedel eftersom de kan öka tarmrörelsema, så minska mängden fullkornsbröd, frukt och grönsaker.",
+        "Fullkornsprodukter och spannmål, t.ex. fullkornsbröd, rågbröd och liknande.",
+        "Lök, purjolök, äpplen och päron, eftersom de kan vara luftdrivande och förvärra diarré.",
+        "Fet mat som kan förvärra problemet."
+      ],
+      "tips": [
+        "Banans, havregrynsgröt.",
+        "Skal av loppfrö (HUSK).",
+        "Många små måltider i stället för stora och få måltider.",
+        "Håll vätskebalansen uppe och undvik att dricka samtidigt som du äter."
+      ]
+    },
+    {
+      "title": "Förstoppning",
+      "info": "Förstoppning kan vara relaterad till behandling och vissa människor upplever perioder av förstoppning. Dessutom kan vissa läkemedel, t.ex. vissa smärtstillande medel, bidra till förstoppning. Minskad aptit, mindre motion och för lite vätska kan öka risken för förstoppning. Vid förstoppning orsakad av sjukdom och/eller behandling kan laxermedel ofta behövas. Enbart diet brukar inte lösa problemet.",
+      "tips": [
+        "Prata med din läkare eller sjuksköterska om att få laxermedel. Laxermedel är helt ofarliga och inte beroendeframkallande.",
+        "Drick 1 1/2 - 2 liter vätska dagligen.",
+        "Försök med loppfröskal (HUSK).",
+        "Använd katrinplommon, katrinplommonjuice, fikon, aprikoser eller russin.",
+        "Experimentera med havregrynsgröt med linfrön och torkad frukt."
+      ]
+    },
+    {
+      "title": "Karcinoid syndrom",
+      "info": "Mellan 10-20% av patienterna med NET kommer att få problem med karcinoidsyndrom (rodnad, även känt som ansiktsflamma, magkramper och diarré), men även andra icke-intestinala symtom. Symtomen utlöses av cancern, som bland annat producerar serotonin. Symtomen påverkar livskvaliteten, kostintaget, fysiska och sociala aktiviteter. De flesta (80%) får lindring av sina symtom med hjälp av de läkemedel de får (somatostatinanaloger). Det kan också vara så att vissa livsmedel utlöser eller påverkar karcinoidsyndrom, rodnad eller diarré. Livsmedel eller drycker som innehåller mycket så kallade vasoaktiva aminer kan utlösa symtom. Tyvärr finns det inga bra studier som visar vilka livsmedel som bör undvikas vid karcinoidsyndrom, men följande livsmedel är kända för att ha höga halter av aminer (tyramin och dopamin) som kan utlösa symtom.",
+      "avoid": [
+        "Lagrade ostar (cheddar, camembert, blåmögelostar).",
+        "Alkoholhaltiga drycker.",
+        "Rökt, saltad eller inlagd fisk eller kött (marinerad sill, salami, korv, pepperoni).",
+        "Jästextrakt och bryggerijäst.",
+        "Fermenterade livsmedel som surkål, miso, tempeh, sojasås och tofu.",
+        "Drycker som innehåller koffein, t.ex. cola, kaffe, te och vissa energidrycker.",
+        "Choklad (i större mängder).",
+        "Vissa nötter (jordnötter, kokosnötter, brasilianska nötter)."
+      ]
+    }
+  ]
+}
