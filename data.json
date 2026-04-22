@@ -13,13 +13,13 @@
     {
       "category": "Näringslära",
       "title": "Allmän kost och fysisk aktivitet i NET",
-      "image": "Bilder/nutrition_image_5.jpg",
+      "image": "nutrition_image_5.jpg",
       "content": "Det är viktigt att äta en varierad kost för att tillgodose behovet av olika näringsämnen. Men hur äter man en varierad kost? Goda råd är dyra, men hälsosamma råvaror och en varierad kost behöver inte vara det. Vanliga livsmedel som morötter, havregryn, hasselnötter, frukt och bär från trädgården, grönkål och persilja är fulla av näringsämnen. Hälsosamma ingredienser och bra mat med högt innehåll av energi, protein, vitaminer och mineraler kan stärka kroppen under behandlingen, ge dig mer energi och en bättre livskvalitet. Finns det någon särskild diet att följa vid NET? Nej, det finns det inte, och inga livsmedel är skadliga, men det kan finnas särskilda försiktighetsåtgärder, t.ex. för matsmältningsproblem som diarré och viktminskning. Eftersom aptiten och mag-tarmfunktionen kan förändras vid NET kan viktnedgång ibland förekomma. Detta kan leda till förlust av styrka och energi eftersom det är muskelmassan som minskar."
     },
     {
       "category": "Näringslära",
       "title": "Protein",
-      "image": "Bilder/nutrition_image_4.jpg",
+      "image": "nutrition_image_4.jpg",
       "content": "Protein är kroppens byggstenar och hjälper till att bygga upp muskler och organ. Samtidigt har kroppen inte ett lager av protein att ösa ur. Därför är det viktigt att uppfylla sitt dagliga proteinbehov. Detta kan uppnås genom en varierad kost, men om aptiten är kraftigt nedsatt kan det vara nödvändigt att komplettera med medicinska näringsdrycker. Behovet av protein är generellt högt vid cancer, och detta gäller även NET, t.ex. i samband med operation, viktminskning och behandling. Behovet av protein ökar också med åldern, vilket gäller för alla, även friska personer. Minimibehovet av protein är 1,2 gram per kilo kroppsvikt och dag (när sjukdomen är i vila). Under perioder med viktnedgång, behandling och eventuell sjukhusvistelse är proteinbehovet högre, upp till 1,5 gram per kilo och dag."
     },
     {
@@ -30,7 +30,7 @@
     {
       "category": "Näringslära",
       "title": "Fett",
-      "image": "Bilder/nutrition_image_10.jpg",
+      "image": "nutrition_image_10.jpg",
       "content": "De viktigaste fettkällorna är smör, olja, feta mejeriprodukter, kött och fisk med hög fetthalt, nötter och mandlar. Fetter delas in i mättade och omättade fettsyror. Mättade fettsyror finns i alla animaliska fetter (smör, mejeriprodukter, kött). Omättade fetter, t.ex. omega-3-fettsyror, får vi från fisk, särskilt fet fisk som lax, sill och makrill. Vi får också bra fettsyror från avokado, mandel och nötter. Flytande fetter som rapsolja och olivolja rekommenderas för matlagning, dressingar och liknande. När aptiten är låg kan det vara nödvändigt att använda mer fett än tidigare, till exempel att använda vispgrädde i såser eller äta en god dessert med grädde. Om du behandlas med somatostatinanaloger eller har opererat bort delar av tunntarmen kan ökad fetthalt dock orsaka diarré."
     },
     {
@@ -71,7 +71,7 @@
     {
       "category": "Livsstil",
       "title": "Måltidens betydelse",
-      "image": "Bilder/nutrition_image_11.jpg",
+      "image": "nutrition_image_11.jpg",
       "content": "En god måltid är aldrig att förakta och är en av de faktorer som kan förbättra livskvaliteten. I de flesta kulturer är familjemåltiderna, vanligtvis middagen, ett sätt att samla familjen och skapa gemensamma upplevelser och socialt välbefinnande. Måltiderna är ofta bland de viktigaste händelserna under dagen. Studier visar att människor äter mer tillsammans med andra, men det kan ofta finnas en onödig press från familjen om cancerpatienten/patienten med NET inte äter som förväntat. Att bli tillsagd att 'äta upp', 'äta lite mer', äta 'onyttig' mat och undvika hälsosam mat även om det är det bästa valet i situationen kan också orsaka känslor av skuld eller skuldkänslor."
     }
   ],
@@ -79,7 +79,7 @@
     {
       "title": "Havregryn med extra fett",
       "category": "Frukost",
-      "image": "Bilder/nutrition_image_3.jpg",
+      "image": "nutrition_image_3.jpg",
       "energy": "190 kcal",
       "protein": "2 g",
       "ingredients": [
@@ -95,7 +95,7 @@
     {
       "title": "Måltid under natten / Bircher-müsli",
       "category": "Mellanmål",
-      "image": "Bilder/nutrition_image_7.jpg",
+      "image": "nutrition_image_7.jpg",
       "energy": "237 kcal",
       "protein": "9,4 g",
       "ingredients": [
@@ -116,7 +116,7 @@
     {
       "title": "Blåbärs- och banansmoothie",
       "category": "Mellanmål",
-      "image": "Bilder/nutrition_image_8.jpg",
+      "image": "nutrition_image_8.jpg",
       "energy": "265 kcal",
       "protein": "11 g",
       "ingredients": [
@@ -134,7 +134,7 @@
     {
       "title": "Melonsallad med fetaost och pumpafrön",
       "category": "Lunch",
-      "image": "Bilder/nutrition_image_13.jpg",
+      "image": "nutrition_image_13.jpg",
       "energy": "410 kcal",
       "protein": "9 g",
       "ingredients": [
@@ -151,7 +151,7 @@
     {
       "title": "Minipajer med spenat och pinjenötter",
       "category": "Lunch",
-      "image": "Bilder/nutrition_image_12.jpg",
+      "image": "nutrition_image_12.jpg",
       "energy": "280 kcal",
       "protein": "17 g",
       "ingredients": [
@@ -169,7 +169,7 @@
     {
       "title": "Smörgås med äggsallad",
       "category": "Lunch",
-      "image": "Bilder/nutrition_image_16.jpg",
+      "image": "nutrition_image_16.jpg",
       "energy": "300 kcal",
       "protein": "8 g",
       "ingredients": [
@@ -184,7 +184,7 @@
     {
       "title": "Krämig broccolisoppa med fisk",
       "category": "Middag",
-      "image": "Bilder/nutrition_image_15.jpg",
+      "image": "nutrition_image_15.jpg",
       "energy": "395 kcal",
       "protein": "14 g",
       "ingredients": [
@@ -201,7 +201,7 @@
     {
       "title": "Morotssoppa med pumpafrön",
       "category": "Middag",
-      "image": "Bilder/nutrition_image_1.jpg",
+      "image": "nutrition_image_1.jpg",
       "energy": "455 kcal",
       "protein": "9 g",
       "ingredients": [
@@ -219,7 +219,7 @@
     {
       "title": "Snacks med torkad frukt och nötter",
       "category": "Mellanmål",
-      "image": "Bilder/nutrition_image_14.jpg",
+      "image": "nutrition_image_14.jpg",
       "energy": "220 kcal",
       "protein": "3 g",
       "ingredients": [
@@ -233,7 +233,7 @@
     {
       "title": "Iskaffe",
       "category": "Dryck",
-      "image": "Bilder/nutrition_image_6.jpg",
+      "image": "nutrition_image_6.jpg",
       "energy": "305 kcal",
       "protein": "6 g",
       "ingredients": [
@@ -250,7 +250,7 @@
     {
       "title": "Kall toast med jordgubbar",
       "category": "Efterrätt",
-      "image": "Bilder/nutrition_image_9.jpg",
+      "image": "nutrition_image_9.jpg",
       "energy": "345 kcal",
       "protein": "11 g",
       "ingredients": [
@@ -266,7 +266,7 @@
     {
       "title": "Pepparkakor",
       "category": "Snacks",
-      "image": "Bilder/nutrition_image_2.jpg",
+      "image": "nutrition_image_2.jpg",
       "energy": "110 kcal",
       "protein": "1 g",
       "ingredients": [
