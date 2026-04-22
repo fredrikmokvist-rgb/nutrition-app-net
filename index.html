@@ -70,6 +70,16 @@
             border: 1px solid var(--card-border); 
             box-shadow: 0 6px 16px rgba(0,0,0,0.03); 
             position: relative;
+            overflow: hidden; /* Viktigt: Håller bilden innanför de rundade hörnen */
+        }
+
+        /* Bild-styling för korten */
+        .card-img {
+            width: calc(100% + 44px);
+            margin: -22px -22px 20px -22px;
+            height: 220px;
+            object-fit: cover;
+            display: block;
         }
         
         .card-icon-right {
@@ -78,6 +88,9 @@
             right: 22px;
             color: #cbd5e0;
             font-size: 20px;
+            background: rgba(255,255,255,0.8);
+            border-radius: 50%;
+            padding: 4px;
         }
         
         .status-label { 
@@ -214,7 +227,7 @@
             showSection('home');
         })
         .catch(err => {
-            document.getElementById('content').innerHTML = "<p style='text-align:center;'>Kunde inte ladda data.</p>";
+            document.getElementById('content').innerHTML = "<p style='text-align:center;'>Kunde inte ladda data. Kontrollera att data.json är sparad korrekt på GitHub.</p>";
         });
 
     function showSection(section) {
@@ -230,6 +243,7 @@
                 <p class="page-subtitle">${appData.welcome_page.text}</p>
                 ${appData.welcome_page.sections.map(s => `
                     <div class="card">
+                        ${s.image ? `<img src="${s.image}" alt="Bild" class="card-img">` : ''}
                         <h3>${s.heading}</h3>
                         <p>${s.body}</p>
                     </div>`).join('')}`;
@@ -241,6 +255,7 @@
                 <p class="page-subtitle">Här är dina guider till nutrition och livsstil.</p>
                 ${appData.knowledge_base.map((k, i) => `
                 <div class="card">
+                    ${k.image ? `<img src="${k.image}" alt="Bild" class="card-img">` : ''}
                     <div class="status-label" style="color: #f6ad55;">
                         <span class="status-dot" style="background-color: #f6ad55;"></span>${k.category}
                     </div>
@@ -259,6 +274,7 @@
                 <p class="page-subtitle">Här är rätterna som hjälper dig i vardagen.</p>
                 ${appData.recipes.map((r, i) => `
                 <div class="card">
+                    ${r.image ? `<img src="${r.image}" alt="${r.title}" class="card-img">` : ''}
                     <div class="status-label">
                         <span class="status-dot"></span>${r.category}
                     </div>
@@ -285,6 +301,7 @@
                 <p class="page-subtitle">Råd kring symtom och biverkningar.</p>
                 ${appData.medical_advice.map((a, i) => `
                 <div class="card">
+                    ${a.image ? `<img src="${a.image}" alt="Bild" class="card-img">` : ''}
                     <div class="status-label" style="color: #e53e3e;">
                         <span class="status-dot" style="background-color: #e53e3e;"></span>Symtomhantering
                     </div>
