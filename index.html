@@ -1,22 +1,25 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nutritionshub NET</title>
+    <title>Nutrition Hub NET</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#4a90e2">
+    <link rel="apple-touch-icon" href="bilder/nutrition_image_11.jpg">
     <style>
         :root { 
-            --primary: #4a90e2; 
-            --bg: #f5f8fa; 
-            --text: #2d3748; 
-            --card-border: #e2e8f0; 
-            --green: #48bb78;
+            --primary-color: #4a90e2; 
+            --background-color: #f5f8fa; 
+            --text-color: #2d3748; 
+            --card-border-color: #e2e8f0; 
+            --success-color: #48bb78;
         }
         
         body { 
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
-            background: var(--bg); 
-            color: var(--text); 
+            background: var(--background-color); 
+            color: var(--text-color); 
             margin: 0; 
             padding-bottom: 120px; 
             -webkit-font-smoothing: antialiased;
@@ -25,12 +28,15 @@
         header { 
             background: white; 
             padding: 15px; 
-            text-align: center; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             box-shadow: 0 2px 10px rgba(0,0,0,0.02); 
             position: sticky; 
             top: 0; 
             z-index: 1000; 
         }
+
         .header-title { 
             margin: 0; 
             font-size: 16px; 
@@ -38,14 +44,24 @@
             color: #4a5568; 
             letter-spacing: 0.5px; 
         }
+
+        .language-selector {
+            padding: 5px 10px;
+            border-radius: 8px;
+            border: 1px solid var(--card-border-color);
+            background-color: #f7fafc;
+            font-size: 14px;
+            color: #4a5568;
+            outline: none;
+        }
         
-        .container { 
+        .main-container { 
             padding: 20px 15px; 
             max-width: 600px; 
             margin: 0 auto; 
         }
         
-        h2.page-title { 
+        .page-title { 
             font-family: Georgia, serif; 
             font-size: 32px; 
             text-align: center; 
@@ -53,7 +69,8 @@
             margin: 15px 0 10px 0; 
             letter-spacing: -0.5px;
         }
-        p.page-subtitle { 
+
+        .page-subtitle { 
             text-align: center; 
             font-size: 14px; 
             color: #718096; 
@@ -62,18 +79,18 @@
             padding: 0 15px;
         }
         
-        .card { 
+        .content-card { 
             background: white; 
             padding: 22px; 
             border-radius: 18px; 
             margin-bottom: 20px; 
-            border: 1px solid var(--card-border); 
+            border: 1px solid var(--card-border-color); 
             box-shadow: 0 6px 16px rgba(0,0,0,0.03); 
             position: relative;
             overflow: hidden; 
         }
 
-        .card-img {
+        .card-image {
             width: calc(100% + 44px);
             margin: -22px -22px 20px -22px;
             height: 220px;
@@ -81,7 +98,7 @@
             display: block;
         }
         
-        .card-icon-right {
+        .card-icon {
             position: absolute;
             top: 22px;
             right: 22px;
@@ -92,34 +109,35 @@
             padding: 4px;
         }
         
-        .status-label { 
+        .status-badge { 
             font-size: 11px; 
             font-weight: 800; 
-            color: var(--green); 
+            color: var(--success-color); 
             text-transform: uppercase; 
             letter-spacing: 1px; 
             margin-bottom: 12px; 
             display: flex; 
             align-items: center; 
         }
+
         .status-dot { 
             width: 8px; 
             height: 8px; 
-            background-color: var(--green); 
+            background-color: var(--success-color); 
             border-radius: 50%; 
             margin-right: 8px; 
         }
         
-        .card h3 { 
+        .content-card h3 { 
             margin: 0 0 12px 0; 
             font-size: 22px; 
             color: #2d3748; 
             font-weight: 700;
         }
         
-        .tag { 
+        .macro-tag { 
             background: #ebf4ff; 
-            color: var(--primary); 
+            color: var(--primary-color); 
             padding: 6px 14px; 
             border-radius: 20px; 
             font-size: 13px; 
@@ -128,13 +146,8 @@
             align-items: center; 
             margin-bottom: 20px; 
         }
-        .tag::before { 
-            content: '🔍'; 
-            margin-right: 6px; 
-            font-size: 12px; 
-        }
         
-        .action-btn { 
+        .toggle-btn { 
             background: #f7fafc; 
             width: 100%; 
             border: 1px solid #edf2f7; 
@@ -149,9 +162,10 @@
             align-items: center; 
             transition: background 0.2s; 
         }
-        .action-btn:active { background: #e2e8f0; }
+
+        .toggle-btn:active { background: #e2e8f0; }
         
-        .accordion-content { 
+        .expandable-content { 
             display: none; 
             margin-top: 15px; 
             padding-top: 15px; 
@@ -159,24 +173,25 @@
             font-size: 16px;
         }
         
-        .card p { line-height: 1.6; color: #4a5568; margin-top: 0; }
-        .ingr-box { background: #f7fafc; padding: 15px; border-radius: 12px; margin: 15px 0; border: 1px solid #e2e8f0; font-size: 15px; }
-        .warning-box { background: #fffaf0; border-left: 4px solid #ecc94b; padding: 15px; margin: 15px 0; border-radius: 8px; font-size: 15px; }
+        .content-card p { line-height: 1.6; color: #4a5568; margin-top: 0; }
+        .ingredients-list { background: #f7fafc; padding: 15px; border-radius: 12px; margin: 15px 0; border: 1px solid #e2e8f0; font-size: 15px; }
+        .warning-alert { background: #fffaf0; border-left: 4px solid #ecc94b; padding: 15px; margin: 15px 0; border-radius: 8px; font-size: 15px; }
         
-        .tab-bar { 
+        .bottom-navigation { 
             position: fixed; 
             bottom: 0; 
             width: 100%; 
             background: white; 
             display: flex; 
-            height: 105px; /* Högre ribba */
+            height: 105px; 
             box-shadow: 0 -4px 20px rgba(0,0,0,0.04); 
             justify-content: space-around; 
             align-items: center; 
             padding-bottom: env(safe-area-inset-bottom);
             border-radius: 20px 20px 0 0;
         }
-        .tab-item { 
+
+        .nav-item { 
             display: flex; 
             flex-direction: column; 
             align-items: center; 
@@ -187,150 +202,198 @@
             cursor: pointer; 
             width: 25%; 
         }
-        .tab-item.active { color: var(--primary); }
-        .tab-icon { font-size: 24px; margin-bottom: 5px; }
+
+        .nav-item.active { color: var(--primary-color); }
+        .nav-icon { font-size: 24px; margin-bottom: 5px; }
     </style>
 </head>
 <body>
 
 <header>
-    <h1 class="header-title">Nutritionshub</h1>
+    <h1 class="header-title">Nutrition Hub</h1>
+    <select id="languageSelect" class="language-selector" onchange="changeLanguage(this.value)">
+        <option value="data_sv.json">Svenska</option>
+        <option value="data_en.json">English</option>
+    </select>
 </header>
 
-<div class="container" id="content">
-    <p style="text-align: center; color: #a0aec0; margin-top: 40px;">Hämtar handboken...</p>
+<div class="main-container" id="appContent">
+    <p style="text-align: center; color: #a0aec0; margin-top: 40px;">Loading content...</p>
 </div>
 
-<nav class="tab-bar">
-    <div id="tab-home" class="tab-item active" onclick="showSection('home')">
-        <span class="tab-icon">🏠</span>Hem
+<nav class="bottom-navigation">
+    <div id="nav-home" class="nav-item active" onclick="renderSection('home')">
+        <span class="nav-icon">🏠</span><span id="label-home">Hem</span>
     </div>
-    <div id="tab-recipes" class="tab-item" onclick="showSection('recipes')">
-        <span class="tab-icon">🍳</span>Recept
+    <div id="nav-recipes" class="nav-item" onclick="renderSection('recipes')">
+        <span class="nav-icon">🍳</span><span id="label-recipes">Recept</span>
     </div>
-    <div id="tab-advice" class="tab-item" onclick="showSection('advice')">
-        <span class="tab-icon">💡</span>Råd
+    <div id="nav-advice" class="nav-item" onclick="renderSection('advice')">
+        <span class="nav-icon">💡</span><span id="label-advice">Råd</span>
     </div>
-    <div id="tab-know" class="tab-item" onclick="showSection('know')">
-        <span class="tab-icon">📚</span>Kunskap
+    <div id="nav-know" class="nav-item" onclick="renderSection('know')">
+        <span class="nav-icon">📚</span><span id="label-know">Kunskap</span>
     </div>
 </nav>
 
 <script>
     let appData = null;
+    let currentSection = 'home';
 
-    fetch('data.json')
-        .then(res => res.json())
-        .then(data => {
-            appData = data;
-            showSection('home');
-        })
-        .catch(err => {
-            document.getElementById('content').innerHTML = "<p style='text-align:center;'>Kunde inte ladda data.</p>";
-        });
+    // Initial load
+    fetchData('data_sv.json');
 
-    function showSection(section) {
+    // Function to load the selected language file
+    function changeLanguage(filename) {
+        document.getElementById('appContent').innerHTML = "<p style='text-align:center;'>Loading...</p>";
+        fetchData(filename);
+    }
+
+    // Fetch JSON data and re-render the current view
+    function fetchData(filename) {
+        fetch(filename)
+            .then(response => response.json())
+            .then(data => {
+                appData = data;
+                updateNavigationLabels(filename);
+                renderSection(currentSection);
+            })
+            .catch(error => {
+                document.getElementById('appContent').innerHTML = "<p style='text-align:center;'>Could not load language data. Make sure " + filename + " exists.</p>";
+                console.error('Error fetching data:', error);
+            });
+    }
+
+    // Optional: Update bottom nav text based on selected language
+    function updateNavigationLabels(filename) {
+        if (filename === 'data_en.json') {
+            document.getElementById('label-home').innerText = 'Home';
+            document.getElementById('label-recipes').innerText = 'Recipes';
+            document.getElementById('label-advice').innerText = 'Advice';
+            document.getElementById('label-know').innerText = 'Learn';
+        } else {
+            document.getElementById('label-home').innerText = 'Hem';
+            document.getElementById('label-recipes').innerText = 'Recept';
+            document.getElementById('label-advice').innerText = 'Råd';
+            document.getElementById('label-know').innerText = 'Kunskap';
+        }
+    }
+
+    // Render the selected view
+    function renderSection(section) {
         if (!appData) return;
-        const content = document.getElementById('content');
+        currentSection = section;
+        const container = document.getElementById('appContent');
         
-        document.querySelectorAll('.tab-item').forEach(el => el.classList.remove('active'));
-        document.getElementById('tab-' + section).classList.add('active');
+        // Update active state on navigation
+        document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
+        document.getElementById('nav-' + section).classList.add('active');
 
         if (section === 'home') {
-            content.innerHTML = `
+            container.innerHTML = `
                 <h2 class="page-title">${appData.welcome_page.title}</h2>
                 <p class="page-subtitle">${appData.welcome_page.text}</p>
-                ${appData.welcome_page.sections.map(s => `
-                    <div class="card">
-                        ${s.image ? `<img src="${s.image}" alt="Bild" class="card-img">` : ''}
-                        <h3>${s.heading}</h3>
-                        <p>${s.body}</p>
+                ${appData.welcome_page.sections.map(sectionData => `
+                    <div class="content-card">
+                        ${sectionData.image ? `<img src="${sectionData.image}" alt="Image" class="card-image">` : ''}
+                        <h3>${sectionData.heading}</h3>
+                        <p>${sectionData.body}</p>
                     </div>`).join('')}`;
         } 
         
         else if (section === 'know') {
-            content.innerHTML = `
+            container.innerHTML = `
                 <h2 class="page-title">Kunskapsbas</h2>
-                <p class="page-subtitle">Här är dina guider till nutrition och livsstil.</p>
-                ${appData.knowledge_base.map((k, i) => `
-                <div class="card">
-                    ${k.image ? `<img src="${k.image}" alt="Bild" class="card-img">` : ''}
-                    <div class="status-label" style="color: #f6ad55;">
-                        <span class="status-dot" style="background-color: #f6ad55;"></span>${k.category}
+                ${appData.knowledge_base.map((item, index) => `
+                <div class="content-card">
+                    ${item.image ? `<img src="${item.image}" alt="Image" class="card-image">` : ''}
+                    <div class="status-badge" style="color: #f6ad55;">
+                        <span class="status-dot" style="background-color: #f6ad55;"></span>${item.category}
                     </div>
-                    <div class="card-icon-right">🔖</div>
-                    <h3>${k.title}</h3>
-                    <button class="action-btn" onclick="toggleAcc('know-${i}')">Läs mer</button>
-                    <div id="acc-know-${i}" class="accordion-content">
-                        <p style="white-space: pre-line;">${k.content}</p>
+                    <div class="card-icon">🔖</div>
+                    <h3>${item.title}</h3>
+                    <button class="toggle-btn" onclick="toggleAccordion('know-${index}')">Läs mer</button>
+                    <div id="acc-know-${index}" class="expandable-content">
+                        <p style="white-space: pre-line;">${item.content}</p>
                     </div>
                 </div>`).join('')}`;
         } 
         
         else if (section === 'recipes') {
-            content.innerHTML = `
+            container.innerHTML = `
                 <h2 class="page-title">Mina Recept</h2>
-                <p class="page-subtitle">Här är rätterna som hjälper dig i vardagen.</p>
-                ${appData.recipes.map((r, i) => `
-                <div class="card">
-                    ${r.image ? `<img src="${r.image}" alt="${r.title}" class="card-img">` : ''}
-                    <div class="status-label">
-                        <span class="status-dot"></span>${r.category}
+                ${appData.recipes.map((recipe, index) => `
+                <div class="content-card">
+                    ${recipe.image ? `<img src="${recipe.image}" alt="${recipe.title}" class="card-image">` : ''}
+                    <div class="status-badge">
+                        <span class="status-dot"></span>${recipe.category}
                     </div>
-                    <div class="card-icon-right">🤍</div>
-                    <h3>${r.title}</h3>
-                    <div class="tag">${r.energy} | ${r.protein} protein</div>
-                    <button class="action-btn" onclick="toggleAcc('rec-${i}')">Visa recept & ingredienser</button>
-                    <div id="acc-rec-${i}" class="accordion-content">
-                        <div class="ingr-box">
+                    <div class="card-icon">🤍</div>
+                    <h3>${recipe.title}</h3>
+                    <div class="macro-tag">${recipe.energy} | ${recipe.protein}</div>
+                    <button class="toggle-btn" onclick="toggleAccordion('rec-${index}')">Visa recept & ingredienser</button>
+                    <div id="acc-rec-${index}" class="expandable-content">
+                        <div class="ingredients-list">
                             <strong>Ingredienser:</strong><br>
                             <ul style="margin:5px 0; padding-left:20px; color: #4a5568;">
-                                ${r.ingredients.map(ing => `<li>${ing}</li>`).join('')}
+                                ${recipe.ingredients.map(ing => `<li>${ing}</li>`).join('')}
                             </ul>
                         </div>
                         <p><strong>Gör så här:</strong></p>
-                        <p style="white-space: pre-line;">${r.instructions}</p>
+                        <p style="white-space: pre-line;">${recipe.instructions}</p>
                     </div>
                 </div>`).join('')}`;
         } 
         
         else if (section === 'advice') {
-            content.innerHTML = `
+            container.innerHTML = `
                 <h2 class="page-title">Medicinska Råd</h2>
-                <p class="page-subtitle">Råd kring symtom och biverkningar.</p>
-                ${appData.medical_advice.map((a, i) => `
-                <div class="card">
-                    ${a.image ? `<img src="${a.image}" alt="Bild" class="card-img">` : ''}
-                    <div class="status-label" style="color: #e53e3e;">
+                ${appData.medical_advice.map((advice, index) => `
+                <div class="content-card">
+                    ${advice.image ? `<img src="${advice.image}" alt="Image" class="card-image">` : ''}
+                    <div class="status-badge" style="color: #e53e3e;">
                         <span class="status-dot" style="background-color: #e53e3e;"></span>Symtomhantering
                     </div>
-                    <h3>${a.title}</h3>
-                    <button class="action-btn" onclick="toggleAcc('adv-${i}')">Visa information</button>
-                    <div id="acc-adv-${i}" class="accordion-content">
-                        <p>${a.info}</p>
-                        ${a.avoid ? `<div class="warning-box"><strong>Viktigt att undvika:</strong><br><ul style="padding-left:20px;">${a.avoid.map(av => `<li>${av}</li>`).join('')}</ul></div>` : ''}
-                        ${a.better ? `<p><strong>Bättre alternativ:</strong><br><ul style="padding-left:20px;">${a.better.map(b => `<li>${b}</li>`).join('')}</ul></p>` : ''}
-                        ${a.tips ? `<div style="margin-top:15px; background: #ebf8fa; padding:15px; border-radius:12px;"><strong>Praktiska råd:</strong><ul style="padding-left:20px;">${a.tips.map(t => `<li>${t}</li>`).join('')}</ul></div>` : ''}
+                    <h3>${advice.title}</h3>
+                    <button class="toggle-btn" onclick="toggleAccordion('adv-${index}')">Visa information</button>
+                    <div id="acc-adv-${index}" class="expandable-content">
+                        <p>${advice.info}</p>
+                        ${advice.avoid ? `<div class="warning-alert"><strong>Viktigt att undvika:</strong><br><ul style="padding-left:20px;">${advice.avoid.map(item => `<li>${item}</li>`).join('')}</ul></div>` : ''}
+                        ${advice.tips ? `<div style="margin-top:15px; background: #ebf8fa; padding:15px; border-radius:12px;"><strong>Praktiska råd:</strong><ul style="padding-left:20px;">${advice.tips.map(item => `<li>${item}</li>`).join('')}</ul></div>` : ''}
                     </div>
                 </div>`).join('')}`;
         }
         window.scrollTo(0,0);
     }
 
-    function toggleAcc(id) {
-        const el = document.getElementById('acc-' + id);
-        const btn = el.previousElementSibling;
-        const isOpen = el.style.display === 'block';
+    // Toggle expand/collapse functionality
+    function toggleAccordion(id) {
+        const element = document.getElementById('acc-' + id);
+        const button = element.previousElementSibling;
+        const isOpen = element.style.display === 'block';
         
-        el.style.display = isOpen ? 'none' : 'block';
+        element.style.display = isOpen ? 'none' : 'block';
         
         if (isOpen) {
-            if (id.includes('rec')) btn.innerText = 'Visa recept & ingredienser';
-            else if (id.includes('know')) btn.innerText = 'Läs mer';
-            else btn.innerText = 'Visa information';
+            if (id.includes('rec')) button.innerText = 'Visa recept & ingredienser';
+            else if (id.includes('know')) button.innerText = 'Läs mer';
+            else button.innerText = 'Visa information';
         } else {
-            btn.innerText = 'Dölj information';
+            button.innerText = 'Dölj / Hide';
         }
+    }
+
+    // PWA Service Worker Registration
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('./sw.js')
+                .then(registration => {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                })
+                .catch(error => {
+                    console.log('ServiceWorker registration failed: ', error);
+                });
+        });
     }
 </script>
 
