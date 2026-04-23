@@ -15,13 +15,18 @@
       "category": "Näringslära",
       "title": "Allmän kost och fysisk aktivitet i NET",
       "image": "bilder/nutrition_image_5.jpg",
-      "content": "Det är viktigt att äta en varierad kost för att tillgodose behovet av olika näringsämnen. Men hur äter man en varierad kost? Goda råd är dyra, men hälsosamma råvaror och en varierad kost behöver inte vara det. Vanliga livsmedel som morötter, havregryn, hasselnötter, frukt och bär från trädgården, grönkål och persilja är fulla av näringsämnen. Hälsosamma ingredienser och bra mat med högt innehåll av energi, protein, vitaminer och mineraler kan stärker kroppen under behandlingen, ge dig mer energi och en bättre livskvalitet. Finns det någon särskild diet att följa vid NET? Nej, det finns det inte, och inga livsmedel är skadliga, men det kan finnas särskilda försiktighetsåtgärder, t.ex. för matsmältningsproblem som diarré och viktminskning. Eftersom aptiten och mag-tarmfunktionen kan förändras vid NET kan viktnedgång ibland förekomma. Detta kan leda till förlust av styrka och energi eftersom det är muskelmassan som minskar."
+      "content": "Det är viktigt att äta en varierad kost för att tillgodose behovet av olika näringsämnen. Men hur äter man en varierad kost? Goda råd är dyra, men hälsosamma råvaror och en varierad kost behöver inte vara det. Vanliga livsmedel som morötter, havregryn, hasselnötter, frukt och bär från trädgården, grönkål och persilja är fulla av näringsämnen. Hälsosamma ingredienser och bra mat med högt innehåll av energi, protein, vitaminer och mineraler kan stärka kroppen under behandlingen, ge dig mer energi och en bättre livskvalitet. Finns det någon särskild diet att följa vid NET? Nej, det finns det inte, och inga livsmedel är skadliga, men det kan finnas särskilda försiktighetsåtgärder, t.ex. för matsmältningsproblem som diarré och viktminskning. Eftersom aptiten och mag-tarmfunktionen kan förändras vid NET kan viktnedgång ibland förekomma. Detta kan leda till förlust av styrka och energi eftersom det är muskelmassan som minskar."
     },
     {
       "category": "Näringslära",
       "title": "Protein",
       "image": "bilder/nutrition_image_4.jpg",
       "content": "Protein är kroppens byggstenar och hjälper till att bygga upp muskler och organ. Samtidigt har kroppen inte ett lager av protein att ösa ur. Därför är det viktigt att uppfylla sitt dagliga proteinbehov. Detta kan uppnås genom en varierad kost, men om aptiten är kraftigt nedsatt kan det vara nödvändigt att komplettera med medicinska näringsdrycker. Behovet av protein är generellt högt vid cancer, och detta gäller även NET, t.ex. i samband med operation, viktminskning och behandling. Behovet av protein ökar också med åldern, vilket gäller för alla, även friska personer. Minimibehovet av protein är 1,2 gram per kilo kroppsvikt och dag (när sjukdomen är i vila). Under perioder med viktnedgång, behandling och eventuell sjukhusvistelse är proteinbehovet högre, upp till 1,5 gram per kilo och dag."
+    },
+    {
+      "category": "Näringslära",
+      "title": "Proteininnehåll i olika livsmedel",
+      "content": "Här är en översikt över gram protein per portion:\n\n- Mjölk, alla typer (1½ dl): 5 g\n- Dricka kall kål (1½ dl): 8 g\n- Ymer/ylette (1½ dl): 9 g\n- Yoghurt, lättmjölk, A-38 (1½ dl): 5 g\n- Ost 27 %/45 + (1 skiva, 20 g): 5 g\n- Skyr (1½ dl): 16 g\n- Ägg (1 st): 6 g\n- Kött, fisk och fjäderfä (125 g): 23 g\n- Köttpålägg (1 skiva, 15 g): 3 g\n- Sojadryck (1½ dl): 5 g\n- Tofu (1 bit, 25 g): 2 g\n- Näringsdrycker från apoteket (1,25-2 dl): 8-20 g"
     },
     {
       "category": "Näringslära",
@@ -41,7 +46,7 @@
     },
     {
       "category": "Dryck",
-      "title": "Medicinska näringsdrycker och näringsberedningar",
+      "title": "Medicinska näringsdrycker",
       "content": "Medicinska näringsdrycker är lämpliga som komplement till vanlig mat, och vissa typer av drycker kan användas som enda näring under en kortare eller längre tid. Vissa drycker innehåller alla näringsämnen, energi (protein, fett och kolhydrater) samt vitaminer och mineraler. Dessa drycker kallas för fullsmaksdrycker. Det finns också näringsdrycker baserade på juice med tillsats av protein och kolhydrater. Dessa drycker är endast lämpliga som komplement till mat. Endast drycker som är godkända av det danska läkemedelsverket kan köpas med subvention. För att få ersättning för drycker och andra näringspreparat måste en läkare eller dietist utfärda ett grönt näringsrecept."
     },
     {
@@ -56,24 +61,34 @@
     },
     {
       "category": "Näringslära",
-      "title": "Kosttillskott, naturläkemedel och alternativa terapier",
-      "content": "Många människor med cancer använder kosttillskott, naturläkemedel eller alternativa/kompletterande terapier i hopp om att minska trötthet och komplikationer i samband med sjukdom och behandling. Kosttillskott är, som ordet antyder, endast ett komplement till det vi äter, men de kan aldrig ersätta mat. Om du tar kosttillskott eller naturläkemedel tillsammans med läkemedel kan det förändra hur läkemedlet tas upp, metaboliseras eller utsöndras. Detta kan innebära att läkemedlet inte fungerar så bra som förväntat, eller så kan det förstärka läkemedlets effekt, vilket skapar en risk för överdosering eller biverkningar. Eftersom både kosttillskott och naturläkemedel kan påverka behandlingen är det en god idé att diskutera med din läkare om kosttillskott kan vara skadliga för ditt sjukdoms- och behandlingsförlopp."
+      "title": "Kosttillskott och naturläkemedel",
+      "content": "Många människor med cancer använder kosttillskott, naturläkemedel eller alternativa terapier i hopp om att minska trötthet och komplikationer. Kosttillskott är endast ett komplement till det vi äter, men de kan aldrig ersätta mat. Om du tar kosttillskott eller naturläkemedel tillsammans med läkemedel kan det förändra hur läkemedlet tas upp, metaboliseras eller utsöndras. Detta kan innebära att läkemedlet inte fungerar så bra som förväntat, eller så kan det förstärka läkemedlets effekt, vilket skapar en risk för överdosering eller biverkningar. Diskutera alltid med din läkare om kosttillskott kan vara skadliga för ditt behandlingsförlopp."
     },
     {
       "category": "Näringslära",
       "title": "Kalcium och vitamin D för NET",
-      "content": "D-vitamin bildas i huden när vi utsätts för solljus. D-vitamin finns också i fet fisk (makrill, lax och sill). Kalciumbehovet för vuxna är vanligtvis 800 mg per dag. De främsta kalciumkällorna i den danska kosten är mejeriprodukter. För att uppfylla kalciumbehovet är det därför en god idé att konsumera mejeriprodukter och fasta ostar. Även om man inte äter några mejeriprodukter eller ost är det ofta nödvändigt att komplettera med kalciumtabletter och D-vitamin. D-vitamin är viktigt eftersom det ökar absorptionen av kalcium från tarmen. Diskutera detta med din läkare på sjukhuset, särskilt om du behandlas med somatostatinanaloger eller har fått delar av tunntarmen borttagna som kan påverka absorptionen av kalcium och D-vitamin."
+      "content": "D-vitamin bildas i huden när vi utsätts för solljus. D-vitamin finns också i fet fisk (makrill, lax och sill). Kalciumbehovet för vuxna är vanligtvis 800 mg per dag. De främsta kalciumkällorna är mejeriprodukter. För att uppfylla kalciumbehovet är det därför en god idé att konsumera mejeriprodukter och fasta ostar. Även om man inte äter några mejeriprodukter eller ost är det ofta nödvändigt att komplettera med kalciumtabletter och D-vitamin. D-vitamin är viktigt eftersom det ökar absorptionen av kalcium från tarmen. Diskutera detta med din läkare, särskilt om du behandlas med somatostatinanaloger eller har opererat bort delar av tarmen."
     },
     {
       "category": "Livsstil",
       "title": "Motion och fysisk aktivitet",
-      "content": "Sjukdom och behandling kan göra det svårt att klara den dagliga motionen. När behandlingen är över för en tid kan det vara svårt att hitta energi till att vara fysiskt aktiv. Samtidigt innebär den minskade aptiten en brist på energi och proteinintag, vilket förvärrar känslan av trötthet och utmattning. Fysisk aktivitet och träning har en övergripande positiv effekt på hälsa, vikt, muskelmassa, trötthet och humör, och det har visat sig att patienter som tränar under och efter en sjukdomsprocess behåller styrkan och motivationen att fortsätta träna. Det kan vara en god idé att sätta upp ett träningsprogram tillsammans med en sjukgymnast. Kom ihåg att lite träning och motion är bättre än ingenting."
+      "content": "Sjukdom och behandling kan göra det svårt att klara den dagliga motionen. Fysisk aktivitet och träning har en övergripande positiv effekt på hälsa, vikt, muskelmassa, trötthet och humör. Det har visat sig att patienter som tränar under och efter en sjukdomsprocess behåller styrkan och motivationen bättre. Det kan vara en god idé att sätta upp ett träningsprogram tillsammans med en sjukgymnast. Kom ihåg att lite träning och motion är bättre än ingenting."
     },
     {
       "category": "Livsstil",
       "title": "Måltidens betydelse",
       "image": "bilder/nutrition_image_11.jpg",
-      "content": "En god måltid är aldrig att förakta och är en av de faktorer som kan förbättra livskvaliteten. I de flesta kulturer är familjemåltiderna, vanligtvis middagen, ett sätt att samla familjen och skapa gemensamma upplevelser och socialt välbefinnande. Måltiderna är ofta bland de viktigaste händelserna under dagen. Studier visar att människor äter mer tillsammans med andra, men det kan ofta finnas en onödig press från familjen om cancerpatienten/patienten med NET inte äter som förväntat. Att bli tillsagd att 'äta upp', 'äta lite mer', äta 'onyttig' mat och undvika hälsosam mat även om det är det bästa valet i situationen kan också orsaka känslor av skuld eller skuldkänslor."
+      "content": "En god måltid är en av de faktorer som kan förbättra livskvaliteten. I de flesta kulturer är familjemåltiderna ett sätt att samla familjen och skapa socialt välbefinnande. Studier visar att människor äter mer tillsammans med andra. Det kan dock ofta finnas en onödig press från familjen om patienten inte äter som förväntat. Att bli tillsagd att 'äta upp' kan orsaka känslor av skuld eller obehag. Försök att göra måltiden till en kravlös och trevlig stund."
+    },
+    {
+      "category": "Information",
+      "title": "Patientorganisation och frågor",
+      "content": "Ställ frågor till din läkare, sjuksköterska eller eventuellt en dietist när du har en konsultation eller undersökning.\n\nDet finns en patientorganisation för NET som du kan kontakta på https://www.netpa.dk/. Netpa är en förening för patienter med neuroendokrina tumörer (NET). Organisationens syfte är att informera om sjukdomen, fungera som en röst gentemot myndigheter och upprätthålla ett patientnätverk. Du kan också hitta mer information på https://www.cancer.dk/neuroendokrine-tumorer-net/."
+    },
+    {
+      "category": "Information",
+      "title": "Om författaren och utgivaren",
+      "content": "Mette Borre är utbildad klinisk dietist och anställd vid Århus universitetssjukhus med specialisering på mag-tarm- och leversjukdomar. Hon arbetar dagligen med NET och är en aktiv föreläsare för bland annat patientorganisationen Netpa.\n\nDenna publikation har utarbetats på initiativ av ADVANZ PHARMA. Abcur AB är den nordiska divisionen av ADVANZ PHARMA."
     }
   ],
   "recipes": [
@@ -86,33 +101,46 @@
       "ingredients": [
         "1 dl havregryn",
         "2 dl vatten",
-        "1 msk. neutral smaksatt olja, t.ex. rapsolja",
+        "1 msk. neutral rapsolja",
         "1 nypa salt",
         "2 tsk smör",
         "2 tsk socker"
       ],
-      "instructions": "1. Koka upp havregryn och mjölk eller vatten under omrörning.\n2. Koka i 1-2 minuter.\n3. Tillsätt salt och olja om så önskas."
+      "instructions": "1. Koka upp havregryn och vatten under omrörning.\n2. Koka i 1-2 minuter.\n3. Tillsätt salt, olja, smör och socker."
     },
     {
-      "title": "Måltid under natten / Bircher-müsli",
+      "title": "Havregryn tillagade på mjölk",
+      "category": "Frukost",
+      "energy": "190 kcal",
+      "protein": "6 g",
+      "ingredients": [
+        "1 dl havregryn",
+        "2 dl helmjölk",
+        "1 nypa salt",
+        "2 tsk smör",
+        "2 tsk socker"
+      ],
+      "instructions": "1. Koka upp havregryn och mjölk under omrörning.\n2. Koka i 1-2 minuter.\n3. Tillsätt salt och krydda efter smak.\n\nTips: Kan också serveras med russin, hackad mandel eller fruktkompott."
+    },
+    {
+      "title": "Bircher-müsli",
       "category": "Mellanmål",
       "image": "bilder/nutrition_image_7.jpg",
       "energy": "237 kcal",
       "protein": "9,4 g",
       "ingredients": [
-        "50 g havregryn (11/½ dl)",
-        "1 msk chiafrön (12 g)",
-        "1 msk. pumpakärnor",
-        "½ msk lönnsirap/flytande honung",
-        "10 g torkade tranbär/raisiner",
-        "1-2 kiwifrukter skurna i små bitar/ eller 1 litet äpple",
-        "10 g blåbär, halverade",
-        "1 msk. färskpressad limesaft",
+        "50 g havregryn",
+        "1 msk chiafrön",
+        "1 msk pumpakärnor",
+        "½ msk flytande honung",
+        "10 g torkade tranbär",
+        "1 kiwi eller litet äpple",
+        "10 g blåbär",
+        "1 msk limesaft",
         "1½ dl mjölk",
-        "1-2 tsk. kanel",
-        "Några hackade valnötter"
+        "1-2 tsk kanel"
       ],
-      "instructions": "1. Häll havregryn, chiafrön, pumpafrön, lönnsirap, tranbär, kiwibär och blåbär i en skål.\n2. Häll sedan limesaften och mjölken i skålen och rör om.\n3. Täck över och kyl till nästa morgon.\n4. Servera med lite kanel och några hackade valnötter och lite extra färska bär, t.ex. blåbär, på toppen."
+      "instructions": "1. Häll havregryn, frön, honung och bär i en skål.\n2. Tillsätt limesaft och mjölk och rör om.\n3. Täck över och kyl till nästa morgon.\n4. Servera med kanel och nötter."
     },
     {
       "title": "Blåbärs- och banansmoothie",
@@ -121,51 +149,47 @@
       "energy": "265 kcal",
       "protein": "11 g",
       "ingredients": [
-        "1 msk. olja",
+        "1 msk olja",
         "1 banan",
-        "2 dl blåbär, färska eller frysta",
+        "2 dl blåbär",
         "1 msk socker",
-        "1 tsk. vaniljsocker",
+        "1 tsk vaniljsocker",
         "2 dl helmjölk",
-        "1 dl skyr",
-        "Isbitar för servering"
+        "1 dl skyr"
       ],
-      "instructions": "1. Mixa alla ingredienser tills drycken har en slät konsistens.\n2. Smaksätt med socker.\n3. Servera i glas med extra isbitar."
+      "instructions": "1. Mixa alla ingredienser till en slät konsistens.\n2. Smaksätt med socker.\n3. Servera med isbitar."
     },
     {
-      "title": "Melonsallad med fetaost och pumpafrön",
+      "title": "Melonsallad med fetaost",
       "category": "Lunch",
       "image": "bilder/nutrition_image_13.jpg",
       "energy": "410 kcal",
       "protein": "9 g",
       "ingredients": [
         "1½ dl pumpafrön",
-        "1 msk olja",
-        "150 g vattenmelon, utan kärnor",
-        "50 g tärnad fetaost",
-        "2 msk. olja, t.ex. olivolja",
-        "1 msk. balsamvinäger",
-        "2 tsk. flytande honung"
+        "150 g vattenmelon",
+        "50 g fetaost",
+        "2 msk olivolja",
+        "1 msk balsamvinäger",
+        "2 tsk honung"
       ],
-      "instructions": "1. Rosta pumpakärnorna lätt i olja i en stekpanna och låt svalna.\n2. Skär vattenmelonen i små tärningar och lägg upp på ett fat.\n3. Låt fetaosten rinna av.\n4. Blanda samman olivolja, balsamvinäger och honung.\n5. Häll dressingen över melonen.\n6. Tillsätt slutligen fetaost och rostade pumpafrön."
+      "instructions": "1. Rosta pumpakärnorna i lite olja.\n2. Tärna melonen och blanda med dressingen.\n3. Toppa med fetaost och frön."
     },
     {
-      "title": "Minipajer med spenat och pinjenötter",
+      "title": "Minipajer med spenat",
       "category": "Lunch",
       "image": "bilder/nutrition_image_12.jpg",
       "energy": "280 kcal",
       "protein": "17 g",
       "ingredients": [
         "½ dl pinjenötter",
-        "2 msk 38% gräddfil",
+        "2 msk crème fraiche 38%",
         "100 g keso",
         "2 ägg",
-        "Salt, peppar och muskotnöt",
-        "250 g spenatblad, färska eller frysta",
-        "1 dl parmesanost",
-        "Lite smör eller olja för smörjning"
+        "250 g spenat",
+        "1 dl parmesanost"
       ],
-      "instructions": "1. Rosta och hacka pinjenötterna grovt.\n2. Blanda ihop 38% crème fraiche, keso och ägg och smaka av med kryddor.\n3. Blanchera eller tina spenaten, låt rinna av och hacka den fint.\n4. Blanda spenat, parmesanost och pinjenötter med kesoblandningen.\n5. Smörj muffinsformarna med lite smör eller olja.\n6. Häll blandningen i muffinsformar.\n7. Grädda pajerna i mitten av ugnen i 160 grader i ca 25 minuter."
+      "instructions": "1. Blanda crème fraiche, keso och ägg.\n2. Hacka den blancherade spenaten och blanda i.\n3. Häll i muffinsformar och grädda i 160 grader ca 25 min."
     },
     {
       "title": "Smörgås med äggsallad",
@@ -175,12 +199,12 @@
       "protein": "8 g",
       "ingredients": [
         "1 ägg",
-        "1 1/2 msk majonnäs",
+        "1½ msk majonnäs",
         "Salt, peppar och curry",
-        "Eventuell gräslök för garnering",
-        "1/2 skiva smörgåsbröd"
+        "Gräslök",
+        "Smörgåsbröd"
       ],
-      "instructions": "1. Koka och skala ägget.\n2. Hacka ägget i en skål och blanda med majonnäsen.\n3. Smaka av med kryddor efter eget tycke och smak.\n4. Tillsätt gräslök om så önskas.\n5. Lägg upp äggsalladen på två små kvartade brödbitar."
+      "instructions": "1. Hacka det kokta ägget.\n2. Blanda med majonnäs och kryddor.\n3. Lägg upp på bröd och garnera med gräslök."
     },
     {
       "title": "Krämig broccolisoppa med fisk",
@@ -189,15 +213,13 @@
       "energy": "395 kcal",
       "protein": "14 g",
       "ingredients": [
-        "2 msk. olja",
-        "1/2 liten lök",
-        "1/2 stjälk selleri 2 1/2 dl buljong",
-        "150 g broccolibuketter",
+        "150 g broccoli",
         "1 dl vispgrädde 38%",
-        "salt och peppar",
-        "100 g fisk, t.ex. rödspättafilé eller kummel"
+        "2½ dl buljong",
+        "100 g rödspättafilé",
+        "Lök och selleri"
       ],
-      "instructions": "1. Ansa och hacka lök, selleri och broccoli.\n2. Fräs lök och rotselleri i en kastrull med olja.\n3. Tillsätt broccoli och buljong och koka soppan i 10 minuter.\n4. Medan soppan kokar, ånga fisken i en kastrull med lite vatten och salt.\n5. Håll fisken varm och servera soppan till.\n6. Mixa soppan med grädden till en krämig konsistens.\n7. Värm soppan, men låt den inte koka.\n8. Smaka av med salt och peppar.\n9. Lägg upp soppan på en tallrik och lägg i en bit fisk i soppan."
+      "instructions": "1. Fräs lök och koka grönsakerna i buljong.\n2. Ånga fisken separat.\n3. Mixa soppan med grädde och servera med fisken."
     },
     {
       "title": "Morotssoppa med pumpafrön",
@@ -206,30 +228,27 @@
       "energy": "455 kcal",
       "protein": "9 g",
       "ingredients": [
-        "2 medelstora morötter",
-        "1 liten purjolök",
-        "2 msk. olja",
-        "3 dl lager",
-        "75 g naturell färskost",
-        "salt och peppar",
-        "1½ dl pumpafrön",
-        "1 msk olja"
+        "2 morötter",
+        "1 purjolök",
+        "3 dl buljong",
+        "75 g färskost",
+        "Pumpafrön"
       ],
-      "instructions": "1. Ansa och hacka purjolöken och morötterna.\n2. Fräs grönsakerna i olja.\n3. Tillsätt buljongen och koka soppan i ca 15 minuter.\n4. Rosta pumpakärnorna lätt i olja i en kastrull medan soppan kokar.\n5. Mixa soppan och häll tillbaka den i kastrullen.\n6. Tillsätt färskosten under omrörning.\n7. Smaka av soppan med salt och peppar."
+      "instructions": "1. Koka morötter och purjolök i buljong.\n2. Mixa soppan och rör ner färskosten.\n3. Toppa med rostade pumpafrön."
     },
     {
-      "title": "Snacks med torkad frukt och nötter",
+      "title": "Torkad frukt och nötter",
       "category": "Mellanmål",
       "image": "bilder/nutrition_image_14.jpg",
       "energy": "220 kcal",
       "protein": "3 g",
       "ingredients": [
-        "3 torkade dadlar",
-        "2 torkade aprikoser",
-        "5 mandalr",
+        "3 dadlar",
+        "2 aprikoser",
+        "5 mandlar",
         "10 blandade nötter"
       ],
-      "instructions": "1. Fördela frukt och nötter i en skål, ett fat eller på en tallrik."
+      "instructions": "Fördela i en skål för ett enkelt och energitätt mellanmål."
     },
     {
       "title": "Iskaffe",
@@ -238,15 +257,12 @@
       "energy": "305 kcal",
       "protein": "6 g",
       "ingredients": [
-        "3 tsk. Nescafé",
-        "1/2 dl kokande vatten",
+        "3 tsk snabbkaffe",
         "3 dl helmjölk",
-        "1 dl vispgrädde 38%.",
-        "4 isbitar",
-        "1 msk. farinsocker eller kaffesirap",
-        "ev. extra isbitar till servering"
+        "1 dl vispgrädde",
+        "Socker eller sirap"
       ],
-      "instructions": "1. Häll snabbkaffe, kokande vatten och farinsocker/kaffesirap i mixern.\n2. Låt kaffeblandningen svalna i ca 5 minuter.\n3. Tillsätt mjölk och isbitar. Blanda tills isen har lösts upp.\n4. Häll upp iskaffet i två stora glas och tillsätt extra isbitar om det behövs."
+      "instructions": "1. Lös upp kaffet i lite varmt vatten.\n2. Blanda med mjölk, grädde och socker.\n3. Servera med isbitar."
     },
     {
       "title": "Kall toast med jordgubbar",
@@ -255,14 +271,13 @@
       "energy": "345 kcal",
       "protein": "11 g",
       "ingredients": [
-        "2 pastöriserade äggulor",
-        "3 msk socker",
-        "1 1/2 dl kärnmjölk",
-        "1 1/2 dl grädde",
-        "1/2 dl grädde 38%.",
-        "100 g jordgubbar, färska eller frysta"
+        "2 äggulor",
+        "1½ dl kärnmjölk",
+        "1½ dl grädde",
+        "100 g jordgubbar",
+        "Socker"
       ],
-      "instructions": "1. Blanda alla ingredienser tillsammans.\n2. Smaksätt med ytterligare socker."
+      "instructions": "1. Mixa eller rör ihop alla ingredienser.\n2. Söta efter behov och servera kallt."
     },
     {
       "title": "Pepparkakor",
@@ -271,17 +286,30 @@
       "energy": "110 kcal",
       "protein": "1 g",
       "ingredients": [
-        "60 g smör",
-        "45 g sirap",
-        "175 g vetemjöl",
-        "1 nypa salt",
-        "1 tsk. bakpulver",
-        "1/2 tsk. bakpulver",
-        "100 g socker",
-        "1/2 msk. färskriven ingefära",
-        "1/2 ägg"
+        "Smör och sirap",
+        "Vetemjöl och socker",
+        "Bakpulver och bikarbonat",
+        "Ingefära och ägg"
       ],
-      "instructions": "1. Smält smör och sirap i en kastrull under omrörning - ställ åt sidan.\n2. Blanda vetemjöl, salt, bakpulver, bikarbonat och socker i en skål.\n3. Skala och riv ingefäran fint.\n4. Knåda ihop ingredienserna till en fast deg.\n5. Rulla valnötsstora bollar och lägg dem på en bakplåt.\n6. Tryck dem något platta.\n7. Baka kakorna i övre delen av ugnen vid 175 grader varmluft i Cirka 10 minuter."
+      "instructions": "1. Smält smör och sirap.\n2. Blanda i de torra ingredienserna och ingefära.\n3. Grädda små bollar i 175 grader ca 10 min."
+    },
+    {
+      "title": "Förslag på mellanmål",
+      "category": "Mellanmål",
+      "energy": "Varierar",
+      "protein": "Varierar",
+      "ingredients": [
+        "Fruktgröt med mjölk/grädde",
+        "Rispudding med smör och kanel",
+        "Kex med smör och ost",
+        "Nötter och mandlar",
+        "Glass eller fromage",
+        "Avokado med gräddfil",
+        "Fruktsallad med vaniljsås",
+        "Legerad soppa med grädde",
+        "Marsipanbröd"
+      ],
+      "instructions": "Mellanmålen bör inte vara för stora. Försök äta 4-5 mellanmål per dag för att hålla energinivån uppe."
     },
     {
       "title": "Dagliga matförslag för lättätare",
@@ -289,14 +317,85 @@
       "energy": "Varierar",
       "protein": "Varierar",
       "ingredients": [
-        "I morgon: 1 liten portion ölbröd med grädde eller 1/2 bulle med smör och ost, 1 ägg, 2 dl helmjölk eller 2 dl Ymer/skyr med honung/marmelad + strössel 1 ägg, 1 dl juice",
-        "Mellanmål: 2 digestivekex med smör och ost, 2 dl juice eller 2 dl kall kål/smoothie/proteindryck, 1 dl popcorn",
-        "Lunch och middag: 1/2 skiva rågbröd/franskt bröd med smör och kallskuret - helst fisk/ägg/majonnässallad, 1 1/2 dl helmjölk eller 2 dl legeringssoppa, 1 1/2 dl helmjölk",
-        "Mellanmål: 2 dl energigivande cold bowl/smoothie/proteindryck 2 chokladbitar eller 30 g jordnötter/valnötter, 2 dl varm choklad med vispad grädde/skyr med fruktkompott",
-        "Middag: 1 dl potatismos/potatis/ris + 1 liten bit kött, fisk eller fågel och sås, 1 1/2 dl mjölk eller dl legeringssoppa + 1 msk gräddfil 2 dl helmjölk",
-        "Mellanmål: 1 pannkaka med glass och hackad choklad eller 2 dl kall kål/smoothie/proteindryck, 1 chokladkex"
+        "Frukost: Gröt med grädde eller bulle med ost, ägg, juice.",
+        "Mellanmål: Kex med ost, smoothie eller juice.",
+        "Lunch: Smörgås med ägg/majonnässallad, mjölk.",
+        "Eftermiddag: Proteindryck, nötter eller varm choklad.",
+        "Middag: Potatismos med kött/fisk och sås, mjölk.",
+        "Kväll: Pannkaka med glass eller proteindryck."
       ],
-      "instructions": "Måltiderna är ofta bland de viktigaste händelserna under dagen. Prioritera mellanmål, eftersom många mellanmål kan öka ditt totala energi- och proteinintag."
+      "instructions": "Prioritera mellanmål då de är avgörande för att öka det totala energiintaget."
+    }
+  ],
+  "medical_advice": [
+    {
+      "title": "Ätproblem vid behandling",
+      "info": "Sjukdom och behandling kan orsaka biverkningar som påverkar aptit och vikt. Berätta alltid om dina symtom för vårdpersonalen så att de kan hjälpa dig med lindring.",
+      "tips": [
+        "Berätta om illamående för läkaren.",
+        "Använd föreskriven medicinering regelbundet.",
+        "Håll munhygienen god."
+      ]
+    },
+    {
+      "title": "Konsistens på maten",
+      "info": "När aptiten är nedsatt kan mjuk eller flytande mat vara lättare att få i sig då det kräver mindre tuggning.",
+      "tips": [
+        "Välj potatismos istället för hel potatis.",
+        "Ät soppa eller smoothies istället för råa grönsaker.",
+        "Använd fruktgröt istället för färsk frukt."
+      ]
+    },
+    {
+      "title": "Smakförändringar",
+      "info": "Sjukdom kan göra att maten smakar annorlunda, t.ex. metalliskt eller bittert. Detta är oftast tillfälligt.",
+      "tips": [
+        "Krydda med färska örter eller citron.",
+        "Välj kall mat om varm mat luktar för mycket.",
+        "Använd extra salt eller socker för att förstärka smaken."
+      ]
+    },
+    {
+      "title": "Illamående",
+      "info": "Illamående kan orsakas av både hunger och behandling. Små, täta måltider är ofta bäst.",
+      "tips": [
+        "Ät torra kex eller salta rätter.",
+        "Undvik fet mat med stark lukt.",
+        "Prova syrliga sötsaker eller ingefära."
+      ]
+    },
+    {
+      "title": "Diarré",
+      "info": "Vissa behandlingar vid NET kan påverka fettupptaget och ge diarré. Det är viktigt att hålla vätskebalansen.",
+      "avoid": [
+        "Mycket fiberrik mat som fullkorn.",
+        "Lök och gasbildande livsmedel.",
+        "Väldigt fet mat."
+      ],
+      "tips": [
+        "Ät banan eller havregrynsgröt.",
+        "Drick mellan måltiderna, inte under.",
+        "Fråga läkaren om enzymer (t.ex. Creon)."
+      ]
+    },
+    {
+      "title": "Förstoppning",
+      "info": "Minskad rörelse och lite vätska ökar risken för trög mage. Ofta behövs laxermedel vid behandling.",
+      "tips": [
+        "Drick minst 2 liter vätska per dag.",
+        "Använd katrinplommon eller aprikoser.",
+        "Rör på dig så gott det går."
+      ]
+    },
+    {
+      "title": "Karcinoid syndrom",
+      "info": "Vissa livsmedel med höga halter av aminer kan utlösa rodnad eller magkramper hos vissa patienter.",
+      "avoid": [
+        "Lagrade ostar och mögelost.",
+        "Alkohol och koffein.",
+        "Rökt eller inlagd mat.",
+        "Choklad i stora mängder."
+      ]
     }
   ]
 }
