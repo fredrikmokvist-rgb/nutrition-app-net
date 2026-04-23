@@ -18,7 +18,7 @@
             background: var(--bg); 
             color: var(--text); 
             margin: 0; 
-            padding-bottom: 100px; 
+            padding-bottom: 120px; 
             -webkit-font-smoothing: antialiased;
         }
         
@@ -70,10 +70,9 @@
             border: 1px solid var(--card-border); 
             box-shadow: 0 6px 16px rgba(0,0,0,0.03); 
             position: relative;
-            overflow: hidden; /* Viktigt: Håller bilden innanför de rundade hörnen */
+            overflow: hidden; 
         }
 
-        /* Bild-styling för korten */
         .card-img {
             width: calc(100% + 44px);
             margin: -22px -22px 20px -22px;
@@ -170,7 +169,7 @@
             width: 100%; 
             background: white; 
             display: flex; 
-            height: 85px; 
+            height: 105px; /* Högre ribba */
             box-shadow: 0 -4px 20px rgba(0,0,0,0.04); 
             justify-content: space-around; 
             align-items: center; 
@@ -227,7 +226,7 @@
             showSection('home');
         })
         .catch(err => {
-            document.getElementById('content').innerHTML = "<p style='text-align:center;'>Kunde inte ladda data. Kontrollera att data.json är sparad korrekt på GitHub.</p>";
+            document.getElementById('content').innerHTML = "<p style='text-align:center;'>Kunde inte ladda data.</p>";
         });
 
     function showSection(section) {
